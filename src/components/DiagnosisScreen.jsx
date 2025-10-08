@@ -2,66 +2,36 @@ import React, { useState } from "react";
 import { useGame } from "../context/GameContext";
 
 export default function DiagnosisScreen() {
-  const { prevStep, resetGame, caseData, loadingCase, caseError } = useGame();
+  const { cases, currentCaseIndex, nextCase } = useGame();
+  const currentCase = cases[currentCaseIndex];
   const [guess, setGuess] = useState("");
-  const [resultMsg, setResultMsg] = useState(null);
+  const [feedback, setFeedback] = useState("");
 
-  if (loadingCase) return <div>Yükleniyor...</div>;
-  if (caseError) return <div>Hata: {caseError}</div>;
-  if (!caseData) return <div>Vaka yok.</div>;
+  if (!currentCase) return <p>Vaka yükleniyor...</p>;
 
-  const correct = caseData.dogru_tani || caseData.dogruTani || caseData.correctDiagnosis || "";
-
-  const check = () => {
-    if (!guess.trim()) return setResultMsg({ ok: false, text: "Lütfen bir tahmin girin." });
-    if (guess.trim().toLowerCase() === correct.trim().toLowerCase()) {
-      setResultMsg({ ok: true, text: "Doğru! Tebrikler 🎉" });
+  const checkGuess = () => {
+    if (guess.trim().toLowerCase() === currentCase.ad.toLowerCase()) {
+      setFeedback("✅ Doğru tahmin! Sonraki vakaya geçiliyor...");
+      setTimeout(() => {
+        setFeedback("");
+        setGuess("");
+        nextCase();
+      }, 2000);
     } else {
-      setResultMsg({ ok: false, text: "Yanlış tahmin. Tekrar deneyin." });
+      setFeedback(`❌ Yanlış! Doğru cevap: ${currentCase.ad}`);
     }
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <h2 className="text-2xl">Hastalık Tahmini</h2>
-
+    <div>
+      <h2>Hastalığı Tahmin Et</h2>
       <input
         value={guess}
         onChange={(e) => setGuess(e.target.value)}
-        placeholder="Tahmininizi yazın (örn: İnferior MI)"
-        style={{ width: "100%", maxWidth: 480, padding: 10, borderRadius: 8, marginTop: 12, border: "1px solid #ddd" }}
+        placeholder="Tahmininizi yazın"
       />
-
-      <div style={{ marginTop: 12 }}>
-        <button onClick={check} style={{ background: "#FFB84C", color: "#1E1E1E", padding: "8px 14px", borderRadius: 10, border: "none", fontWeight: 600 }}>
-          Tahmin Et
-        </button>
-      </div>
-
-      {resultMsg && (
-        <div style={{ marginTop: 16 }}>
-          <div style={{ color: resultMsg.ok ? "green" : "crimson", fontWeight: 600 }}>
-            {resultMsg.text}
-          </div>
-
-          {resultMsg.ok && (
-            <div style={{ marginTop: 12 }}>
-              <button onClick={() => { resetGame(); setGuess(""); setResultMsg(null); }} style={{ background: "#4CAF50", color: "#fff", padding: "8px 12px", borderRadius: 10, border: "none" }}>
-                Yeni vaka
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-
-      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 20 }}>
-        <button onClick={prevStep} style={{ background: "#eee", padding: "8px 14px", borderRadius: 10, border: "none" }}>
-          ← Geri
-        </button>
-        <button onClick={() => { resetGame(); setGuess(""); setResultMsg(null); }} style={{ background: "#ddd", padding: "8px 14px", borderRadius: 10, border: "none" }}>
-          Baştan Başla
-        </button>
-      </div>
+      <button onClick={checkGuess}>Tahmin Et</button>
+      {feedback && <p>{feedback}</p>}
     </div>
   );
 }
