@@ -2,7 +2,7 @@ import React from "react";
 import { useGame } from "../context/GameContext";
 
 export default function TestsScreen() {
-  const { cases, currentCaseIndex, nextStep } = useGame();
+  const { cases, currentCaseIndex, nextStep, prevStep } = useGame();
   const currentCase = cases[currentCaseIndex];
 
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
@@ -12,7 +12,7 @@ export default function TestsScreen() {
       <h2>🧫 Tetkikler</h2>
 
       <div className="screen-content">
-        <p>{currentCase.klinik_bulgular.tetkikler}</p>
+        <p>{currentCase.klinik_bulgular?.tetkikler ?? "Tetkik bilgisi yok."}</p>
       </div>
 
       <div className="nav-buttons">
@@ -20,7 +20,7 @@ export default function TestsScreen() {
           ← Geri
         </button>
         <button className="btn btn-primary" onClick={nextStep}>
-          Hastalığı Tahmin Et →
+          Radyoloji →
         </button>
       </div>
     </div>
