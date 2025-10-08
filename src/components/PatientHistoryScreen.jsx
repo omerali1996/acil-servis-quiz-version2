@@ -27,17 +27,39 @@ export default function PatientHistoryScreen() {
     }
   };
 
+
   return (
-    <div>
-      <h2>Vaka: {currentCase.hikaye}</h2>
-      <input
-        value={question}
-        onChange={(e) => setQuestion(e.target.value)}
-        placeholder="Sorunuzu yazın"
-      />
-      <button onClick={askQuestion} disabled={loading}>Sor</button>
-      {answer && <p>💬 Hasta: {answer}</p>}
-      {answer && <button onClick={nextStep}>Fizik Muayene</button>}
+    <div className="screen">
+      <h2>🧠 Hasta Hikayesi</h2>
+
+      <div className="screen-content">
+        <p>{currentCase.hikaye}</p>
+      </div>
+
+      <div style={{ marginTop: "1.5rem" }}>
+        <input
+          value={question}
+          onChange={(e) => setQuestion(e.target.value)}
+          placeholder="Sorunuzu yazın..."
+        />
+        <button className="btn btn-primary" onClick={askQuestion} disabled={loading}>
+          {loading ? "Soruluyor..." : "Sor"}
+        </button>
+      </div>
+
+      {answer && <p style={{ marginTop: "1rem" }}>💬 Hasta: {answer}</p>}
+
+      <div className="nav-buttons">
+        <button className="btn btn-secondary" onClick={prevStep} disabled>
+          ← Geri
+        </button>
+        {answer && (
+          <button className="btn btn-primary" onClick={nextStep}>
+            Fizik Muayene →
+          </button>
+        )}
+      </div>
     </div>
   );
 }
+
