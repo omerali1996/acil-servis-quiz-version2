@@ -14,12 +14,12 @@ export default function DiagnosisScreen() {
       setFeedback("Lütfen bir tahmin girin.");
       return;
     }
+
     const normalizedGuess = guess.trim().toLowerCase();
     const normalizedAnswer = (currentCase.ad || "").toLowerCase();
 
     if (normalizedGuess === normalizedAnswer) {
       setFeedback("✅ Doğru tahmin! Sonraki vakaya geçiliyor...");
-      // küçük gecikme kullanıcı deneyimi için (setTimeout UI içinde, burada güvenli)
       setTimeout(() => {
         setFeedback("");
         setGuess("");
@@ -34,14 +34,7 @@ export default function DiagnosisScreen() {
     <div className="screen">
       <h2>🔍 Hastalığı Tahmin Et</h2>
 
-      <div className="screen-content">
-        <div style={{flex:1}}>
-          <p className="kv">Vaka özeti:</p>
-          <p>{currentCase.hikaye}</p>
-        </div>
-      </div>
-
-      <div className="input-row">
+      <div className="input-row" style={{ marginTop: "2rem" }}>
         <input
           type="text"
           value={guess}
@@ -55,7 +48,14 @@ export default function DiagnosisScreen() {
       </div>
 
       {feedback && (
-        <p className="feedback" style={{ color: feedback.startsWith("✅") ? "var(--success)" : "var(--danger)" }}>
+        <p
+          className="feedback"
+          style={{
+            color: feedback.startsWith("✅") ? "green" : "red",
+            fontWeight: 500,
+            marginTop: "1rem",
+          }}
+        >
           {feedback}
         </p>
       )}
@@ -64,7 +64,6 @@ export default function DiagnosisScreen() {
         <button className="btn btn-secondary" onClick={prevStep}>
           ← Geri
         </button>
-        <div />
       </div>
     </div>
   );
