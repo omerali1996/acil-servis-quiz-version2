@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import api from "../api"; // varsa var olmali
+import api from "../api"; // varsa var olmalı
 
 const GameContext = createContext();
 
@@ -10,8 +10,8 @@ export const GameProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // 🧠 EKLENDİ: Sorular ve hak bilgileri global state'te
-  const [askedQuestions, setAskedQuestions] = useState({}); // caseId -> [sorular]
+  // 🧠 Sorular ve hak bilgileri global state'te
+  const [askedQuestions, setAskedQuestions] = useState({}); // caseId -> [{question, answer}]
   const [questionAttempts, setQuestionAttempts] = useState({}); // caseId -> kalan hak (örn. 2)
 
   useEffect(() => {
