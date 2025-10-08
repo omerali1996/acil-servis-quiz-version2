@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useGame } from "../context/GameContext";
 import api from "../api";
 
@@ -14,11 +14,16 @@ export default function PatientHistoryScreen() {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Current case hazır mı kontrol
+  // Mevcut vaka kontrolü
   if (!cases || !cases[currentCaseIndex]) return <p>Vaka yükleniyor...</p>;
   const currentCase = cases[currentCaseIndex];
 
-  // Context'ten sorular ve cevapları alıyoruz, yoksa default
+  // Klinik Bulgular ifadesini kaldır
+  const cleanedHistory = currentCase.hikaye
+    ? currentCase.hikaye.replace(" Klinik Bulgular:", "").trim()
+    : "";
+
+  // Context'ten sorular ve cevaplar
   const caseQuestions = questionsData[currentCaseIndex] || {
     answers: [],
     questionCount: 0,
@@ -66,7 +71,7 @@ export default function PatientHistoryScreen() {
       <h2>🧠 Hasta Hikayesi</h2>
 
       <div className="screen-content">
-        <p>{currentCase.hikaye}</p>
+        <p>{cleanedHistory}</p>
       </div>
 
       <div className="input-row">
@@ -91,14 +96,13 @@ export default function PatientHistoryScreen() {
       </div>
 
       <div className="screen-content" style={{ marginTop: 8 }}>
-        {answers.length > 0
-          ? answers.map((item, index) => (
-              <div key={index} style={{ marginBottom: 10 }}>
-                <strong>💬 Hasta Cevap {index + 1}:</strong>
-                <div style={{ marginLeft: 10 }}>{item.answer}</div>
-              </div>
-            ))
-          : null}
+        {answers.length > 0 &&
+          answers.map((item, index) => (
+            <div key={index} style={{ marginBottom: 10 }}>
+              <strong>💬 Hasta Cevap {index + 1}:</strong>
+              <div style={{ marginLeft: 10 }}>{item.answer}</div>
+            </div>
+          ))}
       </div>
 
       <div className="nav-buttons">
