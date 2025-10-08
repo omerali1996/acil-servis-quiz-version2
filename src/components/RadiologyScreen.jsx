@@ -8,10 +8,21 @@ export default function RadiologyScreen() {
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
 
   return (
-    <div>
-      <h2>Radyolojik Görüntüler</h2>
-      <p>{currentCase.klinik_bulgular.radyolojik_goruntuler}</p>
-      <button onClick={nextStep}>EKG</button>
+    <div className="screen">
+      <h2>🩻 Radyolojik Görüntüler</h2>
+
+      <div className="screen-content">
+        <p>{currentCase.klinik_bulgular.radyolojik_goruntuler}</p>
+      </div>
+
+      <div className="nav-buttons">
+        <button className="btn btn-secondary" onClick={prevStep}>
+          ← Geri
+        </button>
+        <button className="btn btn-primary" onClick={nextStep}>
+          EKG →
+        </button>
+      </div>
     </div>
   );
 }
