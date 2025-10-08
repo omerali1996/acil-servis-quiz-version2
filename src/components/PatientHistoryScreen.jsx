@@ -3,14 +3,16 @@ import { useGame } from "../context/GameContext";
 import api from "../api";
 
 export default function PatientHistoryScreen() {
-  const { cases, currentCaseIndex, nextStep } = useGame();
+  const { cases, currentCaseIndex, nextStep, questionsData, updateCaseQuestions } = useGame();
   const [question, setQuestion] = useState("");
-  const [answers, setAnswers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [questionCount, setQuestionCount] = useState(0);
 
   if (!cases || !cases[currentCaseIndex]) return <p>Vaka yükleniyor...</p>;
   const currentCase = cases[currentCaseIndex];
+
+  // Context'ten alıyoruz, yoksa default
+  const caseQuestions = questionsData[currentCaseIndex] || { answers: [], questionCount: 0 };
+  const { answers, questionCount } = caseQuestions;
 
   const askQuestion = async () => {
     if (!question.trim()) return;
@@ -24,14 +26,19 @@ export default function PatientHistoryScreen() {
       });
 
       const newAnswer = res?.data?.answer || "Cevap alınamadı.";
-      setAnswers((prev) => [...prev, { question, answer: newAnswer }]);
+      const newAnswers = [...answers, { question, answer: newAnswer }];
+      updateCaseQuestions(currentCaseIndex, {
+        answers: newAnswers,
+        questionCount: questionCount + 1,
+      });
+
       setQuestion("");
-      setQuestionCount((prev) => prev + 1);
     } catch (err) {
-      setAnswers((prev) => [
-        ...prev,
-        { question, answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata") },
-      ]);
+      const newAnswers = [...answers, { question, answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata") }];
+      updateCaseQuestions(currentCaseIndex, {
+        answers: newAnswers,
+        questionCount: questionCount + 1,
+      });
     } finally {
       setLoading(false);
     }
@@ -86,9 +93,4 @@ export default function PatientHistoryScreen() {
             disabled={answers.length < 1}
           >
             Fizik Muayene →
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+          </but
