@@ -2,7 +2,7 @@ import React from "react";
 import { useGame } from "../context/GameContext";
 
 export default function EKGScreen() {
-  const { cases, currentCaseIndex, nextStep } = useGame();
+  const { cases, currentCaseIndex, nextStep, prevStep } = useGame();
   const currentCase = cases[currentCaseIndex];
 
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
@@ -12,7 +12,7 @@ export default function EKGScreen() {
       <h2>📈 EKG Bulguları</h2>
 
       <div className="screen-content">
-        <p>{currentCase.klinik_bulgular.ekg}</p>
+        <p>{currentCase.klinik_bulgular?.ekg ?? "EKG bilgisi yok."}</p>
       </div>
 
       <div className="nav-buttons">
@@ -26,4 +26,3 @@ export default function EKGScreen() {
     </div>
   );
 }
-
