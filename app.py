@@ -1,50 +1,41 @@
-import os
-from flask import Flask, request, jsonify
-from openai import OpenAI
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from hastaliklar import hastaliklar
+import os
+from openai import OpenAI
 
 app = Flask(__name__)
 CORS(app)
 
-# Environment variable'dan API key al
-API_KEY = os.environ.get("OPENAI_API_KEY")
-if not API_KEY:
-    raise ValueError("OPENAI_API_KEY environment variable is not set!")
-client = OpenAI(api_key=API_KEY)  # kendi anahtarını buraya yaz
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")  # güvenlik için .env
 
-
-
-
-
-
-@app.route('/chat', methods=['POST'])
-def chat():
-    data = request.get_json()
-    question = data.get("question", "")
-
-    # Basit context: Hasta gibi cevap ver
-    messages = [
-        {"role": "system", "content": "Sen bir hasta gibi davran, sorulara kendi durumuna göre yanıt ver."},
-        {"role": "user", "content": question}
-    ]
-
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=messages
-        )
-        answer = response.choices[0].message.content
-        return jsonify({"answer": answer})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/diseases', methods=['GET'])
+@app.route("/diseases", methods=["GET"])
 def get_diseases():
     return jsonify(hastaliklar)
 
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.json
+    question = data.get("question")
+    disease_name = data.get("disease")
+
+    if not question or not disease_name:
+        return jsonify({"error": "Eksik parametre"}), 400
+
+    client = OpenAI(api_key=OPENAI_API_KEY)
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{
+            "role": "user",
+            "content": (f"Doktorun sorduğu '{question}' sorusunu, "
+                        f"bir {disease_name} hastası gibi cevapla, "
+                        f"hastalık adını verme, 1-2 cümle ile cevapla.")
+        }],
+    )
+    answer = response.to_dict()["choices"][0]["message"]["content"]
+    return jsonify({"answer": answer})
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
