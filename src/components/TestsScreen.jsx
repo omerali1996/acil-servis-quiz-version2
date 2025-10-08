@@ -13,11 +13,6 @@ export default function TestsScreen() {
   return (
     <div className="screen">
       <h2>🧫 Tetkikler</h2>
-
-      <div className="screen-content">
-        <p>{tetkikBilgisi ? tetkikBilgisi : "Tetkik bilgisi bulunamadı."}</p>
-      </div>
-
       <div className="nav-buttons" style={{ justifyContent: "center" }}>
         <button className="btn btn-primary" onClick={nextStep}>
           🧩 Hastalığı Tahmin Et
@@ -26,6 +21,7 @@ export default function TestsScreen() {
     </div>
   );
 }
+
 
 
 
