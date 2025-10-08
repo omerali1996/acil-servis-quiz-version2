@@ -1,31 +1,105 @@
-:root{
-  --bg: #FFFDF7;
-  --card: #FFFFFF;
-  --text: #2B2B2B;
-  --accent: #FFB84C;
-  --accent-dark: #D9A25F;
-  --btn-text: #1E1E1E;
-  --shadow: 0 6px 18px rgba(226,198,165,0.25);
-}
-
-*{box-sizing:border-box;}
-html,body,#root{height:100%;}
+/* === Genel layout === */
 body {
-  margin:0;
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f3f6ff 0%, #e9edf7 100%);
+  color: #1e293b;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-  max-width:900px;
-  margin:36px auto;
-  padding:20px;
+/* === Ana container === */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.card{
-  background: var(--card);
-  border-radius:18px;
-  padding:24px;
-  box-shadow: var(--shadow);
+/* === Card alanı === */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover efekti */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* === Başlıklar === */
+.card h1,
+.card h2 {
+  color: #1e3a8a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* === Navigasyon butonları (ileri/geri) === */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-buttons button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Geri butonu stili */
+.nav-buttons .back {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.nav-buttons .back:hover {
+  background-color: #cbd5e1;
+}
+
+/* === Loading ve Error ekranı için === */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.error {
+  color: #ef4444;
 }
