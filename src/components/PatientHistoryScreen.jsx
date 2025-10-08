@@ -1,19 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useGame } from "../context/GameContext";
 import api from "../api";
 
 export default function PatientHistoryScreen() {
-  const { cases, currentCaseIndex, nextStep, questionsData, updateCaseQuestions } = useGame();
+  const {
+    cases,
+    currentCaseIndex,
+    nextStep,
+    questionsData,
+    updateCaseQuestions,
+  } = useGame();
+
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Current case hazır mı kontrol
   if (!cases || !cases[currentCaseIndex]) return <p>Vaka yükleniyor...</p>;
   const currentCase = cases[currentCaseIndex];
 
-  // Context'ten alıyoruz, yoksa default
-  const caseQuestions = questionsData[currentCaseIndex] || { answers: [], questionCount: 0 };
+  // Context'ten sorular ve cevapları alıyoruz, yoksa default
+  const caseQuestions = questionsData[currentCaseIndex] || {
+    answers: [],
+    questionCount: 0,
+  };
   const { answers = [], questionCount = 0 } = caseQuestions;
 
+  // API çağrısı
   const askQuestion = async () => {
     if (!question.trim()) return;
     if (questionCount >= 2) return;
@@ -27,6 +39,8 @@ export default function PatientHistoryScreen() {
 
       const newAnswer = res?.data?.answer || "Cevap alınamadı.";
       const newAnswers = [...answers, { question, answer: newAnswer }];
+
+      // Context güncelle
       updateCaseQuestions(currentCaseIndex, {
         answers: newAnswers,
         questionCount: questionCount + 1,
@@ -34,7 +48,10 @@ export default function PatientHistoryScreen() {
 
       setQuestion("");
     } catch (err) {
-      const newAnswers = [...answers, { question, answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata") }];
+      const newAnswers = [
+        ...answers,
+        { question, answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata") },
+      ];
       updateCaseQuestions(currentCaseIndex, {
         answers: newAnswers,
         questionCount: questionCount + 1,
@@ -73,6 +90,29 @@ export default function PatientHistoryScreen() {
         </button>
       </div>
 
-      {answers.length > 0 ? (
-        <div className="screen-content" style={{ marginTop: 8 }}>
-          {answers.map((ite
+      <div className="screen-content" style={{ marginTop: 8 }}>
+        {answers.length > 0
+          ? answers.map((item, index) => (
+              <div key={index} style={{ marginBottom: 10 }}>
+                <strong>💬 Hasta Cevap {index + 1}:</strong>
+                <div style={{ marginLeft: 10 }}>{item.answer}</div>
+              </div>
+            ))
+          : null}
+      </div>
+
+      <div className="nav-buttons">
+        <div />
+        <div>
+          <button
+            className="btn btn-primary"
+            onClick={nextStep}
+            disabled={answers.length < 1}
+          >
+            Fizik Muayene →
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
