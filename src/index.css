@@ -1,0 +1,31 @@
+:root{
+  --bg: #FFFDF7;
+  --card: #FFFFFF;
+  --text: #2B2B2B;
+  --accent: #FFB84C;
+  --accent-dark: #D9A25F;
+  --btn-text: #1E1E1E;
+  --shadow: 0 6px 18px rgba(226,198,165,0.25);
+}
+
+*{box-sizing:border-box;}
+html,body,#root{height:100%;}
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container{
+  max-width:900px;
+  margin:36px auto;
+  padding:20px;
+}
+
+.card{
+  background: var(--card);
+  border-radius:18px;
+  padding:24px;
+  box-shadow: var(--shadow);
+}
