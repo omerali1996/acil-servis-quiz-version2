@@ -1,18 +1,18 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import api from "../api"; // varsa var olmalı
+import api from "../api";
 
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const [step, setStep] = useState(1); // 1..6
+  const [step, setStep] = useState(1);
   const [cases, setCases] = useState([]);
   const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // 🧠 Sorular ve hak bilgileri global state'te
-  const [askedQuestions, setAskedQuestions] = useState({}); // caseId -> [{question, answer}]
-  const [questionAttempts, setQuestionAttempts] = useState({}); // caseId -> kalan hak (örn. 2)
+  // Sorular ve haklar
+  const [askedQuestions, setAskedQuestions] = useState({}); // caseIndex -> [{question, answer}]
+  const [questionAttempts, setQuestionAttempts] = useState({}); // caseIndex -> kalan hak
 
   useEffect(() => {
     let mounted = true;
@@ -47,13 +47,7 @@ export const GameProvider = ({ children }) => {
   };
 
   const nextCase = () => {
-    setCurrentCaseIndex((i) => {
-      const next = i + 1;
-      if (next >= cases.length) {
-        return 0;
-      }
-      return next;
-    });
+    setCurrentCaseIndex((i) => (i + 1 >= cases.length ? 0 : i + 1));
     setStep(1);
   };
 
@@ -70,8 +64,6 @@ export const GameProvider = ({ children }) => {
         error,
         nextCase,
         setStep,
-
-        // 🧠 Yeni eklenenler:
         askedQuestions,
         setAskedQuestions,
         questionAttempts,
