@@ -8,10 +8,22 @@ export default function EKGScreen() {
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
 
   return (
-    <div>
-      <h2>EKG</h2>
-      <p>{currentCase.klinik_bulgular.ekg}</p>
-      <button onClick={nextStep}>Tetkikler</button>
+    <div className="screen">
+      <h2>📈 EKG Bulguları</h2>
+
+      <div className="screen-content">
+        <p>{currentCase.klinik_bulgular.ekg}</p>
+      </div>
+
+      <div className="nav-buttons">
+        <button className="btn btn-secondary" onClick={prevStep}>
+          ← Geri
+        </button>
+        <button className="btn btn-primary" onClick={nextStep}>
+          Tetkikler →
+        </button>
+      </div>
     </div>
   );
 }
+
