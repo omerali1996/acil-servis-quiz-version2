@@ -5,35 +5,51 @@ const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
   const [step, setStep] = useState(1);
-  const [caseData, setCaseData] = useState(null);
-  const [loadingCase, setLoadingCase] = useState(true);
-  const [caseError, setCaseError] = useState(null);
+  const [cases, setCases] = useState([]);
+  const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchCase = async () => {
+    const fetchCases = async () => {
       try {
-        setLoadingCase(true);
-        const res = await api.get("/diseases");
-        if (Array.isArray(res.data) && res.data.length > 0) {
-          setCaseData(res.data[0]);
-        } else {
-          setCaseError("Vaka bulunamadı.");
-        }
+        setLoading(true);
+        const res = await api.get("/api/cases");
+        setCases(res.data);
       } catch (err) {
-        setCaseError(err.message || "Vaka yüklenemedi.");
+        setError(err.message || "Vaka yüklenemedi");
       } finally {
-        setLoadingCase(false);
+        setLoading(false);
       }
     };
-    fetchCase();
+    fetchCases();
   }, []);
 
   const nextStep = () => setStep((s) => Math.min(6, s + 1));
   const prevStep = () => setStep((s) => Math.max(1, s - 1));
-  const resetGame = () => setStep(1);
+  const resetGame = () => {
+    setStep(1);
+    setCurrentCaseIndex(0);
+  };
+  const nextCase = () => {
+    setCurrentCaseIndex((i) => i + 1);
+    setStep(1);
+  };
 
   return (
-    <GameContext.Provider value={{ step, nextStep, prevStep, resetGame, caseData, loadingCase, caseError }}>
+    <GameContext.Provider
+      value={{
+        step,
+        nextStep,
+        prevStep,
+        resetGame,
+        cases,
+        currentCaseIndex,
+        loading,
+        error,
+        nextCase
+      }}
+    >
       {children}
     </GameContext.Provider>
   );
