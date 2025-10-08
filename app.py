@@ -1,12 +1,22 @@
+import os
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 from openai import OpenAI
+from flask_cors import CORS
 from hastaliklar import hastaliklar
 
 app = Flask(__name__)
-CORS(app)  # React frontend'den gelen istekleri kabul eder
+CORS(app)
 
-client = OpenAI(api_key="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")  # kendi anahtarını buraya yaz
+# Environment variable'dan API key al
+API_KEY = os.environ.get("OPENAI_API_KEY")
+if not API_KEY:
+    raise ValueError("OPENAI_API_KEY environment variable is not set!")
+client = OpenAI(api_key=API_KEY)  # kendi anahtarını buraya yaz
+
+
+
+
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -37,3 +47,4 @@ def get_diseases():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
