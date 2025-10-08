@@ -10,10 +10,6 @@ export const GameProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Sorular ve haklar
-  const [askedQuestions, setAskedQuestions] = useState({}); // caseIndex -> [{question, answer}]
-  const [questionAttempts, setQuestionAttempts] = useState({}); // caseIndex -> kalan hak
-
   useEffect(() => {
     let mounted = true;
     const fetchCases = async () => {
@@ -38,14 +34,10 @@ export const GameProvider = ({ children }) => {
 
   const nextStep = () => setStep((s) => Math.min(6, s + 1));
   const prevStep = () => setStep((s) => Math.max(1, s - 1));
-
   const resetGame = () => {
     setStep(1);
     setCurrentCaseIndex(0);
-    setAskedQuestions({});
-    setQuestionAttempts({});
   };
-
   const nextCase = () => {
     setCurrentCaseIndex((i) => (i + 1 >= cases.length ? 0 : i + 1));
     setStep(1);
@@ -64,10 +56,6 @@ export const GameProvider = ({ children }) => {
         error,
         nextCase,
         setStep,
-        askedQuestions,
-        setAskedQuestions,
-        questionAttempts,
-        setQuestionAttempts,
       }}
     >
       {children}
