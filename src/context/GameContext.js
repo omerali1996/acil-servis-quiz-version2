@@ -1,28 +1,35 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import api from "../api";
+import api from "../api"; // varsa var olmali
 
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(1); // 1..6
   const [cases, setCases] = useState([]);
   const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    let mounted = true;
     const fetchCases = async () => {
       try {
         setLoading(true);
         const res = await api.get("/api/cases");
-        setCases(res.data);
+        if (!mounted) return;
+        setCases(res.data || []);
       } catch (err) {
+        if (!mounted) return;
         setError(err.message || "Vaka yüklenemedi");
       } finally {
+        if (!mounted) return;
         setLoading(false);
       }
     };
     fetchCases();
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   const nextStep = () => setStep((s) => Math.min(6, s + 1));
@@ -32,7 +39,14 @@ export const GameProvider = ({ children }) => {
     setCurrentCaseIndex(0);
   };
   const nextCase = () => {
-    setCurrentCaseIndex((i) => i + 1);
+    setCurrentCaseIndex((i) => {
+      const next = i + 1;
+      if (next >= cases.length) {
+        // optional: loop or reset
+        return 0;
+      }
+      return next;
+    });
     setStep(1);
   };
 
@@ -47,7 +61,8 @@ export const GameProvider = ({ children }) => {
         currentCaseIndex,
         loading,
         error,
-        nextCase
+        nextCase,
+        setStep
       }}
     >
       {children}
