@@ -10,6 +10,10 @@ export const GameProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // 🧠 EKLENDİ: Sorular ve hak bilgileri global state'te
+  const [askedQuestions, setAskedQuestions] = useState({}); // caseId -> [sorular]
+  const [questionAttempts, setQuestionAttempts] = useState({}); // caseId -> kalan hak (örn. 2)
+
   useEffect(() => {
     let mounted = true;
     const fetchCases = async () => {
@@ -34,15 +38,18 @@ export const GameProvider = ({ children }) => {
 
   const nextStep = () => setStep((s) => Math.min(6, s + 1));
   const prevStep = () => setStep((s) => Math.max(1, s - 1));
+
   const resetGame = () => {
     setStep(1);
     setCurrentCaseIndex(0);
+    setAskedQuestions({});
+    setQuestionAttempts({});
   };
+
   const nextCase = () => {
     setCurrentCaseIndex((i) => {
       const next = i + 1;
       if (next >= cases.length) {
-        // optional: loop or reset
         return 0;
       }
       return next;
@@ -62,7 +69,13 @@ export const GameProvider = ({ children }) => {
         loading,
         error,
         nextCase,
-        setStep
+        setStep,
+
+        // 🧠 Yeni eklenenler:
+        askedQuestions,
+        setAskedQuestions,
+        questionAttempts,
+        setQuestionAttempts,
       }}
     >
       {children}
