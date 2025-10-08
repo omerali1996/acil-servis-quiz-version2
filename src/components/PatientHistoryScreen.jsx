@@ -19,7 +19,7 @@ export default function PatientHistoryScreen() {
   if (!cases || !cases[currentCaseIndex]) return <p>Vaka yükleniyor...</p>;
   const currentCase = cases[currentCaseIndex];
 
-  // İlk açılışta hakları ayarla
+  // Hakları başlat
   useEffect(() => {
     if (!questionAttempts[currentCaseIndex]) {
       setQuestionAttempts((prev) => ({ ...prev, [currentCaseIndex]: 2 }));
@@ -28,9 +28,8 @@ export default function PatientHistoryScreen() {
 
   const askQuestion = async () => {
     if (!question.trim()) return;
-
     const remaining = questionAttempts[currentCaseIndex] || 0;
-    if (remaining <= 0) return; // hak yoksa dur
+    if (remaining <= 0) return;
 
     setLoading(true);
     try {
@@ -40,7 +39,6 @@ export default function PatientHistoryScreen() {
       });
       const answerText = res?.data?.answer || "Cevap alınamadı.";
 
-      // Soruyu ve cevabı kaydet
       setAskedQuestions((prev) => ({
         ...prev,
         [currentCaseIndex]: [
@@ -49,7 +47,6 @@ export default function PatientHistoryScreen() {
         ],
       }));
 
-      // Hak azalt
       setQuestionAttempts((prev) => ({
         ...prev,
         [currentCaseIndex]: remaining - 1,
@@ -59,10 +56,7 @@ export default function PatientHistoryScreen() {
         ...prev,
         [currentCaseIndex]: [
           ...(prev[currentCaseIndex] || []),
-          {
-            question,
-            answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata"),
-          },
+          { question, answer: "Hata oluştu: " + (err.message || "Bilinmeyen hata") },
         ],
       }));
     } finally {
@@ -103,7 +97,6 @@ export default function PatientHistoryScreen() {
         </button>
       </div>
 
-      {/* Önceki soruları ve cevapları göster */}
       {questionsForCurrentCase.length > 0 && (
         <div className="screen-content" style={{ marginTop: 8 }}>
           {questionsForCurrentCase.map((item, index) => (
@@ -121,7 +114,7 @@ export default function PatientHistoryScreen() {
           <button
             className="btn btn-primary"
             onClick={nextStep}
-            disabled={questionsForCurrentCase.length < 1} // en az 1 soru sorulmadan geçilemez
+            disabled={questionsForCurrentCase.length < 1}
           >
             Fizik Muayene →
           </button>
