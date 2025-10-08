@@ -12,7 +12,7 @@ export default function PatientHistoryScreen() {
 
   // Context'ten alıyoruz, yoksa default
   const caseQuestions = questionsData[currentCaseIndex] || { answers: [], questionCount: 0 };
-  const { answers, questionCount } = caseQuestions;
+  const { answers = [], questionCount = 0 } = caseQuestions;
 
   const askQuestion = async () => {
     if (!question.trim()) return;
@@ -73,24 +73,6 @@ export default function PatientHistoryScreen() {
         </button>
       </div>
 
-      {answers.length > 0 && (
+      {answers.length > 0 ? (
         <div className="screen-content" style={{ marginTop: 8 }}>
-          {answers.map((item, index) => (
-            <div key={index} style={{ marginBottom: 10 }}>
-              <strong>💬 Hasta Cevap {index + 1}:</strong>
-              <div style={{ marginLeft: 10 }}>{item.answer}</div>
-            </div>
-          ))}
-        </div>
-      )}
-
-      <div className="nav-buttons">
-        <div />
-        <div>
-          <button
-            className="btn btn-primary"
-            onClick={nextStep}
-            disabled={answers.length < 1}
-          >
-            Fizik Muayene →
-          </but
+          {answers.map((ite
