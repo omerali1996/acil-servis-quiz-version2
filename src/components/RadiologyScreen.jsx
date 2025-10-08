@@ -2,7 +2,7 @@ import React from "react";
 import { useGame } from "../context/GameContext";
 
 export default function RadiologyScreen() {
-  const { cases, currentCaseIndex, nextStep } = useGame();
+  const { cases, currentCaseIndex, nextStep, prevStep } = useGame();
   const currentCase = cases[currentCaseIndex];
 
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
@@ -12,7 +12,7 @@ export default function RadiologyScreen() {
       <h2>🩻 Radyolojik Görüntüler</h2>
 
       <div className="screen-content">
-        <p>{currentCase.klinik_bulgular.radyolojik_goruntuler}</p>
+        <p>{currentCase.klinik_bulgular?.radyolojik_goruntuler ?? "Radyolojik görüntü bilgisi yok."}</p>
       </div>
 
       <div className="nav-buttons">
@@ -20,7 +20,7 @@ export default function RadiologyScreen() {
           ← Geri
         </button>
         <button className="btn btn-primary" onClick={nextStep}>
-          EKG →
+          Evet, Tahmin Et →
         </button>
       </div>
     </div>
