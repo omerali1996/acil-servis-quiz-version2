@@ -2,7 +2,7 @@ import React from "react";
 import { useGame } from "../context/GameContext";
 
 export default function PhysicalExamScreen() {
-  const { cases, currentCaseIndex, nextStep } = useGame();
+  const { cases, currentCaseIndex, nextStep, prevStep } = useGame();
   const currentCase = cases[currentCaseIndex];
 
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
@@ -12,7 +12,7 @@ export default function PhysicalExamScreen() {
       <h2>🩺 Fizik Muayene</h2>
 
       <div className="screen-content">
-        <p>{currentCase.klinik_bulgular.fizik_muayene}</p>
+        <p>{currentCase.klinik_bulgular?.fizik_muayene ?? "Fizik muayene bilgisi yok."}</p>
       </div>
 
       <div className="nav-buttons">
@@ -20,10 +20,9 @@ export default function PhysicalExamScreen() {
           ← Geri
         </button>
         <button className="btn btn-primary" onClick={nextStep}>
-          Radyoloji →
+          EKG →
         </button>
       </div>
     </div>
   );
 }
-
