@@ -10,6 +10,9 @@ export const GameProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Sorular ve cevaplar artık context'te tutuluyor
+  const [questionsData, setQuestionsData] = useState({}); // { caseIndex: { answers: [], questionCount: 0 } }
+
   useEffect(() => {
     let mounted = true;
     const fetchCases = async () => {
@@ -37,10 +40,21 @@ export const GameProvider = ({ children }) => {
   const resetGame = () => {
     setStep(1);
     setCurrentCaseIndex(0);
+    setQuestionsData({});
   };
   const nextCase = () => {
     setCurrentCaseIndex((i) => (i + 1 >= cases.length ? 0 : i + 1));
     setStep(1);
+  };
+
+  const updateCaseQuestions = (caseIndex, newData) => {
+    setQuestionsData((prev) => ({
+      ...prev,
+      [caseIndex]: {
+        ...prev[caseIndex],
+        ...newData,
+      },
+    }));
   };
 
   return (
@@ -56,6 +70,8 @@ export const GameProvider = ({ children }) => {
         error,
         nextCase,
         setStep,
+        questionsData,
+        updateCaseQuestions,
       }}
     >
       {children}
