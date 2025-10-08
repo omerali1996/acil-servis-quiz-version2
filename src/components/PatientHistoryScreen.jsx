@@ -16,7 +16,8 @@ export default function PatientHistoryScreen() {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
 
-  if (!cases || !cases[currentCaseIndex]) return <p>Vaka yükleniyor...</p>;
+  if (!cases || cases.length === 0) return <p>Vaka yükleniyor...</p>;
+
   const currentCase = cases[currentCaseIndex];
 
   // Hakları başlat
