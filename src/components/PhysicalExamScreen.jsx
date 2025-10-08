@@ -8,10 +8,22 @@ export default function PhysicalExamScreen() {
   if (!currentCase) return <p>Vaka yükleniyor...</p>;
 
   return (
-    <div>
-      <h2>Fizik Muayene</h2>
-      <p>{currentCase.klinik_bulgular.fizik_muayene}</p>
-      <button onClick={nextStep}>Radyolojik Görüntüler</button>
+    <div className="screen">
+      <h2>🩺 Fizik Muayene</h2>
+
+      <div className="screen-content">
+        <p>{currentCase.klinik_bulgular.fizik_muayene}</p>
+      </div>
+
+      <div className="nav-buttons">
+        <button className="btn btn-secondary" onClick={prevStep}>
+          ← Geri
+        </button>
+        <button className="btn btn-primary" onClick={nextStep}>
+          Radyoloji →
+        </button>
+      </div>
     </div>
   );
 }
+
