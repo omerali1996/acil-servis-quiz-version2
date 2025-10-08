@@ -22,16 +22,31 @@ export default function DiagnosisScreen() {
     }
   };
 
-  return (
-    <div>
-      <h2>Hastalığı Tahmin Et</h2>
-      <input
-        value={guess}
-        onChange={(e) => setGuess(e.target.value)}
-        placeholder="Tahmininizi yazın"
-      />
-      <button onClick={checkGuess}>Tahmin Et</button>
-      {feedback && <p>{feedback}</p>}
+    return (
+    <div className="diagnosis-screen">
+      <h2 className="title">🩺 Hastalığı Tahmin Et</h2>
+
+      <div className="input-group">
+        <input
+          className="guess-input"
+          value={guess}
+          onChange={(e) => setGuess(e.target.value)}
+          placeholder="Tahmininizi yazın..."
+        />
+        <button className="btn-primary" onClick={checkGuess}>
+          Tahmin Et
+        </button>
+      </div>
+
+      {feedback && (
+        <p
+          className={`feedback ${
+            feedback.startsWith("✅") ? "success" : "error"
+          }`}
+        >
+          {feedback}
+        </p>
+      )}
     </div>
   );
 }
