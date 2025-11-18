@@ -1,1102 +1,704 @@
-hastaliklar = [
-  {
-    "id": 1,
-    "ad": "Abdominal Aort Anevrizması Rüptürü",
-    "hikaye": "72 yaşında erkek hasta sabah banyoda yere yığılmış. Son günlerde mide yanması ve karın şişkinliği nedeniyle ilaç kullandığı öğreniliyor. Olay anında belden başlayıp sırta ve kasıklara yayılan çok şiddetli bir ağrı tarif ediyor. Ağrı giderek artmış, hasta bunu hayatındaki en kötü ağrı olarak tanımlıyor. Ambulansla gelirken birkaç kez bilinci bulanmış. Acile ulaştığında yoğun terleme, halsizlik ve huzursuzluk içinde. Konuşmaları kısa, sürekli sırtını ovuşturuyor. Yere düşerken kafasını çarpmış, alnında yüzeysel bir sıyrık var. Eşi, son haftalarda bacaklarda da ağrı şikayetleri olduğunu aktarıyor. Hasta sürekli “midemde patlama oldu” diyerek mide sorununa dikkat çekiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 80/50 mmHg, nabız 120/dk, soğuk-nemli cilt, karında yaygın hassasiyet ve defans, orta hatta pulsatil kitle.",
-      "radyolojik_goruntuler": "Yatak başı USG’de büyük damar çapında genişleme ve çevresinde heterojen hematom. BT anjiyografide aktif kontrast ekstravazasyonu.",
-      "ekg": "Sinüs taşikardisi, alt derivasyonlarda nonspesifik ST-T değişiklikleri.",
-      "tetkikler": "Hb 8.9 g/dl, Htc %27, laktat 4.2 mmol/L, kreatinin 1.8 mg/dl."
-    }
-  },
-  {
-    "id": 2,
-    "ad": "Adrenal Kriz",
-    "hikaye": "45 yaşında kadın hasta, son 2 gündür bulantı, kusma ve halsizlik yaşıyor. Yakınları sabah aniden titremeye başladığını ve konuşmalarının yavaşladığını söylüyor. Çok susadığını, su içtikten kısa süre sonra tekrar kustuğunu ifade ediyor. Şiddetli karın ağrısı nedeniyle yatağa kıvrılmış durumda. Dudakları kurumuş, cildi koyu pigmentli. Son haftalarda iştah kaybı ve baş ağrıları mevcutmuş. Eşi, evde birkaç kez fenalaştığını ve neredeyse bayıldığını söylüyor. Acile geldiğinde bilinci dalgalı, sorulara gecikmeli yanıt veriyor. Gözleri çökmüş, ağız kuruluğu belirgin. Evde bu durumu “zehirlenme” olarak düşündükleri öğreniliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 70/40 mmHg, nabız 110/dk, cilt kuru, mukozalar kuru, karında yaygın hassasiyet. Bilinç bulanık.",
-      "radyolojik_goruntuler": "Batın BT’de her iki bezde atrofi, akut kanama yok.",
-      "ekg": "Sivri T dalgaları, QRS genişlemesi.",
-      "tetkikler": "Na: 120 mmol/L, K: 6.5 mmol/L, glukoz: 40 mg/dl, kortizol düşük, ACTH yüksek."
-    }
-  },
-  {
-    "id": 3,
-    "ad": "Akut Glokom",
-    "hikaye": "60 yaşında kadın hasta ani başlayan göz ağrısı ve baş ağrısı ile başvuruyor. Evde migren sandığı için ağrı kesici almış, fayda görmemiş. Görmesi giderek bulanmış, ışıkların etrafında haleler görmüş. Bulantı ve kusma eklenmiş. Oğlu gece uyumakta zorlandığını ve “gözüm patlayacak gibi” dediğini söylüyor. Acile geldiğinde çok huzursuz, gözünü açmakta zorlanıyor. Konuşurken sürekli gözünü ovuşturuyor. Yakın zamanda yeni gözlük aldığı için başta gözlük uyumsuzluğu düşünülmüş. Öyküsünde hipertansiyon var. Yatarken ağrının arttığını, oturunca biraz azaldığını söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Gözde kızarıklık, kornea ödemli, pupil orta genişlikte, ışığa yanıt yok.",
-      "radyolojik_goruntuler": "Göz USG’de ön kamara sığ ve basınç artışı mevcut.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "Göz içi basıncı 45 mmHg, görme keskinliği belirgin azalmış."
-    }
-  },
-  {
-    "id": 4,
-    "ad": "Akut Graft-Versus-Host Hastalığı",
-    "hikaye": "35 yaşında erkek hasta, kemik iliği naklından 3 hafta sonra yaygın döküntü, karın ağrısı ve ishal nedeniyle acile geliyor. Başta besin intoleransı olabileceği düşünülmüş. Ciltte kızarıklık ve kaşıntı var. Yakınları son günlerde ateşinin çıktığını ve halsizliğinin arttığını anlatıyor. Hasta ishal nedeniyle sık sık tuvalete gidiyor. Yemek yiyemiyor, ağzında yaralar çıkmış. Kaşıntıdan dolayı sürekli derisini kaşıyor. Karın ağrısı giderek şiddetlenmiş. Bitkin ve konuşmakta zorlanıyor. Acile gelirken tekerlekli sandalye ile getirilmiş. Yakınları moral bozukluğundan dolayı uyumadığını söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Yaygın eritemli döküntü, sarılık, karında hassasiyet.",
-      "radyolojik_goruntuler": "Batın BT’de diffüz barsak duvarı ödemi.",
-      "ekg": "Normal.",
-      "tetkikler": "AST/ALT yüksek, bilirubin artmış, CRP yüksek."
-    }
-  },
-  {
-    "id": 5,
-    "ad": "Akut İnferior Miyokard İnfarktüsü",
-    "hikaye": "62 yaşında erkek hasta sabah kahvaltısından sonra göğüs ağrısı başlamış. Ağrı mideye vurduğu için önce gastrit düşünülmüş. Bulantı ve yoğun terleme eşlik ediyor. 30 yıldır sigara içiyor. Daha önce birkaç kez göğüs ağrısı olmuş ama doktora gitmemiş. Evde “mideme kramp giriyor” diye yakınmış. Acile geldiğinde rengi solgun, nefes nefese. Konuşmaları kısa, ağrısını sağ omza da vurduğunu söylüyor. Ağrı kesici almış ancak fayda etmemiş. Şikayetler başladıktan 1 saat içinde acile ulaşmış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 50/dk, soğuk ve nemli cilt.",
-      "radyolojik_goruntuler": "Akciğer grafisi normal.",
-      "ekg": "DII, DIII, aVF’de ST elevasyonu, bradikardi.",
-      "tetkikler": "Troponin yüksek, CK-MB artmış, elektrolitler normal."
-    }
-  },
-  {
-    "id": 6,
-    "ad": "Akut İskemik İnme",
-    "hikaye": "68 yaşında erkek hasta, konuşma bozukluğu ve sağ tarafında güçsüzlük şikâyetiyle acile getiriliyor. Yakınları belirtilerin yaklaşık 1 saat önce başladığını söylüyor. Evde önce hipoglisemi zannedilerek şekerli su içirilmiş ancak düzelmemiş. Hasta bir süredir tansiyon ilacını düzensiz kullandığını itiraf ediyor. Yolda gelirken konuşmaları anlaşılmaz hale gelmiş, sağ kolunu kaldıramamış. Acile ulaştığında bilinci açık ancak oryantasyonu bozuk. Sorulara kısa ve anlamsız cevaplar veriyor. Eşi, birkaç gündür baş ağrısı ve halsizlik şikâyeti olduğunu belirtiyor. Hasta sürekli sağ bacağını oynatmakta zorlandığını söylüyor. Oğlunun ifadesine göre evde otururken aniden yüzünün sağ tarafı düşmüş gibi görünmüş. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Sağ hemiparezi, disartri, yüzün sağ tarafında asimetri.",
-      "radyolojik_goruntuler": "Acil BT’de kanama yok, erken iskemik değişiklikler mevcut.",
-      "ekg": "Atriyal fibrilasyon ritmi.",
-      "tetkikler": "Kan şekeri 110 mg/dl, INR normal, troponin normal."
-    }
-  },
-  {
-    "id": 7,
-    "ad": "Akut KOAH Alevlenmesi",
-    "hikaye": "70 yaşında erkek hasta, kronik solunum hastalığı öyküsüyle biliniyor. Son 2 gündür öksürüğü ve balgamı artmış, nefes darlığı belirginleşmiş. Evde inhaler tedavilerini düzenli kullanmadığını söylüyor. Yakınları, merdiven çıkarken çok zorlandığını ve geceleri nefes almakta güçlük çektiğini belirtiyor. Balgamın rengi sararmış. Evde “astım krizi” olabileceği düşünülerek nebülizatör verilmiş ama fayda etmemiş. Acile getirildiğinde konuşmakta zorlanıyor, cümleleri yarıda kesiliyor. Dudaklarında morarma gözleniyor. Hasta sürekli oturur pozisyonda kalmaya çalışıyor. Son bir haftadır iştahsızlık ve yorgunluk şikâyeti de eklenmiş. Sigara kullanım öyküsü devam ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 130/70 mmHg, nabız 100/dk, solunum sayısı 28/dk, ekspiryum uzamış, yaygın wheezing.",
-      "radyolojik_goruntuler": "Akciğer grafisinde hiperinflasyon, diyafram düzleşmiş.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Kan gazı: pH 7.32, pCO₂ 55 mmHg, pO₂ 60 mmHg."
-    }
-  },
-  {
-    "id": 8,
-    "ad": "Akut Pankreatit",
-    "hikaye": "55 yaşında erkek hasta, ani başlayan şiddetli karın ağrısı nedeniyle başvuruyor. Ağrı epigastrik bölgede başlamış, sırta doğru yayılıyor. İlk başta gastrit olduğunu düşünerek mide ilacı almış ama fayda görmemiş. Bulantı ve birkaç kez kusma eşlik etmiş. Hastanın alkol kullanım öyküsü var. Son günlerde yağlı yemeklerden sonra karnında rahatsızlık hissettiğini söylüyor. Ağrı nedeniyle gece uyuyamamış, sabaha karşı dayanılmaz hale gelmiş. Yakınları, hastanın sürekli karın üstü yatmaya çalıştığını belirtiyor. Acile geldiğinde huzursuz, terli ve kıvranır halde. Öyküsünde safra taşı öyküsü de bulunuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/70 mmHg, nabız 110/dk, epigastrik hassasiyet, defans mevcut.",
-      "radyolojik_goruntuler": "Batın BT’de pankreas ödemli, çevresinde sıvı koleksiyonu.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Amilaz ve lipaz belirgin yüksek, CRP artmış."
-    }
-  },
-  {
-    "id": 9,
-    "ad": "Akut Perfore Apandisit",
-    "hikaye": "28 yaşında erkek hasta, 2 gündür karın ağrısı şikâyetiyle acile geliyor. Başlangıçta göbek çevresinde olan ağrı zamanla sağ alt kadrana yerleşmiş. İştahsızlık, bulantı ve kusma tarifliyor. Evde bu durum önce “hazımsızlık” sanılmış. Ateşi yükselmiş, gece boyunca uyuyamamış. Acile geldiğinde karın ağrısı çok şiddetli, yürürken zorlanıyor. Yakınları, ağrının giderek arttığını ve son saatlerde hastanın kıvranmaya başladığını söylüyor. Hasta ayakta dik durmakta zorlanıyor, sürekli sağ tarafına eğiliyor. Birkaç gün önce normalden fazla acılı yemek yediğini belirtiyor. Konuşmaları kısa, karın ağrısı nedeniyle hareket etmek istemiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Ateş 38.5°C, TA 110/70 mmHg, nabız 105/dk, sağ alt kadranda rebound ve defans.",
-      "radyolojik_goruntuler": "Batın BT’de apendiks çevresinde sıvı koleksiyonu ve serbest hava.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "Lökosit 18.000/mm³, CRP yüksek."
-    }
-  },
-  {
-    "id": 10,
-    "ad": "Akut Perikardit",
-    "hikaye": "35 yaşında erkek hasta göğüs ağrısı nedeniyle acile başvuruyor. Ağrı göğüs ön duvarında, nefes alırken ve yatarken artıyor, öne eğilince biraz azalıyor. Hasta bu ağrıyı birkaç gündür hissettiğini söylüyor. Önce kas ağrısı sandığı için ağrı kesici almış ancak fayda görmemiş. Yakınları, son haftalarda sık sık soğuk algınlığı geçirdiğini belirtiyor. Ağrıya halsizlik ve hafif ateş eşlik etmiş. Acile geldiğinde hafif nefes darlığı da mevcut. Hasta sürekli göğsünü ovuşturuyor, pozisyon değiştirerek rahatlamaya çalışıyor. Geceleri uyuyamadığını, ağrıdan dolayı sık sık uyandığını anlatıyor. Konuşurken kısa cümlelerle yanıt veriyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 90/dk, perikardiyal frotman duyuluyor.",
-      "radyolojik_goruntuler": "Ekokardiyografide perikardiyal efüzyon mevcut.",
-      "ekg": "Diffüz ST elevasyonu, PR segment depresyonu.",
-      "tetkikler": "Troponin hafif yüksek, CRP yüksek, lökositoz."
-    }
-  },
-  {
-    "id": 11,
-    "ad": "Akut Renal Yetmezlik",
-    "hikaye": "58 yaşında erkek hasta halsizlik, iştahsızlık ve bacaklarda şişlik şikâyetiyle acile geliyor. Yakınları son günlerde idrar miktarının belirgin şekilde azaldığını söylüyor. Hasta birkaç gündür baş ağrısı, bulantı ve kusma yaşadığını belirtiyor. Daha önce hipertansiyon için ilaç kullanıyormuş fakat son aylarda düzensiz almış. Acile geldiğinde huzursuz, cildi soluk ve kuru. Sürekli başının ağrıdığını ve uyumakta zorlandığını anlatıyor. Eşi, son günlerde uyurken sık sık kasılmalar yaşadığını ifade ediyor. Hasta iştahsızlık nedeniyle son haftada birkaç kilo kaybetmiş. Yürürken dengesizlik ve halsizlik belirgin. Evde sürekli “idrarım gelmiyor” diye yakınmış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 150/90 mmHg, nabız 92/dk, ödem bilateral pretibial bölgede, mukozalar soluk.",
-      "radyolojik_goruntuler": "Batın USG’de böbreklerde kortikomedüller ayrım silinmiş, boyutlar normalden küçük.",
-      "ekg": "Sivri T dalgaları (hiperkalemi bulgusu).",
-      "tetkikler": "Üre 210 mg/dl, kreatinin 6.2 mg/dl, potasyum 6.0 mmol/L, sodyum 130 mmol/L."
-    }
-  },
-  {
-    "id": 12,
-    "ad": "Akut Toksik Hepatit",
-    "hikaye": "40 yaşında erkek hasta, sarılık, halsizlik ve iştahsızlık nedeniyle başvuruyor. Son günlerde cildinde sararma ve idrar renginde koyulaşma fark etmiş. Birkaç gündür bulantı, kusma ve sağ üst kadranda ağrı tarif ediyor. Hasta evde ateş düşürücü ilaçları fazla miktarda aldığını itiraf ediyor. Acile geldiğinde yorgun, cilt ve skleralar sarı renkte. Yakınları, son günlerde uykuya meyilli olduğunu söylüyor. Karın bölgesinde şişlik hissetmiş. Baş ağrısı ve kaslarda ağrı da mevcut. Son aylarda alkol kullanımı öyküsü de var. Konuşmaları yavaş, çevresine ilgisi azalmış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 88/dk, sarılık belirgin, hepatomegali palpabl, karında hassasiyet.",
-      "radyolojik_goruntuler": "Batın USG’de karaciğer büyümüş, ekojenitesi heterojen.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "AST 1450 U/L, ALT 1650 U/L, bilirubin 12 mg/dl, INR 2.1."
-    }
-  },
-  {
-    "id": 13,
-    "ad": "Alt Gastrointestinal Kanama",
-    "hikaye": "67 yaşında erkek hasta, birkaç saat önce başlayan bol miktarda kanlı dışkı şikâyetiyle getiriliyor. Hasta aniden tuvalete gitme ihtiyacı hissetmiş ve dışkısının parlak kırmızı olduğunu fark etmiş. Daha önce benzer bir şikâyeti olmamış. Karın ağrısı ve baş dönmesi tarif ediyor. Yakınları, hastanın birkaç gündür yorgun olduğunu belirtiyor. Acile ulaştığında rengi soluk, halsiz ve bitkin görünüyor. Konuşurken “içim boşalıyor gibi” ifadesini kullanıyor. Birkaç aydır kabızlık şikâyeti de mevcut. Sigara ve alkol öyküsü var. Olay sırasında fenalaştığını ve düşecek gibi olduğunu söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 110/dk, cilt soluk ve nemli, rektal muayenede taze kan.",
-      "radyolojik_goruntuler": "Batın BT anjiyografide kolon segmentinde aktif kontrast ekstravazasyonu.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 7.5 g/dl, Htc %23, laktat 3.8 mmol/L."
-    }
-  },
-  {
-    "id": 14,
-    "ad": "Amniyotik Sıvı Embolisi",
-    "hikaye": "32 yaşında kadın hasta, doğum sırasında ani gelişen nefes darlığı ve bilinç kaybı nedeniyle acile alınıyor. Doğumun normal seyir ettiği ancak son aşamada aniden fenalaştığı öğreniliyor. Hastada şiddetli göğüs ağrısı ve öksürük başlamış. Hızla solunumu bozulmuş ve morarma gelişmiş. Yakınları, doğum öncesinde her şeyin normal olduğunu söylüyor. Hasta doğumdan önce aşırı kaygılıymış. Olay sırasında birkaç dakika boyunca bilinci kapalı kalmış. Acile getirildiğinde ciddi solunum sıkıntısı içinde, bilinci bulanık. Yakınları hastanın ilk kez bu kadar ciddi bir durum yaşadığını belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 70/40 mmHg, nabız 130/dk, siyanoz belirgin, solunum sayısı 32/dk.",
-      "radyolojik_goruntuler": "Akciğer BT’de bilateral diffüz infiltratlar.",
-      "ekg": "Sinüs taşikardisi, sağ kalp yüklenme bulguları.",
-      "tetkikler": "Hb 9.0 g/dl, trombosit 60.000/mm³, D-dimer yüksek, oksijen satürasyonu %70."
-    }
-  },
-  {
-    "id": 15,
-    "ad": "Anafilaksi",
-    "hikaye": "27 yaşında kadın hasta, yemek sonrası birkaç dakika içinde başlayan boğazda şişlik, nefes darlığı ve yaygın kızarıklık nedeniyle acile geliyor. Yemekte deniz ürünleri yediği öğreniliyor. İlk olarak dudaklarında ve göz kapaklarında şişlik olmuş. Daha sonra nefes almakta zorlanmış. Kaşıntı ve yaygın döküntüler eklenmiş. Yakınları, hastanın hızla renginin solduğunu ve nefesinin kesildiğini söylüyor. Acile ulaştığında panik halinde, konuşmakta zorlanıyor. Sürekli boğazını tutuyor. Sesinde boğukluk gelişmiş. Önce astım atağı zannedilmiş. Hasta giderek daha halsiz hale geliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 70/40 mmHg, nabız 130/dk, yaygın ürtiker, dudak ve dilde şişlik, solunum sıkıntısı.",
-      "radyolojik_goruntuler": "Akciğer grafisinde yaygın bronkospazm bulgusu.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Laktat 4.5 mmol/L, eozinofil sayısı artmış, oksijen satürasyonu %80."
-    }
-  },
-  {
-    "id": 16,
-    "ad": "Anjioödem",
-    "hikaye": "50 yaşında erkek hasta, ani gelişen yüz ve dudak şişliğiyle acile geliyor. Sabah antihipertansif ilacını aldıktan birkaç saat sonra şikâyetleri başlamış. Önce dudaklarında şişlik olmuş, sonra dil ve boğazda genişleme gelişmiş. Hastanın nefes alması zorlaşmış. Yakınları, kısa sürede konuşmasının da bozulduğunu söylüyor. Hasta panik halinde, sürekli nefes almakta zorlandığını belirtiyor. Göz çevresinde de şişlik var. Acile geldiğinde yüzünde belirgin ödem, boğazda daralma hissi mevcut. İlk bakışta alerjik reaksiyon sanılmış. Hastanın daha önce benzer bir durum yaşamadığı öğreniliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, dudak, dil ve boğazda belirgin ödem, inspiratuar stridor.",
-      "radyolojik_goruntuler": "Boyun BT’de üst hava yollarında ödem, daralma.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "C4 düşük, C1 inhibitör aktivitesi azalmış, oksijen satürasyonu %88."
-    }
-  },
-  {
-    "id": 17,
-    "ad": "Botulizm",
-    "hikaye": "42 yaşında erkek hasta, birkaç gün önce ev yapımı konserve tükettikten sonra halsizlik, çift görme ve yutma güçlüğü şikâyetleri başlamış. Önce mide rahatsızlığı zannedilmiş. Bulantı ve karın ağrısı da olmuş. Zamanla konuşması peltekleşmiş. Ellerde ve bacaklarda güçsüzlük belirginleşmiş. Acile ulaştığında göz kapakları düşmüş, konuşması anlaşılmaz halde. Yakınları, hastanın son 2 gündür giderek kötüleştiğini anlatıyor. Evde tek başına yürüyemez hale gelmiş. Acile getirildiğinde solunumu yüzeysel, halsiz ve endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 90/dk, pitozis, yutma güçlüğü, kaslarda güçsüzlük.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "Sinir iletim çalışmasında presinaptik blokaj bulguları, EMG’de anormal yanıtlar."
-    }
-  },
-  {
-    "id": 18,
-    "ad": "Brown-Sequard Sendromu",
-    "hikaye": "29 yaşında erkek hasta, bıçaklanma sonrası acile getiriliyor. Belden aşağıya yayılan ağrı ve güçsüzlük şikâyeti var. Yaralanma sağ lomber bölgede. Olaydan sonra sağ bacağında güç kaybı başlamış, sol bacağında ise ağrı ve sıcaklık hissini kaybettiğini söylüyor. Yakınları, hastanın yürümekte zorlandığını belirtiyor. Acile geldiğinde bilinci açık, ancak çok endişeli. Ayağa kalkmak istediğinde dengesini kaybediyor. Sık sık idrar kaçırma hissettiğini ifade ediyor. Yakınları, olaydan önce tamamen sağlıklı olduğunu vurguluyor. Hasta sürekli sırtındaki ağrıdan yakınıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Sağ bacakta motor kayıp, ipsilateral duyu kaybı; karşı tarafta ağrı ve ısı duyusu kaybı.",
-      "radyolojik_goruntuler": "Spinal MR’da yaralanma seviyesinde hemorajik kontüzyon.",
-      "ekg": "Normal.",
-      "tetkikler": "Tam kan sayımı normal, CRP hafif yüksek."
-    }
-  },
-  {
-    "id": 19,
-    "ad": "Bruselloz",
-    "hikaye": "46 yaşında erkek hasta, ateş, gece terlemesi ve eklem ağrısı nedeniyle başvuruyor. Son haftalarda iştahsızlık ve halsizlik tarif ediyor. Hasta çiftçi, sık sık hayvanlarla temas ediyor. Özellikle çiğ süt tüketme öyküsü var. Acile geldiğinde halsiz, terli ve bitkin görünümde. Bel ve diz ağrılarından yakınıyor. Yakınları, son günlerde kilo kaybettiğini söylüyor. Hasta gece boyunca yoğun terlediğini ifade ediyor. Vücudunda kas ağrıları ve sürekli yorgunluk mevcut. Konuşmaları net ama yorgun. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 95/dk, ateş 38.5°C, karaciğer ve dalak hafif büyümüş.",
-      "radyolojik_goruntuler": "MR’da lomber omurgada enflamatuar değişiklikler.",
-      "ekg": "Normal.",
-      "tetkikler": "Wright aglütinasyon testi pozitif, CRP yüksek, lökosit normal."
-    }
-  },
-  {
-    "id": 20,
-    "ad": "Buerger Hastalığı",
-    "hikaye": "39 yaşında erkek hasta, bacak ağrısı ve yürüme güçlüğü nedeniyle başvuruyor. Uzun süredir sigara kullanıyor. Son haftalarda parmaklarında morarma ve soğukluk fark etmiş. Hasta, yürüdüğünde baldırında şiddetli ağrı oluyor ve durmak zorunda kaldığını söylüyor. Ellerde de soğukluk ve uyuşma şikâyeti var. Acile geldiğinde parmak uçlarında küçük yaralar ve renk değişikliği gözleniyor. Yakınları, hastanın sık sık sigarayı bırakmaya çalıştığını ama başaramadığını belirtiyor. Hasta sürekli bacaklarını ovuşturuyor. Gece ağrıdan uyuyamadığını ifade ediyor. Son günlerde ayak bileklerinde şişlik de eklenmiş. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 88/dk, distal nabızlar alınamıyor, ayak parmaklarında siyanoz.",
-      "radyolojik_goruntuler": "Alt ekstremite anjiyosunda distal arterlerde tıkanıklık.",
-      "ekg": "Normal.",
-      "tetkikler": "D-dimer normal, CRP hafif yüksek, lökosit normal."
-    }
-  },
-  {
-    "id": 21,
-    "ad": "Cushing Sendromu",
-    "hikaye": "42 yaşında kadın hasta, son aylarda yüzünde yuvarlaklaşma, kilo artışı ve adet düzensizliği şikâyetleriyle başvuruyor. Aynı zamanda sürekli halsizlik, kas zayıflığı ve moral bozukluğu tarif ediyor. Yakınları yüzünün kısa sürede “ay dede gibi” olduğunu fark ettiklerini söylüyor. Hasta kolay morardığını ve cildinde çizgiler çıktığını belirtiyor. Gece uyumakta zorlandığını, gündüz ise yorgun hissettiğini anlatıyor. Son zamanlarda şeker ihtiyacının arttığını söylüyor. Evde tansiyon ölçümlerinde sık sık yüksek değerler kaydedilmiş. Konuşurken bitkin görünüyor, otururken sık sık sırtını ovuşturuyor. Son haftalarda saç dökülmesinden de şikâyetçi. Yakınları ruh halinde dalgalanmalar olduğunu ifade ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 160/95 mmHg, nabız 88/dk, yüzde yuvarlaklaşma, abdominal bölgede mor çizgiler, kaslarda güçsüzlük.",
-      "radyolojik_goruntuler": "Batın BT’de adrenal bezlerde kitle şüphesi.",
-      "ekg": "Hipertansiyona bağlı sol ventrikül hipertrofisi bulguları.",
-      "tetkikler": "Kortizol yüksek, ACTH düşük, glukoz 180 mg/dl, potasyum düşük."
-    }
-  },
-  {
-    "id": 22,
-    "ad": "Dekompresyon Hastalığı",
-    "hikaye": "34 yaşında erkek dalgıç, dalış sonrası kısa sürede yüzeye çıktıktan sonra eklem ağrısı ve halsizlik şikâyetiyle acile getiriliyor. Başlangıçta yorgunluk zannedilmiş. Hastada göğüs ağrısı ve öksürük gelişmiş. Yakınları, sudan çıkarıldıktan kısa süre sonra yürüyemediğini söylüyor. Vücudunda kaşıntı ve döküntü ortaya çıkmış. Konuşurken nefes nefese kalıyor. Baş ağrısı ve sersemlik de tarif ediyor. Olay anında kaskını hızlı çıkarmış ve telaşla sudan çıkmış. Acile ulaştığında halsiz, yönelim bozukluğu var. Ellerde uyuşma hissi mevcut. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/70 mmHg, nabız 110/dk, döküntüler mevcut, kaslarda güçsüzlük.",
-      "radyolojik_goruntuler": "Toraks BT’de diffüz amfizematöz alanlar.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Kan gazında hipoksemi, laktat yüksek."
-    }
-  },
-  {
-    "id": 23,
-    "ad": "Deliryum",
-    "hikaye": "76 yaşında erkek hasta, bir süredir hastanede yatmakta iken ani bilinç değişikliği gelişmiş. Öncesinde oryante olan hasta aniden çevresini tanımaz hale gelmiş. Gece boyunca huzursuzluk, bağırma ve yerinde duramama gözlenmiş. Gün içinde ise dalgın ve ilgisiz. Yakınları, son günlerde ilaçlarının değiştiğini söylüyor. Hasta bazen net konuşuyor, bazen saçma cümleler kuruyor. Yatakta otururken hayali şeyler gördüğünü anlatıyor. Elleriyle havada bir şeyler yakalamaya çalışıyor. Yemek yemeyi reddediyor. Hemşireler, hastanın sürekli yataktan kalkmaya çalıştığını ifade ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 130/80 mmHg, nabız 92/dk, dalgın, zaman-mekan oryantasyonu bozuk.",
-      "radyolojik_goruntuler": "Beyin BT normal.",
-      "ekg": "Sinüs ritmi.",
-      "tetkikler": "Na 128 mmol/L, K 4.2 mmol/L, CRP hafif yüksek, idrar kültürü pozitif."
-    }
-  },
-  {
-    "id": 24,
-    "ad": "Divertikülit",
-    "hikaye": "61 yaşında kadın hasta, 3 gündür süren karın ağrısı ve ateş nedeniyle başvuruyor. Ağrı sol alt kadranda yoğunlaşmış. Başlangıçta hazımsızlık sanarak ilaç kullanmış ama fayda görmemiş. Bulantı ve iştahsızlık tarif ediyor. Son 24 saatte ateşi yükselmiş, gece uyuyamamış. Yakınları, hastanın tuvalete çıkarken zorlandığını söylüyor. Acile geldiğinde bitkin ve huzursuz. Karnını tutarak yürümekte zorlanıyor. Daha önce kabızlık şikâyeti olduğu biliniyor. Evde “bağırsaklarımda gaz birikti” diye yakınmış. Konuşmaları kısa, karın ağrısından dolayı oturup kalkarken zorlanıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/70 mmHg, nabız 100/dk, ateş 38.2°C, sol alt kadranda hassasiyet ve defans.",
-      "radyolojik_goruntuler": "Batın BT’de sigmoid kolon çevresinde inflamasyon, sıvı koleksiyonu.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 15.000/mm³, CRP yüksek."
-    }
-  },
-  {
-    "id": 25,
-    "ad": "Diyabetik Ketoasidoz",
-    "hikaye": "24 yaşında tip 1 diyabetli kadın hasta, son 2 gündür bulantı, kusma ve karın ağrısı şikâyetiyle başvuruyor. Yakınları insülinini aksattığını söylüyor. Hasta çok susamış, sürekli su içmiş ancak rahatlamamış. Ağızdan aseton kokusu fark ediliyor. Halsiz, yorgun ve uykulu görünüyor. Son 24 saatte iştahı tamamen kaybolmuş. Acile geldiğinde bilinci bulanık, sorulara yavaş yanıt veriyor. Son haftalarda sık idrara çıkma şikâyeti olduğu öğreniliyor. Nefesi derin ve hızlı. Eşi, hastanın önce gribe benzer semptomlarla başladığını ifade ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 120/dk, derin ve hızlı solunum, cilt kuru.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "T dalga değişiklikleri.",
-      "tetkikler": "Glukoz 420 mg/dl, pH 7.15, HCO₃ 12 mmol/L, keton pozitif."
-    }
-  },
-  {
-    "id": 26,
-    "ad": "Eklampsi",
-    "hikaye": "29 yaşında gebe kadın, 34. haftada ani gelişen nöbet nedeniyle acile getiriliyor. Öncesinde baş ağrısı, bulanık görme ve karın ağrısı tarif etmiş. Eşi, hastanın birkaç gündür şiddetli ödemi olduğunu söylüyor. Nöbet sırasında bilinci tamamen kapanmış, kasılmalar olmuş. Ambulansla getirildiğinde bilinci dalgalı. Konuşmaları yavaş, baş ağrısı devam ediyor. Yüzünde ve ellerinde belirgin şişlik mevcut. Son kontrollerde tansiyonunun yüksek olduğu öğreniliyor. Hasta sürekli gözlerini ovuşturuyor ve huzursuz görünüyor. Karnındaki bebeğin hareketlerini az hissettiğini söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 170/110 mmHg, nabız 100/dk, ödem yaygın, bilinç dalgalı.",
-      "radyolojik_goruntuler": "Beyin MR’da kortikal bölgelerde ödem alanları.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Proteinüri (+++), kreatinin hafif yüksek, trombosit sayısı normal."
-    }
-  },
-  {
-    "id": 27,
-    "ad": "Ektopik Gebelik Rüptürü",
-    "hikaye": "31 yaşında kadın hasta, ani başlayan şiddetli alt karın ağrısı ve bayılma şikâyetiyle acile getiriliyor. Adet gecikmesi öyküsü var. Ağrı önce hafifmiş, sonra hızla şiddetlenmiş. Kusma ve terleme eklenmiş. Yolda bilinci bulanık hale gelmiş. Acile geldiğinde çok soluk ve halsiz. Yakınları, son günlerde hafif lekelenme tarzı kanaması olduğunu söylüyor. Hasta sürekli karnını tutuyor ve “içim parçalanıyor” ifadesini kullanıyor. Birkaç gün önce gebelik testi yaptığını ancak sonucu ailesiyle paylaşmadığını anlatıyor. Konuşmaları kısa, ağrı nedeniyle hareket edemiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 70/40 mmHg, nabız 130/dk, karında yaygın hassasiyet, defans, soluk cilt.",
-      "radyolojik_goruntuler": "Batın USG’de pelviste serbest sıvı.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 7.8 g/dl, Htc %24, β-hCG pozitif."
-    }
-  },
-  {
-    "id": 28,
-    "ad": "Geçici İskemik Atak",
-    "hikaye": "63 yaşında erkek hasta, 20 dakika süren konuşma bozukluğu ve sağ elinde güçsüzlük yaşamış. Şikâyetleri kendiliğinden düzelmiş. Yakınları, hastanın olay sırasında bilincinin açık olduğunu ancak cümle kurmakta zorlandığını söylüyor. Evde tansiyonu yüksek ölçülmüş. Hasta, şikâyetleri geçince doktora gitmek istememiş. Son 1 aydır baş ağrısı ve ara ara görmede bulanıklık tarif ediyor. Sigara ve hipertansiyon öyküsü mevcut. Acile geldiğinde yakınması kalmamış ancak endişeli görünüyor. Konuşurken sık sık “biraz önce elim tutmadı” diye vurguluyor. Yürüyüşünde hafif dengesizlik izleniyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 160/90 mmHg, nabız 88/dk, nörolojik muayene normal.",
-      "radyolojik_goruntuler": "Beyin BT normal, karotis dopplerinde aterosklerotik plaklar.",
-      "ekg": "Atriyal fibrilasyon.",
-      "tetkikler": "Kolesterol yüksek, HbA1c 7.5."
-    }
-  },
-  {
-    "id": 29,
-    "ad": "Gonokokal Septik Artrit",
-    "hikaye": "26 yaşında kadın hasta, dizinde ani başlayan ağrı, şişlik ve kızarıklık nedeniyle acile geliyor. Yürümekte zorlanıyor. Son günlerde idrar yaparken yanma ve vajinal akıntı tarif ediyor. Ateşi yükselmiş, halsizlik şikâyeti var. Yakınları, hastanın bacağında birkaç gündür ağrı olduğunu söylüyor. Acile geldiğinde dizini hareket ettiremiyor. Konuşurken sürekli “dizim patlayacak gibi” ifadesini kullanıyor. Ciltte birkaç yerde döküntü gözleniyor. Daha önce cinsel yolla bulaşan hastalık öyküsü olduğu öğreniliyor. Son günlerde iştahsızlık ve kilo kaybı da olmuş. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, ateş 38.7°C, sağ diz ekleminde şişlik, kızarıklık ve hareket kısıtlılığı.",
-      "radyolojik_goruntuler": "Diz MR’da eklem sıvısında artış ve sinovyal kalınlaşma.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 14.000/mm³, CRP yüksek, eklem sıvısında gram-negatif diplokok."
-    }
-  },
-  {
-    "id": 30,
-    "ad": "Guillain-Barre Sendromu",
-    "hikaye": "37 yaşında erkek hasta, 1 haftadır artan bacaklarda güçsüzlük ve uyuşma şikâyetiyle başvuruyor. Öncesinde üst solunum yolu enfeksiyonu geçirmiş. İlk günlerde yorgunluk zannedilmiş. Şikâyetleri giderek ilerlemiş, yürümekte zorlanmaya başlamış. Acile geldiğinde bacaklarını kaldıramıyor. Yakınları, son 2 gündür ellerinde de güçsüzlük başladığını söylüyor. Hasta sürekli yorgun ve endişeli görünüyor. Merdiven çıkarken çok zorlandığını anlatıyor. Konuşurken nefes almakta güçlük hissettiğini ifade ediyor. Yakınları gece öksürükle uyandığını söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 95/dk, alt ekstremitelerde güç kaybı, refleksler alınmıyor.",
-      "radyolojik_goruntuler": "MR’da spinal kord normal.",
-      "ekg": "Sinüs ritmi.",
-      "tetkikler": "BOS’ta protein artışı, hücre sayısı normal (albuminositolojik disosiasyon)."
-    }
-  },
-  {
-    "id": 31,
-    "ad": "HELLP Sendromu",
-    "hikaye": "30 yaşında, 32 haftalık gebe kadın hasta, şiddetli baş ağrısı, bulantı ve sağ üst kadranda ağrı nedeniyle acile getiriliyor. Son günlerde yüzünde ve ellerinde şişlik fark etmiş. Eşi, hastanın halsizlik ve sarılık benzeri bir görünüm geliştirdiğini söylüyor. Evde tansiyonu birkaç kez 160/100 mmHg ölçülmüş. Hasta son günlerde görmede bulanıklık ve ışık çakmaları tarif ediyor. Konuşurken bitkin, sürekli “başım çatlıyor” diyor. Karnındaki bebeğin hareketlerinin azaldığını belirtiyor. Acile geldiğinde çok huzursuz ve gözyaşları içinde. Yakınları, hastanın ilk gebeliği olduğunu ve son haftalarda stresli olduğunu ifade ediyor. Hasta yemek yemeyi reddediyor, sürekli karnını tutuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 170/110 mmHg, nabız 105/dk, ödem yaygın, sağ üst kadranda hassasiyet.",
-      "radyolojik_goruntuler": "Abdominal USG’de karaciğer kapsülünde ödem ve serbest sıvı şüphesi.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Trombosit 65.000/mm³, AST 250 U/L, ALT 200 U/L, LDH yüksek, hemoglobin düşük."
-    }
-  },
-  {
-    "id": 32,
-    "ad": "Henoch-Schönlein Purpurası",
-    "hikaye": "12 yaşında erkek çocuk, bacaklarında döküntü, karın ağrısı ve eklem şişliği nedeniyle acile getiriliyor. Yakınları, 2 gündür dizlerinde ağrı ve şişlik fark ettiklerini söylüyor. Karın ağrısı kramp tarzında, zaman zaman kusma eşlik etmiş. İştahı azalmış, son 24 saatte halsizleşmiş. Ailesi bacaklarında morluk gibi döküntüler fark etmiş. Çocuk sürekli karın ağrısından şikâyet ediyor, yürümekte zorlanıyor. Gece boyunca uykusuz kalmış. Konuşurken halsiz, sık sık annesinin elini tutuyor. Yakınları, birkaç gün önce boğaz enfeksiyonu geçirdiğini anlatıyor. Çocuğun okulda sürekli baş ağrısından yakındığı da öğreniliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Ateş 37.8°C, TA 100/60 mmHg, bacaklarda purpurik döküntüler, dizlerde şişlik.",
-      "radyolojik_goruntuler": "Abdominal USG’de barsak duvarında ödem, mezenterik lenfadenopati.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 13.000/mm³, CRP yüksek, idrarda proteinüri ve hematüri."
-    }
-  },
-  {
-    "id": 33,
-    "ad": "Herpes Simpleks Ensefaliti",
-    "hikaye": "41 yaşında kadın hasta, 3 gündür süren ateş, baş ağrısı ve bilinç bulanıklığı nedeniyle getiriliyor. Yakınları, son 24 saatte konuşmalarının bozulduğunu ve zaman zaman anlamsız cümleler kurduğunu söylüyor. Hasta evde birkaç kez nöbet geçirmiş. Başlangıçta grip sanılmış. Acile ulaştığında dalgın, çevreyle iletişimi zayıf. Sürekli başını tutuyor, ara ara çığlık atıyor. Eşi, hastanın kısa süre önce uçuk çıkardığını belirtiyor. Bilinç giderek kötüleşmiş. Son haftalarda iştahının da azaldığı öğreniliyor. Hasta yatağında kıvranıyor, huzursuz. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 110/dk, ateş 38.9°C, bilinç bulanık, ense sertliği.",
-      "radyolojik_goruntuler": "Beyin MR’da temporal loblarda hiperintens lezyonlar.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "BOS’ta lenfositik pleositoz, protein yüksek, PCR pozitif."
-    }
-  },
-  {
-    "id": 34,
-    "ad": "Hiperkalemi",
-    "hikaye": "65 yaşında erkek hasta halsizlik, kaslarda güçsüzlük ve çarpıntı şikâyetiyle acile geliyor. Son günlerde iştahsızlık ve bulantı tarif ediyor. Böbrek yetmezliği öyküsü var. Yakınları, hastanın birkaç gündür idrarının azaldığını söylüyor. Acile geldiğinde bitkin, kaslarında seğirmeler var. Hasta konuşurken zorlanıyor, sık sık “kalbim sıkışıyor” ifadesini kullanıyor. Bacaklarında uyuşma hissediyor. Konuşmaları kısa ve kesik. Son 24 saatte uyumakta zorlanmış. Hastanın ilaçlarını düzensiz kullandığı öğreniliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 55/dk, kaslarda güçsüzlük, refleksler azalmış.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sivri T dalgaları, QRS genişlemesi, bradikardi.",
-      "tetkikler": "Potasyum 7.2 mmol/L, kreatinin 5.5 mg/dl, Na 132 mmol/L."
-    }
-  },
-  {
-    "id": 35,
-    "ad": "Hiperkalsemi",
-    "hikaye": "58 yaşında kadın hasta halsizlik, iştahsızlık ve kabızlık nedeniyle acile geliyor. Son haftalarda sık idrara çıkma ve susuzluk tarif ediyor. Yakınları, son günlerde dalgınlaştığını ve sık uyuduğunu söylüyor. Hasta, “bacaklarımda ağırlık var” diyerek yürümede zorlandığını belirtiyor. Bulantı ve mide ağrısı eklenmiş. Evde depresif ruh hali gelişmiş. Son zamanlarda kemik ağrıları da başlamış. Konuşurken sık sık susuzluk hissinden yakınıyor. Yakınları, son günlerde davranışlarının değiştiğini ifade ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 92/dk, kaslarda güçsüzlük, bilinç dalgalı.",
-      "radyolojik_goruntuler": "Kemik grafilerinde litik lezyonlar.",
-      "ekg": "QT intervali kısalmış.",
-      "tetkikler": "Kalsiyum 14.5 mg/dl, PTH yüksek, kreatinin 1.8 mg/dl."
-    }
-  },
-  {
-    "id": 36,
-    "ad": "Akut Kalp Yetmezliği",
-    "hikaye": "72 yaşında erkek hasta, ani başlayan nefes darlığı ve öksürük nedeniyle acile getiriliyor. Son günlerde ayak bileklerinde şişlik olmuş. Hasta gece uykudan nefes darlığıyla uyanmış. Konuşurken sık sık öksürüyor, “nefes alamıyorum” diye yakınıyor. Rengi soluk ve terli. Yakınları, hastanın yastık sayısını artırarak uyuduğunu söylüyor. Acile geldiğinde oturur pozisyonda durmaya çalışıyor. Bacaklarında belirgin ödem mevcut. Eşi, son aylarda merdiven çıkarken çok yorulduğunu anlatıyor. Hasta çok huzursuz ve panik içinde. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, bilateral ral, pretibial ödem.",
-      "radyolojik_goruntuler": "Akciğer grafisinde alveoler ödem, kardiyomegali.",
-      "ekg": "Sinüs taşikardisi, sol dal bloğu.",
-      "tetkikler": "BNP yüksek, troponin hafif yüksek, kreatinin normal."
-    }
-  },
-  {
-    "id": 37,
-    "ad": "Hipertansif Pulmoner Ödem",
-    "hikaye": "65 yaşında kadın hasta, aniden gelişen şiddetli nefes darlığı ve köpüklü balgam ile acile getiriliyor. Evde tansiyonu çok yüksek ölçülmüş. Hasta panik halinde, nefes almakta zorlanıyor. Yatağa uzanamıyor, sürekli oturur pozisyonda kalıyor. Yakınları, hastanın bir anda morardığını ve boğulur gibi olduğunu söylüyor. Konuşurken tek kelimelik yanıtlar veriyor. Bacaklarında ödem mevcut. Gece boyunca uyuyamamış. Olaydan önce baş ağrısı ve görmede bulanıklık yaşamış. Acile ulaştığında çok huzursuz ve terli. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 220/120 mmHg, nabız 120/dk, yaygın ral, siyanoz.",
-      "radyolojik_goruntuler": "Akciğer grafisinde yaygın alveoler ödem, kardiyomegali.",
-      "ekg": "Sol ventrikül hipertrofisi bulguları.",
-      "tetkikler": "BNP çok yüksek, kreatinin normal, troponin normal."
-    }
-  },
-  {
-    "id": 38,
-    "ad": "Hiperviskozite Sendromu",
-    "hikaye": "59 yaşında erkek hasta, baş ağrısı, görme bulanıklığı ve halsizlik nedeniyle başvuruyor. Son günlerde burun kanamaları olmuş. Hasta sürekli yorgun hissettiğini söylüyor. Yakınları, hastanın yürürken sık sık sendelediğini anlatıyor. Konuşmaları yavaşlamış, bazen net değil. Son haftalarda kilo kaybı ve gece terlemesi de tarif ediyor. Acile geldiğinde rengi solgun, yüzünde hafif kızarıklık var. Elleri ve ayakları soğuk. Hasta sürekli başının zonkladığını söylüyor. Yakınları, son günlerde sık sık uyuduğunu belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 140/90 mmHg, nabız 90/dk, bilinç bulanık, görme bulanıklığı mevcut.",
-      "radyolojik_goruntuler": "Beyin MR’da diffüz küçük damar dolgunluğu.",
-      "ekg": "Sinüs ritmi.",
-      "tetkikler": "Hematokrit %65, Hb 19 g/dl, viskozite artmış."
-    }
-  },
-  {
-    "id": 39,
-    "ad": "Hipokalemi",
-    "hikaye": "48 yaşında kadın hasta, halsizlik, kaslarda kramplar ve çarpıntı şikâyetiyle acile geliyor. Son günlerde ishal öyküsü var. Yakınları, hastanın birkaç gündür iştahsız olduğunu söylüyor. Acile ulaştığında sürekli bacaklarında kramplardan yakınıyor. Konuşurken ellerinde titreme olduğu fark ediliyor. Baş dönmesi ve yorgunluk mevcut. Geceleri bacak kramplarıyla uyanmış. Eşi, hastanın son günlerde çok su içtiğini belirtiyor. Hasta yürümekte zorlanıyor, sık sık oturmak istiyor. Morali düşük ve endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 105/dk, kaslarda güçsüzlük, refleksler azalmış.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "U dalgaları, QT uzaması, ventriküler ektopiler.",
-      "tetkikler": "Potasyum 2.4 mmol/L, Na 137 mmol/L, kreatinin normal."
-    }
-  },
-  {
-    "id": 40,
-    "ad": "Hipokalsemi",
-    "hikaye": "35 yaşında kadın hasta, ellerinde karıncalanma, kas spazmları ve çarpıntı şikâyetiyle acile geliyor. Son günlerde boyun ameliyatı öyküsü var. Eşi, ameliyat sonrası halsizlik ve kasılmalar başladığını söylüyor. Hasta konuşurken ellerini sürekli ovuşturuyor. Parmaklarında kasılma gelişiyor. Dudak çevresinde uyuşma hissediyor. Gece boyunca kas krampları nedeniyle uyuyamamış. Panik halinde “ellerim kilitleniyor” diyor. Yürümekte zorlanıyor, sık sık oturuyor. Çevresine kaygılı gözlerle bakıyor. Yakınları, hastanın son günlerde moralinin de bozulduğunu söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 115/70 mmHg, nabız 100/dk, pozitif Chvostek ve Trousseau bulguları.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "QT uzaması.",
-      "tetkikler": "Kalsiyum 6.1 mg/dl, PTH düşük, magnezyum normal."
-    }
-  },
-  {
-    "id": 41,
-    "ad": "Horner Sendromu",
-    "hikaye": "54 yaşında erkek hasta, sağ göz kapağında düşüklük ve yüzün sağ tarafında terleme kaybı nedeniyle başvuruyor. Şikâyetlerin birkaç gündür fark edildiği söyleniyor. Yakınları gözünde küçülme olduğunu fark etmiş. Hasta baş ağrısı ve boyun ağrısı tarif ediyor. Birkaç hafta önce trafik kazası geçirmiş, boynunda ağrı kalmış. Acile geldiğinde endişeli, aynaya bakıp gözünü inceliyor. Konuşurken sürekli gözündeki asimetriyi vurguluyor. Eşi, son haftalarda göz kızarıklığı ve görmede bulanıklık da tarif ediyor. Hasta ayrıca kulakta çınlama hissettiğini belirtiyor. Halsizlik ve yorgunluk mevcut. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Sağ gözde pitozis, miyozis ve anhidrozis.",
-      "radyolojik_goruntuler": "Servikal MR’da paravertebral kitle şüphesi.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "Kan sayımı normal, biyokimya normal."
-    }
-  },
-  {
-    "id": 42,
-    "ad": "İntraserebral Hipertansif Kanama",
-    "hikaye": "67 yaşında erkek hasta, aniden gelişen baş ağrısı, bulantı ve bilinç bulanıklığı nedeniyle acile getiriliyor. Eşi, olay sırasında hastanın konuşmalarının bozulduğunu söylüyor. Evde tansiyon aletinde değer 210/120 mmHg olarak ölçülmüş. Hasta yere düşmüş ve kısa süreli bilinç kaybı yaşamış. Acile ulaştığında dalgın, çevreye ilgisiz. Sürekli başını tutuyor. Konuşmaları yavaş, sözcükler anlaşılmıyor. Sağ kolunu hareket ettirmekte zorlanıyor. Yakınları, hastanın ilaçlarını düzenli kullanmadığını anlatıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 200/110 mmHg, nabız 90/dk, sağ hemiparezi, bilinç bulanık.",
-      "radyolojik_goruntuler": "Beyin BT’de bazal ganglion bölgesinde hematom.",
-      "ekg": "Sol ventrikül hipertrofisi bulguları.",
-      "tetkikler": "Kan şekeri normal, koagülasyon testleri normal."
-    }
-  },
-  {
-    "id": 43,
-    "ad": "Karbonmonoksit Zehirlenmesi",
-    "hikaye": "29 yaşında erkek hasta, soba ile ısınan evde baygın halde bulunmuş. Ambulansla acile getirildiğinde baş ağrısı, bulantı ve sersemlik tarif ediyor. Olay sırasında eşi de baş dönmesi yaşamış. Hasta, gece boyunca uyandığında baş ağrısı hissetmiş ama önemsememiş. Cildi hafif kiraz kırmızısı görünüyor. Konuşurken dalgın ve yavaş. Yakınları, evde duman kokusu olmadığını söylüyor. Hasta sürekli uyumak istediğini belirtiyor. Acile ulaştığında hafif ajite, ellerinde titreme var. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, bilinç bulanık, cilt kiraz kırmızısı.",
-      "radyolojik_goruntuler": "Beyin MR’da diffüz hipoksik değişiklikler.",
-      "ekg": "Sinüs taşikardisi, ST depresyonları.",
-      "tetkikler": "Karboksihemoglobin %28, laktat yüksek."
-    }
-  },
-  {
-    "id": 44,
-    "ad": "Karotis Arter Diseksiyonu",
-    "hikaye": "46 yaşında kadın hasta, ani gelişen baş ağrısı, boyun ağrısı ve konuşma bozukluğu nedeniyle acile geliyor. Birkaç gün önce spor salonunda ağır egzersiz yaptığı öğreniliyor. Olay sırasında sağ gözünde görme bulanıklığı olmuş. Acile ulaştığında baş ağrısı çok şiddetli. Konuşurken zorlanıyor, kelimeleri seçemiyor. Boynunda ağrı ve sertlik tarif ediyor. Yakınları, hastanın son günlerde sağ kulağında çınlama duyduğunu söylüyor. Hasta sürekli sağ elinde uyuşmadan şikâyetçi. Konuşmaları yavaş, endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 88/dk, sağ tarafta hafif hemiparezi, pupil asimetrisi.",
-      "radyolojik_goruntuler": "MR anjiyografide karotis arterde disseksiyon hattı.",
-      "ekg": "Normal.",
-      "tetkikler": "Kan biyokimyası normal, koagülasyon testleri normal."
-    }
-  },
-  {
-    "id": 45,
-    "ad": "Kırım Kongo Kanamalı Ateşi",
-    "hikaye": "37 yaşında erkek hasta, kırsal alanda çalıştıktan sonra yüksek ateş, baş ağrısı ve kas ağrıları nedeniyle acile geliyor. Son günlerde keneyle temas öyküsü var. Hasta halsiz, bitkin ve iştahsız. Burun kanaması olmuş. Cildinde küçük morluklar dikkat çekiyor. Konuşurken dalgın ve yorgun görünüyor. Ateş yüksek, titreme mevcut. Yakınları, hastanın gece boyunca yoğun terlediğini söylüyor. Acile ulaştığında yüzü solgun, karın ağrısı tarif ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, peteşi ve ekimozlar mevcut.",
-      "radyolojik_goruntuler": "Batın USG’de hepatosplenomegali.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Trombosit 25.000/mm³, AST/ALT yüksek, INR uzamış, PCR pozitif."
-    }
-  },
-  {
-    "id": 46,
-    "ad": "Klostridiyal Miyonekroz",
-    "hikaye": "52 yaşında erkek hasta, bacağında hızla ilerleyen ağrı, şişlik ve kötü kokulu akıntı nedeniyle başvuruyor. Birkaç gün önce yaralanma öyküsü var. Başlangıçta hafif ağrı varken kısa sürede şiddetlenmiş. Hasta ateş ve halsizlik de tarif ediyor. Acile geldiğinde huzursuz, sürekli bacağını ovuşturuyor. Bacak cildi morarmış ve gergin. Gaz çıkışı nedeniyle çıtırtı hissediliyor. Yakınları, hastanın son 24 saatte yürüyemez hale geldiğini söylüyor. Konuşmaları yavaş, bitkin görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 120/dk, ateş 39.2°C, bacakta yaygın şişlik ve krepitasyon.",
-      "radyolojik_goruntuler": "BT’de kas dokusu içinde gaz alanları.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 20.000/mm³, CRP çok yüksek, laktat yüksek."
-    }
-  },
-  {
-    "id": 47,
-    "ad": "Kolanjit",
-    "hikaye": "62 yaşında kadın hasta, ateş, titreme ve sağ üst kadran ağrısı nedeniyle başvuruyor. İdrar renginde koyulaşma ve ciltte sararma fark etmiş. Yakınları, hastanın son günlerde iştahsız olduğunu söylüyor. Gece boyunca terlemiş. Karın ağrısı gittikçe şiddetlenmiş. Acile ulaştığında bitkin, konuşmaları yavaş. Hasta sürekli karnını tutuyor. Son aylarda safra taşı öyküsü olduğu öğreniliyor. Eşi, birkaç kez benzer atak yaşadığını anlatıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 102/dk, ateş 38.8°C, sarılık mevcut, sağ üst kadranda hassasiyet.",
-      "radyolojik_goruntuler": "MRCP’de safra yollarında genişleme ve taş.",
-      "ekg": "Normal.",
-      "tetkikler": "AST/ALT yüksek, bilirubin yüksek, lökosit 16.000/mm³."
-    }
-  },
-  {
-    "id": 48,
-    "ad": "Kolesistit",
-    "hikaye": "56 yaşında kadın hasta, sağ üst kadranda şiddetli karın ağrısı nedeniyle acile geliyor. Ağrıya bulantı ve kusma eşlik ediyor. Eşi, hastanın yağlı yemeklerden sonra şikâyetlerinin arttığını söylüyor. Son günlerde ateş de eklenmiş. Hasta iştahsız ve huzursuz. Acile ulaştığında karnını tutarak yürümekte zorlanıyor. Konuşurken sürekli ağrıdan yakınıyor. Daha önce safra taşı tanısı aldığı öğreniliyor. Gece boyunca uyuyamamış. Ateş ve terleme şikâyetleri mevcut. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 95/dk, ateş 38.3°C, sağ üst kadranda hassasiyet ve Murphy pozitif.",
-      "radyolojik_goruntuler": "Batın USG’de safra kesesinde taş ve duvar kalınlaşması.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 14.000/mm³, CRP yüksek, ALP yüksek."
-    }
-  },
-  {
-    "id": 49,
-    "ad": "Kompartman Sendromu",
-    "hikaye": "28 yaşında erkek hasta, trafik kazası sonrası bacak ağrısı ve şişlik nedeniyle acile getiriliyor. Bacağına alçı uygulanmış, ancak sonrasında ağrı giderek artmış. Hasta sürekli “bacağım patlayacak gibi” diyerek şikâyet ediyor. Ağrıya uyuşma eklenmiş. Gece boyunca ağrıdan uyuyamamış. Acile geldiğinde panik içinde, bacağını oynatamıyor. Ayağında soğukluk hissediyor. Yakınları, parmaklarını oynatmakta zorlandığını fark etmiş. Hasta terli ve huzursuz. Konuşmaları kısa ve endişeli. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 100/dk, bacakta gerginlik, şiddetli ağrı, parmak hareketlerinde kısıtlılık.",
-      "radyolojik_goruntuler": "BT’de kas bölgesinde ödem ve basınç artışı bulguları.",
-      "ekg": "Normal.",
-      "tetkikler": "CK yüksek, laktat yüksek."
-    }
-  },
-  {
-    "id": 50,
-    "ad": "Krup",
-    "hikaye": "3 yaşında erkek çocuk, öksürük, ateş ve nefes darlığı nedeniyle acile getiriliyor. Öksürüğü havlar tarzında, sesi kısılmış. Anne, çocuğun gece boyunca nefes almakta zorlandığını söylüyor. Çocuk sürekli annesine sarılmış, huzursuz. Nefes alırken stridor duyuluyor. Ateşi 38.5°C. Çocuk yemek yemeyi reddediyor. Yakınları, evde nefesinin kesildiğini düşündüklerini anlatıyor. Çocuk acile geldiğinde bitkin ve ağlamaklı. Gece öksürük krizleriyle uyanmış. Konuşmakta zorlanıyor, kelimeleri fısıldayarak söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 120/dk, ateş 38.5°C, inspiratuar stridor, havlar tarzda öksürük.",
-      "radyolojik_goruntuler": "Boyun grafisinde subglottik daralma (“steeple sign”).",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit hafif yüksek, CRP hafif yüksek."
-    }
-  },
-  {
-    "id": 51,
-    "ad": "Legionella Pnömonisi",
-    "hikaye": "62 yaşında erkek hasta, yüksek ateş, öksürük ve nefes darlığı şikâyetiyle acile geliyor. Yakınları, hastanın 1 haftadır otelde konakladığını ve havuz kullandığını söylüyor. Öksürüğü başta kuruymuş, sonradan balgam çıkmaya başlamış. Hasta baş ağrısı ve kas ağrısından da yakınıyor. Son 2 gündür ishal tarif ediyor. Halsizliği nedeniyle yatağından kalkmakta zorlanıyor. Eşi, hastanın zaman zaman konuşmalarında dalgalanmalar olduğunu söylüyor. Acile geldiğinde terli, huzursuz ve öksürük krizleri yaşıyor. Son günlerde iştahı da kapanmış. Sigara kullanımı öyküsü mevcut. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 110/dk, ateş 39.5°C, bilateral ral ve krepitasyon.",
-      "radyolojik_goruntuler": "Akciğer grafisinde sağ alt lobda konsolidasyon, BT’de multilober infiltratlar.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 13.000/mm³, CRP yüksek, hiponatremi (Na 124 mmol/L), idrarda antijen pozitif."
-    }
-  },
-  {
-    "id": 52,
-    "ad": "Meniere Sendromu",
-    "hikaye": "47 yaşında kadın hasta, tekrarlayan baş dönmesi, kulakta çınlama ve işitme kaybı şikâyetleriyle acile geliyor. Son atağı birkaç saat önce başlamış. Baş dönmesi o kadar şiddetli ki ayakta duramıyor. Hasta sürekli kulak basıncından yakınıyor. Yakınları, hastanın birkaç gündür mide bulantısı ve dengesizlik yaşadığını söylüyor. Acile geldiğinde çok huzursuz ve endişeli görünüyor. Konuşurken başını tutuyor ve gözleri sık sık kapanıyor. Daha önce benzer ataklar yaşamış. Eşi, hastanın stresli dönemlerde şikâyetlerinin arttığını belirtiyor. Hasta yemek yemeyi reddediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 85/dk, nistagmus mevcut, denge bozukluğu belirgin.",
-      "radyolojik_goruntuler": "Beyin MR normal, iç kulak MR’da endolenfatik hidrops şüphesi.",
-      "ekg": "Normal sinüs ritmi.",
-      "tetkikler": "Odyometri testinde sensörinöral işitme kaybı, elektrolitler normal."
-    }
-  },
-  {
-    "id": 53,
-    "ad": "Meningokoksemi",
-    "hikaye": "18 yaşında erkek hasta, ateş, baş ağrısı ve döküntü şikâyetiyle acile getiriliyor. Şikâyetler birkaç saat içinde hızla ilerlemiş. Yakınları, hastanın sabah okula giderken başının ağrıdığını ve eve dönerken morluklar oluştuğunu söylüyor. Hastada kusma ve bilinç bulanıklığı da eklenmiş. Acile ulaştığında çok halsiz ve huzursuz. Yatakta sürekli sağa sola dönüyor. Derisinde morarmalar ve peteşiler dikkat çekiyor. Nefes almakta zorlanıyor. Konuşmaları anlamsız, gözleri donuk. Ebeveynleri, daha önce tamamen sağlıklı olduğunu belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/50 mmHg, nabız 120/dk, ateş 39.8°C, yaygın peteşi ve purpura, ense sertliği.",
-      "radyolojik_goruntuler": "BT normal.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 20.000/mm³, CRP çok yüksek, kan kültüründe gram-negatif diplokok."
-    }
-  },
-  {
-    "id": 54,
-    "ad": "Mezenter Arter İskemisi",
-    "hikaye": "71 yaşında kadın hasta, ani başlayan şiddetli karın ağrısı nedeniyle acile geliyor. Ağrı yemek sonrası başlamış. Başta hazımsızlık sanmış ama giderek şiddetlenmiş. Kusma ve ishal eşlik ediyor. Hasta ağrıdan dolayı yatağa kıvrılmış halde. Yakınları, hastanın atriyal fibrilasyon öyküsü olduğunu söylüyor. Acile ulaştığında çok huzursuz, sürekli karnını tutuyor. Konuşmaları kısa ve zorlanarak çıkıyor. Ağrı şiddetine rağmen karın muayenesinde bulgular hafif. Hasta sürekli “içim yanıyor” diye yakınmış. Morali düşük, endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/70 mmHg, nabız 110/dk, karında yaygın hassasiyet hafif, şiddetli ağrı şikâyeti ile uyumsuz.",
-      "radyolojik_goruntuler": "Batın BT anjiyografide superior mezenterik arterde tıkanıklık, barsaklarda hipoperfüzyon.",
-      "ekg": "Atriyal fibrilasyon.",
-      "tetkikler": "Laktat 5 mmol/L, lökosit 18.000/mm³, CRP yüksek."
-    }
-  },
-  {
-    "id": 55,
-    "ad": "Miksödem Krizi",
-    "hikaye": "68 yaşında kadın hasta, bilinç bulanıklığı, soğuk intoleransı ve şiddetli halsizlik nedeniyle acile getiriliyor. Yakınları, hastanın günlerdir çok uyuduğunu ve zor uyandırıldığını söylüyor. Evde ısıtıcı çalışmasına rağmen sürekli üşümüş. Konuşmaları yavaş, ses tonu kısık. Yüzü şiş, göz kapakları ödemli. Nabzının çok yavaşladığı fark edilmiş. Acile geldiğinde bilinci bulanık, çevreyle ilgisiz. Dudakları morarmış. Yakınları, ilaçlarını düzenli kullanmadığını anlatıyor. Sürekli titriyor ve yorgun görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 45/dk, soğuk ve kuru cilt, ödemli yüz.",
-      "radyolojik_goruntuler": "BT normal.",
-      "ekg": "Sinüs bradikardisi, düşük voltaj.",
-      "tetkikler": "TSH çok yüksek, serbest T4 çok düşük, Na 120 mmol/L."
-    }
-  },
-  {
-    "id": 56,
-    "ad": "Miyokardit",
-    "hikaye": "26 yaşında erkek hasta, göğüs ağrısı, halsizlik ve çarpıntı şikâyetiyle acile geliyor. Yakınları, hastanın 1 hafta önce grip benzeri hastalık geçirdiğini söylüyor. Göğüs ağrısı birkaç gündür devam ediyormuş. Hastada ateş ve gece terlemesi de mevcut. Konuşurken sık sık göğsünü tutuyor. Halsizliği nedeniyle günlük işlerini yapamıyor. Acile geldiğinde endişeli, solgun ve terli. Son günlerde eforla nefes darlığı yaşadığını belirtiyor. Olay günü istirahat halinde de göğüs ağrısı olmuş. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 105/dk, ateş 38.1°C, kalpte üfürüm.",
-      "radyolojik_goruntuler": "Ekokardiyografide ejeksiyon fraksiyonu düşük, sol ventrikül dilate.",
-      "ekg": "ST-T dalga değişiklikleri, sinüs taşikardisi.",
-      "tetkikler": "Troponin yüksek, CK-MB artmış, CRP yüksek."
-    }
-  },
-  {
-    "id": 57,
-    "ad": "Nekrotizan Fasiit",
-    "hikaye": "52 yaşında kadın hasta, bacağında şiddetli ağrı, şişlik ve kızarıklık nedeniyle acile getiriliyor. Şikâyetler 2 gündür artarak devam ediyor. Yakınları, hastanın bacağındaki küçük bir yara sonrası bu tablo geliştiğini söylüyor. Ağrı kısa sürede dayanılmaz hale gelmiş. Hasta halsiz ve ateşi yükselmiş. Acile geldiğinde panik içinde, bacağını hareket ettiremiyor. Ciltte hızla ilerleyen morluk ve kötü koku mevcut. Yara çevresi hassas, dokunulduğunda şiddetli ağrı oluyor. Hasta sürekli ağlamış, çok endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 120/dk, ateş 39.5°C, bacakta yaygın şişlik ve nekrotik cilt.",
-      "radyolojik_goruntuler": "BT’de yumuşak dokuda gaz birikimi.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 22.000/mm³, CRP çok yüksek, laktat 4.5 mmol/L."
-    }
-  },
-  {
-    "id": 58,
-    "ad": "Orbital Selülit",
-    "hikaye": "9 yaşında erkek çocuk, gözde şişlik, kızarıklık ve ateş nedeniyle acile getiriliyor. Şikâyetler 2 gündür var. Anne, çocuğun burnunun da tıkalı olduğunu söylüyor. Çocuk gözünü açmakta zorlanıyor. Ateşi yüksek, halsiz. Acile ulaştığında endişeli ve sürekli ağlıyor. Göz çevresi kızarık ve şiş. Göz hareketleri kısıtlı, ağrı artıyor. Ailesi, çocuğun daha önce sinüzit geçirdiğini belirtiyor. Çocuk yemek yemeyi reddediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Ateş 38.7°C, TA 95/60 mmHg, nabız 110/dk, göz kapağı ödemli, hareket kısıtlı.",
-      "radyolojik_goruntuler": "Orbital BT’de subperiostal apse ve sinüslerde doluluk.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 17.000/mm³, CRP yüksek."
-    }
-  },
-  {
-    "id": 59,
-    "ad": "Otoimmün Hemolitik Anemi",
-    "hikaye": "36 yaşında kadın hasta, halsizlik, baş dönmesi ve ciltte solukluk nedeniyle başvuruyor. Son günlerde çarpıntı tarif ediyor. İdrar renginde koyulaşma olmuş. Yakınları, hastanın çok hızlı yorulduğunu söylüyor. Hasta baş ağrısından da yakınıyor. Konuşurken solgun ve yorgun görünüyor. Halsizliği nedeniyle işe gidememiş. Acile geldiğinde huzursuz, sık sık dinlenmek istiyor. Cildinde sarılık da fark ediliyor. Hasta son günlerde soğuk algınlığı geçirmiş. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, cilt soluk ve ikterik.",
-      "radyolojik_goruntuler": "Batın USG’de dalak büyümüş.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 6.8 g/dl, indirekt bilirubin yüksek, retikülosit artmış, Coombs testi pozitif."
-    }
-  },
-  {
-    "id": 60,
-    "ad": "Over Kist Rüptürü",
-    "hikaye": "27 yaşında kadın hasta, ani başlayan alt karın ağrısı nedeniyle acile getiriliyor. Ağrı sağ tarafta başlamış, kısa sürede şiddetlenmiş. Hasta bulantı ve baş dönmesi de tarif ediyor. Acile ulaştığında çok huzursuz ve ağrıdan kıvranıyor. Yürümekte zorlanıyor, sürekli karnını tutuyor. Yakınları, hastanın birkaç gündür karın bölgesinde dolgunluk hissettiğini söylüyor. Gece boyunca uyuyamamış. Adet düzensizliği öyküsü mevcut. Hasta sürekli “patladı gibi” diyerek ağrısını tarif ediyor. Konuşmaları kısa ve kesik. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, karında sağ alt kadranda hassasiyet.",
-      "radyolojik_goruntuler": "Pelvik USG’de serbest sıvı ve rüptüre kist görünümü.",
-      "ekg": "Normal.",
-      "tetkikler": "Hb 9.5 g/dl, Htc %29, β-hCG negatif."
-    }
-  },
-  {
-    "id": 61,
-    "ad": "Özefagus Rüptürü",
-    "hikaye": "58 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı nedeniyle acile getiriliyor. Bir gece önce aşırı alkol aldıktan sonra şiddetli kusmalar yaşamış. Kusmalar sonrası göğsünde bıçak saplanır gibi ağrı hissetmiş. Eşi, olaydan sonra hastanın çok halsizleştiğini söylüyor. Acile ulaştığında terli, solgun ve bitkin görünüyor. Konuşurken “göğsüm parçalanıyor” diyerek şikâyet ediyor. Yutkunmada güçlük ve boğazda ağrı tarif ediyor. Sırtına vuran bir ağrıdan da yakınmakta. Yemek yemeyi reddediyor. Yakınları, hastanın mide sorunları nedeniyle sık ilaç kullandığını belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 120/dk, ateş 38.2°C, göğüste hassasiyet, subkutan amfizem.",
-      "radyolojik_goruntuler": "Toraks BT’de mediastinal hava, plevral effüzyon.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 17.000/mm³, CRP yüksek, pH düşük."
-    }
-  },
-  {
-    "id": 62,
-    "ad": "Panik Atak",
-    "hikaye": "26 yaşında kadın hasta, ani başlayan çarpıntı, nefes darlığı ve göğüs ağrısı nedeniyle acile geliyor. Şikâyetleri otobüste yolculuk sırasında başlamış. Kalbinin çok hızlı attığını ve boğulacak gibi olduğunu söylüyor. Acile ulaştığında çok korkmuş ve panik içinde. Konuşurken elleri titriyor, terlemiş ve gözleri endişeyle etrafta dolaşıyor. Yakınları, hastanın daha önce de benzer ataklar yaşadığını anlatıyor. Baş dönmesi ve göğüste sıkışma tarif ediyor. Birkaç kez “öleceğim sandım” ifadesini kullanıyor. Olaydan sonra sakinleşmekte zorlanmış. Şikâyetler aniden başlamış ve yaklaşık 20 dakikadır devam ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 130/80 mmHg, nabız 120/dk, hızlı ve yüzeysel solunum, terleme.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Kan şekeri normal, elektrolitler normal, troponin normal."
-    }
-  },
-  {
-    "id": 63,
-    "ad": "Peptik Ülser Perforasyonu",
-    "hikaye": "49 yaşında erkek hasta, ani başlayan karın ağrısı nedeniyle acile getiriliyor. Ağrı epigastrik bölgede başlamış, tüm karına yayılmış. Hasta ağrıyı bıçak saplanır gibi tarif ediyor. Gece yarısı aniden uyanmış ve karnını tutarak yere kıvrılmış. Kusma ve terleme eklenmiş. Acile ulaştığında bitkin ve huzursuz görünüyor. Sigara ve alkol öyküsü var. Yakınları, hastanın sık sık mide ilaçları kullandığını söylüyor. Konuşurken çok kısa cevaplar veriyor. Karın ağrısı nedeniyle oturup kalkmakta zorlanıyor. Morali düşük, endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 115/dk, karında defans ve rebound.",
-      "radyolojik_goruntuler": "Batın BT’de karın boşluğunda serbest hava ve sıvı.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 15.000/mm³, CRP yüksek, Hb normal."
-    }
-  },
-  {
-    "id": 64,
-    "ad": "Perikardiyal Tamponad",
-    "hikaye": "56 yaşında erkek hasta, nefes darlığı ve göğüs ağrısı nedeniyle acile getiriliyor. Şikâyetleri birkaç gündür artarak devam etmiş. Hasta konuşurken çok zorlanıyor. Geceleri uykudan nefes darlığıyla uyanmış. Acile ulaştığında oturur pozisyonda kalmak istiyor. Dudakları morarmış, gözleri endişeli. Eşi, son günlerde hastanın ayaklarında şişlik olduğunu söylüyor. Hasta çok huzursuz, göğsünü tutarak sürekli “nefes alamıyorum” diyor. Konuşmaları kısa, panik içinde. Yakınları, hastanın daha önce göğüs travması geçirdiğini belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 85/60 mmHg, nabız 120/dk, boyun venlerinde dolgunluk, kalp sesleri derinden duyuluyor.",
-      "radyolojik_goruntuler": "Ekokardiyografide perikardiyal efüzyon, kalp odacıklarında sıkışma bulguları.",
-      "ekg": "Elektriksel alternans.",
-      "tetkikler": "Hb normal, laktat yüksek, troponin hafif yüksek."
-    }
-  },
-  {
-    "id": 65,
-    "ad": "Periorbital Selülit",
-    "hikaye": "7 yaşında kız çocuk, göz kapağında şişlik ve kızarıklık nedeniyle acile getiriliyor. Şikâyetler dün akşam başlamış, sabah artmış. Ateşi yükselmiş. Anne, çocuğun burnunun tıkalı olduğunu söylüyor. Çocuk gözünü açmakta zorlanıyor. Yemek yemeyi reddediyor, huzursuz. Acile ulaştığında sürekli ağlıyor. Göz çevresi kızarık, şiş ve dokununca ağrılı. Konuşmaları kısık, bitkin görünüyor. Ailesi, daha önce sık sinüzit öyküsü olduğunu belirtiyor. Çocuk sık sık annesine sarılıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Ateş 38.6°C, TA 95/60 mmHg, nabız 115/dk, göz kapağında ödem ve eritem, göz hareketleri serbest.",
-      "radyolojik_goruntuler": "Orbital BT’de yumuşak doku ödemi, apse yok.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 13.000/mm³, CRP yüksek."
-    }
-  },
-  {
-    "id": 66,
-    "ad": "Pilor Stenozu",
-    "hikaye": "5 haftalık erkek bebek, tekrarlayan fışkırır tarzda kusmalar nedeniyle acile getiriliyor. Anne, bebeğin her beslenmeden kısa süre sonra kustuğunu söylüyor. Son günlerde kilo alamadığı fark edilmiş. Bebek sürekli aç gibi emmek istiyor ama kısa sürede kusuyor. Kusmalar şiddetli ve süt kokulu. Anne, bebeğin bezlerini eskisi kadar ıslatmadığını belirtiyor. Acile ulaştığında bebek huzursuz, ağlıyor ve cildi kuru. Karnında dalga hareketi izleniyor. Babası, bebeğin doğumdan beri sağlıklı olduğunu ancak son haftalarda şikâyetlerin başladığını anlatıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 80/50 mmHg, nabız 160/dk, kilo düşük, epigastrik bölgede zeytin büyüklüğünde kitle.",
-      "radyolojik_goruntuler": "Abdominal USG’de mide çıkışında kas kalınlaşması, dar kanal.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Na düşük, K düşük, metabolik alkaloz."
-    }
-  },
-  {
-    "id": 67,
-    "ad": "Portal Ven Trombozu",
-    "hikaye": "49 yaşında erkek hasta, karın ağrısı ve şişlik nedeniyle acile geliyor. Son günlerde iştahsızlık ve kilo kaybı tarif ediyor. Hastanın karaciğer hastalığı öyküsü var. Acile ulaştığında huzursuz, karnını tutarak yürüyor. Ağrı daha çok üst karında hissediliyor. Yakınları, son günlerde cildinde sararma fark ettiklerini söylüyor. Hasta gece uyuyamamış. Yemek yemeyi reddediyor. Bacaklarında da şişlik mevcut. Konuşurken endişeli ve yorgun görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, karında şişlik, asit, hepatosplenomegali.",
-      "radyolojik_goruntuler": "Batın BT’de portal vende dolum defekti, karaciğerde konjesyon.",
-      "ekg": "Normal.",
-      "tetkikler": "INR uzamış, trombosit düşük, bilirubin yüksek."
-    }
-  },
-  {
-    "id": 68,
-    "ad": "Preeklampsi",
-    "hikaye": "29 yaşında, 30 haftalık gebe kadın hasta, baş ağrısı, bulanık görme ve karın ağrısı nedeniyle acile geliyor. Eşi, son günlerde yüzünde ve ellerinde şişlik fark ettiklerini söylüyor. Hasta çok halsiz, sürekli “gözümün önünde ışık çakıyor” diye tarif ediyor. Karnında sertlik ve ağrı mevcut. Acile ulaştığında ödem belirgin. Konuşmaları kısa, endişeli görünüyor. Geceleri uyuyamamış, baş ağrısı giderek artmış. Yakınları, hastanın son haftalarda tansiyonunun yüksek olduğunu belirtiyor. Hasta huzursuz ve ağlamaklı. Karnındaki bebeğin hareketlerini az hissettiğini söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 170/110 mmHg, nabız 95/dk, ödem yaygın, refleksler hiperaktif.",
-      "radyolojik_goruntuler": "Ultrasonografide intrauterin gelişme geriliği.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Proteinüri (+++), kreatinin hafif yüksek, trombosit normal."
-    }
-  },
-  {
-    "id": 69,
-    "ad": "Primer Hiperaldosteronizm",
-    "hikaye": "43 yaşında erkek hasta, baş ağrısı, kas krampları ve halsizlik nedeniyle acile geliyor. Son günlerde çok su içtiğini ve sık idrara çıktığını söylüyor. Evde tansiyonu sürekli yüksek ölçülmüş. Acile ulaştığında endişeli ve huzursuz. Bacaklarında kasılma mevcut. Hasta, sık sık “bacaklarım tutuluyor” diyor. Yakınları, son günlerde sinirli olduğunu belirtiyor. İşyerinde performansının düştüğü anlatılıyor. Hasta gece boyunca uyuyamamış. Yemek yemeyi reddediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 170/100 mmHg, nabız 92/dk, kaslarda güçsüzlük, hafif dehidratasyon.",
-      "radyolojik_goruntuler": "Abdominal BT’de adrenal bezde kitle şüphesi.",
-      "ekg": "U dalgaları, QT uzaması.",
-      "tetkikler": "Potasyum 2.8 mmol/L, Na 148 mmol/L, aldosteron yüksek, renin düşük."
-    }
-  },
-  {
-    "id": 70,
-    "ad": "Psikotik Atak",
-    "hikaye": "24 yaşında erkek hasta, son günlerde konuşmalarında anlamsızlık ve davranış bozukluğu nedeniyle acile getiriliyor. Yakınları, hastanın evde kendi kendine konuştuğunu söylüyor. Hasta sürekli çevresinde olmayan şeylerden bahsediyor. Konuşurken huzursuz, gözlerini bir noktaya dikiyor. Acile ulaştığında agresifleşmiş. Yemek yemeyi reddediyor. Son günlerde uykusuz kalmış. Ebeveynleri, hastanın okul başarısında düşüş olduğunu belirtiyor. Hasta sık sık “beni takip ediyorlar” diye bağırıyor. Morali bozuk, endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 120/80 mmHg, nabız 90/dk, ajite, yönelim bozukluğu.",
-      "radyolojik_goruntuler": "Beyin MR normal.",
-      "ekg": "Normal.",
-      "tetkikler": "Kan biyokimyası normal, idrar toksikoloji negatif."
-    }
-  },
-  {
-    "id": 71,
-    "ad": "Psödomembranöz Enterokolit",
-    "hikaye": "64 yaşında kadın hasta, son 1 haftadır devam eden ishal ve karın ağrısı şikâyetiyle acile getiriliyor. Yakınları, hastanın kısa süre önce antibiyotik tedavisi gördüğünü söylüyor. İshal sulu ve kötü kokulu, günde 10’dan fazla tuvalete gitmiş. Hastada halsizlik ve iştahsızlık belirgin. Eşi, hastanın son günlerde çok kilo kaybettiğini ifade ediyor. Hasta sürekli karnını tutuyor ve oturmakta zorlanıyor. Geceleri uyuyamamış, ishal nedeniyle sık sık tuvalete kalkmış. Acile ulaştığında çok bitkin, konuşmaları yavaş. Karın ağrısı nedeniyle sürekli kıvranıyor. Susuzluk hissi belirgin. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 95/60 mmHg, nabız 110/dk, karında yaygın hassasiyet, dil kuru.",
-      "radyolojik_goruntuler": "Batın BT’de kolon duvarında kalınlaşma, diffüz ödem.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 20.000/mm³, CRP yüksek, dışkı testinde toksin pozitif."
-    }
-  },
-  {
-    "id": 72,
-    "ad": "Pulmoner Emboli",
-    "hikaye": "59 yaşında kadın hasta, ani başlayan nefes darlığı ve göğüs ağrısı nedeniyle acile getiriliyor. Birkaç gün önce uzun uçak yolculuğu yapmış. Yakınları, hastanın bacaklarında şişlik fark ettiklerini söylüyor. Olay sırasında aniden nefesi kesilmiş, yere oturmak zorunda kalmış. Acile ulaştığında dudakları morarmış. Hasta “nefesim kesiliyor” diyerek panik içinde. Konuşmaları kısa ve kesik. Eşi, hastanın son günlerde öksürük ve balgam şikâyeti olmadığını belirtiyor. Yatarken nefes almakta çok zorlandığını söylüyor. Terli ve huzursuz görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 120/dk, solunum sayısı 30/dk, sağ bacakta ödem.",
-      "radyolojik_goruntuler": "BT pulmoner anjiyografide sağ ana pulmoner arterde dolum defekti.",
-      "ekg": "Sinüs taşikardisi, S1Q3T3 paterni.",
-      "tetkikler": "D-dimer yüksek, kan gazında hipoksemi."
-    }
-  },
-  {
-    "id": 73,
-    "ad": "Pulmoner Hipertansiyon",
-    "hikaye": "48 yaşında kadın hasta, eforla artan nefes darlığı ve çarpıntı nedeniyle başvuruyor. Son aylarda merdiven çıkarken zorlandığını söylüyor. Halsizlik ve yorgunluk tarif ediyor. Son günlerde ayak bileklerinde şişlik başlamış. Hasta, göğsünde sıkışma hissettiğini belirtiyor. Konuşurken nefes nefese kalıyor. Acile ulaştığında rengi soluk, dudaklarında morarma mevcut. Eşi, son haftalarda hastanın bayılacak gibi olduğunu söylüyor. Hasta sürekli oturmak istiyor, yürümekte zorlanıyor. Gece boyunca uyuyamamış, öksürük krizleri yaşamış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, siyanoz, pretibial ödem.",
-      "radyolojik_goruntuler": "Ekokardiyografide sağ ventrikül hipertrofisi, pulmoner arter basıncı artmış.",
-      "ekg": "Sağ aks sapması, sağ ventrikül hipertrofisi.",
-      "tetkikler": "BNP yüksek, oksijen satürasyonu %85."
-    }
-  },
-  {
-    "id": 74,
-    "ad": "Rabdomiyoliz",
-    "hikaye": "36 yaşında erkek hasta, şiddetli kas ağrısı ve koyu renkli idrar şikâyetiyle acile geliyor. Yakınları, hastanın ağır spor sonrası şikâyetlerinin başladığını söylüyor. Kaslarda ağrı ve hassasiyet belirgin. Hasta “bacaklarımda yanma var” diyerek şikâyet ediyor. İdrarının kahverengi olduğunu anlatıyor. Halsiz ve yorgun görünüyor. Son 24 saatte sık sık kramp girmiş. Gece boyunca ağrıdan uyuyamamış. Acile ulaştığında panik içinde, sık sık su içmek istiyor. Konuşurken kaslarını ovuşturuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 95/dk, kaslarda yaygın ağrı ve hassasiyet.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Hiperkalemiye bağlı sivri T dalgaları.",
-      "tetkikler": "CK çok yüksek, potasyum 6.2 mmol/L, kreatinin 2.8 mg/dl."
-    }
-  },
-  {
-    "id": 75,
-    "ad": "Raynaud Fenomeni",
-    "hikaye": "32 yaşında kadın hasta, ellerinde soğukluk ve renk değişikliği şikâyetiyle başvuruyor. Özellikle soğuk havada parmaklarının beyazlaştığını ve morardığını söylüyor. Sıcak ortama girince parmaklarda kızarma oluyor. Son haftalarda parmak uçlarında uyuşma tarif ediyor. Acile ulaştığında elleri buz gibi. Hasta sürekli ellerini ovuşturuyor. Yakınları, hastanın son günlerde yazı yazmakta zorlandığını belirtiyor. Endişeli görünüyor, konuşurken ellerini saklamaya çalışıyor. Günlük yaşamını etkileyen şikâyetleri olduğunu ifade ediyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 115/70 mmHg, nabız 80/dk, ellerde soğukluk, distal nabızlar zayıf.",
-      "radyolojik_goruntuler": "El damar dopplerinde vazospazm bulguları.",
-      "ekg": "Normal.",
-      "tetkikler": "ANA pozitif, CRP normal."
-    }
-  },
-  {
-    "id": 76,
-    "ad": "Restriktif Kardiyomiyopati",
-    "hikaye": "55 yaşında erkek hasta, nefes darlığı, çarpıntı ve bacaklarda şişlik nedeniyle acile geliyor. Şikâyetler aylardır artarak devam etmiş. Hasta merdiven çıkmakta zorlanıyor. Son günlerde gece nefes darlığıyla uyanmış. Halsizliği belirgin. Konuşurken sık sık göğsünü tutuyor. Acile ulaştığında çok yorgun ve terli. Dudaklarında morarma mevcut. Yakınları, son aylarda hastanın iştahsız olduğunu ve kilo kaybettiğini söylüyor. Hasta sürekli dinlenmek istiyor, yürümekte zorlanıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 105/65 mmHg, nabız 95/dk, juguler venöz dolgunluk, pretibial ödem.",
-      "radyolojik_goruntuler": "Ekokardiyografide diyastolik dolum kısıtlı, atriyumlar geniş.",
-      "ekg": "Düşük voltajlı QRS, aritmi.",
-      "tetkikler": "BNP yüksek, troponin normal, CRP normal."
-    }
-  },
-  {
-    "id": 77,
-    "ad": "Retina Dekolmanı",
-    "hikaye": "52 yaşında erkek hasta, ani başlayan görme kaybı ve ışık çakmaları nedeniyle başvuruyor. Şikâyetler bir gözde başlamış. Hasta “perde iniyor gibi” bir his tarif ediyor. Yakınları, hastanın birkaç haftadır gözünde uçuşmalar gördüğünü söylüyor. Acile ulaştığında çok endişeli ve huzursuz. Görme kaybı hızla ilerlemiş. Hasta sürekli gözünü ovuşturuyor. Konuşurken sık sık “gözüm kararıyor” diyor. Daha önce miyopi öyküsü olduğu öğreniliyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "Görme keskinliği belirgin azalmış, pupil normal.",
-      "radyolojik_goruntuler": "Göz USG’de retina tabakasında ayrılma.",
-      "ekg": "Normal.",
-      "tetkikler": "Kan değerleri normal."
-    }
-  },
-  {
-    "id": 78,
-    "ad": "Santral Diyabetes İnsipidus",
-    "hikaye": "29 yaşında erkek hasta, aşırı susama ve sık idrara çıkma nedeniyle başvuruyor. Günde 8–10 litre su içtiğini söylüyor. Gece boyunca defalarca tuvalete kalkmış. Yakınları, hastanın çok kilo kaybettiğini anlatıyor. Acile ulaştığında bitkin ve huzursuz. Dudakları kurumuş, cildi solgun. Konuşurken sürekli “çok susadım” diyor. İştahı azalmış, gözleri çökmüş. Halsizliği nedeniyle işe gidememiş. Baş ağrısı tarif ediyor. Yakınları, birkaç ay önce kafa travması geçirdiğini söylüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 95/dk, cilt kuru, mukozalar kuru.",
-      "radyolojik_goruntuler": "Hipofiz MR’da posterior hipofiz sinyali kaybı.",
-      "ekg": "Normal.",
-      "tetkikler": "Na 154 mmol/L, idrar yoğunluğu çok düşük, plazma osmolalitesi yüksek."
-    }
-  },
-  {
-    "id": 79,
-    "ad": "Sepsis",
-    "hikaye": "68 yaşında kadın hasta, ateş, bilinç bulanıklığı ve tansiyon düşüklüğü nedeniyle acile getiriliyor. Yakınları, hastanın 3 gündür öksürük ve balgam çıkardığını söylüyor. Sabah aniden bilinci bulanıklaşmış. Acile ulaştığında çok halsiz, terli ve solgun. Konuşmaları anlaşılmaz. Nabzı hızlı, nefes darlığı var. Hasta sürekli yatağında dönüyor. Eşi, hastanın idrar çıkışının da azaldığını söylüyor. Hasta panik halinde, sık sık gözlerini kapatıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 80/50 mmHg, nabız 120/dk, ateş 39.1°C, bilinç bulanık.",
-      "radyolojik_goruntuler": "Akciğer BT’de konsolidasyon alanları.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 23.000/mm³, CRP çok yüksek, laktat 5.2 mmol/L, prokalsitonin yüksek."
-    }
-  },
-  {
-    "id": 80,
-    "ad": "Serotonin Sendromu",
-    "hikaye": "34 yaşında kadın hasta, huzursuzluk, terleme ve kaslarda kasılma nedeniyle acile getiriliyor. Yakınları, hastanın son günlerde antidepresan ilaç kullandığını söylüyor. Hasta panik içinde, sürekli hareket ediyor. Kaslarında titreme mevcut. Konuşurken anlamsız cümleler kuruyor. Ateşi yükselmiş, terleme yoğun. Eşi, hastanın son 24 saatte uykusuz olduğunu belirtiyor. Acile ulaştığında ajite, göz bebekleri geniş. Hasta sürekli “duramıyorum” diyerek bağırıyor. Bitkin ama hiperaktif görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 140/90 mmHg, nabız 130/dk, ateş 39.5°C, kaslarda klonus, ajitasyon.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "CK yüksek, laktat yüksek, elektrolitler normal."
-    }
-  },
-  {
-    "id": 81,
-    "ad": "Solunumsal Şarbon",
-    "hikaye": "42 yaşında erkek hasta, yüksek ateş, öksürük ve göğüs ağrısı nedeniyle acile getiriliyor. Çiftçi olduğu öğreniliyor, son günlerde hayvanlarla yakın temas etmiş. Şikâyetler ilk başta soğuk algınlığına benzemiş. Ancak son 2 günde nefes darlığı ve göğüs ağrısı şiddetlenmiş. Hasta öksürürken kanlı balgam çıkarmış. Acile ulaştığında rengi soluk, dudakları morarmış. Halsiz ve bitkin, konuşmaları kısa ve zorlanarak çıkıyor. Terlemiş ve huzursuz görünüyor. Yakınları, hastanın gece boyunca uyuyamadığını söylüyor. Endişeli ve panik içinde sürekli göğsünü tutuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 90/60 mmHg, nabız 120/dk, ateş 39.7°C, solunum sayısı 32/dk, siyanoz mevcut.",
-      "radyolojik_goruntuler": "Akciğer BT’de mediastinal genişleme, plevral effüzyon.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 18.000/mm³, CRP yüksek, kan kültüründe gram-pozitif basiller."
-    }
-  },
-  {
-    "id": 82,
-    "ad": "Splenik Rüptür",
-    "hikaye": "27 yaşında erkek hasta, trafik kazası sonrası karın ağrısı ve halsizlik nedeniyle acile getiriliyor. Olay yerinde kısa süreli bayılma yaşamış. Acile ulaştığında rengi solgun, çok terli ve huzursuz. Karnında şiddetli ağrı tarif ediyor. Konuşmaları kısa, sürekli karnını tutuyor. Yakınları, hastanın daha önce sağlıklı olduğunu belirtiyor. Ağrı sırta yayılıyor. Yolda gelirken bilinci dalgalanmış. Hasta oturmakta zorlanıyor, yatağa kıvrılmış halde. Endişeli ve panik içinde görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 80/50 mmHg, nabız 125/dk, karında defans, sol üst kadranda hassasiyet.",
-      "radyolojik_goruntuler": "Batın BT’de dalakta laserasyon ve intraperitoneal sıvı.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 7.8 g/dl, Htc %24, laktat yüksek."
-    }
-  },
-  {
-    "id": 83,
-    "ad": "Status Astmatikus",
-    "hikaye": "19 yaşında kadın hasta, şiddetli nefes darlığı nedeniyle acile getiriliyor. Astım öyküsü mevcut, inhalerini kullanmasına rağmen rahatlamamış. Nefesi hırıltılı ve zor. Hasta panik halinde, konuşmakta güçlük çekiyor. Dudakları morarmış. Acile ulaştığında çok huzursuz, terli ve ajite. Yakınları, hastanın son günlerde soğuk algınlığı geçirdiğini söylüyor. Göğsünde baskı hissi tarif ediyor. Elleriyle sürekli boğazını tutuyor. Gece boyunca uyuyamamış, öksürük krizleri yaşamış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/65 mmHg, nabız 130/dk, solunum sayısı 35/dk, yaygın wheezing, yardımcı solunum kasları aktif.",
-      "radyolojik_goruntuler": "Akciğer grafisinde hiperinflasyon.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Kan gazında pH 7.28, pCO₂ 55 mmHg, pO₂ 60 mmHg."
-    }
-  },
-  {
-    "id": 84,
-    "ad": "Subaraknoid Kanama",
-    "hikaye": "49 yaşında kadın hasta, ani başlayan şiddetli baş ağrısı nedeniyle acile getiriliyor. Hasta ağrıyı “hayatımda hissettiğim en kötü baş ağrısı” diye tarif ediyor. Kusma ve ense sertliği eklenmiş. Olay sırasında bilinci kısa süreli kapanmış. Acile ulaştığında çok huzursuz, başını tutarak yatıyor. Yakınları, hastanın hipertansiyon öyküsü olduğunu söylüyor. Konuşmaları yavaş, gözleri endişeli. Işığa bakmakta zorlanıyor. Sürekli “başım patlayacak” ifadesini kullanıyor. Halsiz ve bitkin görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 150/90 mmHg, nabız 95/dk, ense sertliği, bilinç bulanık.",
-      "radyolojik_goruntuler": "Beyin BT’de subaraknoid boşluklarda yaygın kanama.",
-      "ekg": "ST-T değişiklikleri.",
-      "tetkikler": "Kan şekeri normal, lökosit hafif yüksek."
-    }
-  },
-  {
-    "id": 85,
-    "ad": "Superior Vena Kava Sendromu",
-    "hikaye": "61 yaşında erkek hasta, yüz ve boyunda şişlik, nefes darlığı ve öksürük nedeniyle acile getiriliyor. Şikâyetler birkaç haftadır giderek artmış. Sabahları belirgin şişlik oluyor. Hasta ses kısıklığından da yakınıyor. Acile ulaştığında huzursuz, oturur pozisyonda kalmak istiyor. Dudakları morarmış. Göz kapakları şiş, yüzünde belirgin ödem mevcut. Yakınları, hastanın kilo kaybettiğini ve iştahsız olduğunu söylüyor. Konuşurken zorlanıyor, sık sık öksürüyor. Sigara öyküsü var. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, juguler venöz dolgunluk, yüzde ve boyunda ödem.",
-      "radyolojik_goruntuler": "Toraks BT’de mediastende büyük kitle, vena kavada daralma.",
-      "ekg": "Sinüs ritmi.",
-      "tetkikler": "Hb normal, laktat normal, tümör belirteçleri yüksek."
-    }
-  },
-  {
-    "id": 86,
-    "ad": "Supraventriküler Taşikardi",
-    "hikaye": "28 yaşında kadın hasta, ani başlayan çarpıntı ve baş dönmesi nedeniyle acile geliyor. Çarpıntı birden başlamış, yaklaşık 20 dakikadır devam ediyor. Hasta panik halinde, sürekli kalbini tutuyor. Konuşurken nefes nefese kalıyor. Halsiz ve terli. Yakınları, hastanın daha önce de kısa süreli benzer ataklar yaşadığını söylüyor. Olay sırasında baş dönmesi şiddetlenmiş, yere oturmak zorunda kalmış. Acile ulaştığında çok endişeli, elleri titriyor. “Kalbim yerinden çıkacak gibi” ifadesini kullanıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 180/dk, cilt soluk ve terli.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Dar QRS’li taşikardi, P dalgaları seçilemiyor.",
-      "tetkikler": "Elektrolitler normal, troponin normal."
-    }
-  },
-  {
-    "id": 87,
-    "ad": "Tansiyon Pnömotoraks",
-    "hikaye": "34 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı nedeniyle acile getiriliyor. Olaydan önce ağır egzersiz yapmış. Aniden göğsünde batma hissi olmuş. Nefesi hızla daralmış. Acile ulaştığında panik içinde, dudakları morarmış. Hasta konuşmakta zorlanıyor, kısa cümlelerle yanıt veriyor. Terli ve huzursuz. Eşi, hastanın daha önce sağlıklı olduğunu söylüyor. Nefes almak için sürekli dik oturmak istiyor. Konuşurken göğsünü tutuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 85/60 mmHg, nabız 130/dk, sağ hemitoraksta solunum sesleri yok, juguler venöz dolgunluk.",
-      "radyolojik_goruntuler": "Akciğer grafisinde sağ hemitoraksta geniş pnömotoraks, mediastinal kayma.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Kan gazında hipoksemi, laktat yüksek."
-    }
-  },
-  {
-    "id": 88,
-    "ad": "Testiküler Torsiyon",
-    "hikaye": "17 yaşında erkek hasta, ani başlayan testis ağrısı nedeniyle acile getiriliyor. Ağrı sabah aniden başlamış, çok şiddetli. Hasta huzursuz, sürekli ağrısından dolayı kıvranıyor. Konuşurken terli ve endişeli görünüyor. Kusma da eklenmiş. Yakınları, hastanın daha önce sağlıklı olduğunu söylüyor. Ağrı kasığa yayılıyor. Yürümekte zorlanıyor. Sürekli “çok acıyor” diyerek bağırıyor. Endişeli, kıpırdamak istemiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 110/dk, sağ testis şiş ve hassas, yüksek pozisyonda.",
-      "radyolojik_goruntuler": "Skrotal doppler USG’de testiste kan akımı izlenmiyor.",
-      "ekg": "Normal.",
-      "tetkikler": "Lökosit 12.000/mm³, CRP hafif yüksek."
-    }
-  },
-  {
-    "id": 89,
-    "ad": "Tiroid Fırtınası",
-    "hikaye": "36 yaşında kadın hasta, yüksek ateş, çarpıntı ve huzursuzluk nedeniyle acile geliyor. Yakınları, hastanın tiroid hastalığı öyküsü olduğunu söylüyor. Hasta çok terli, panik halinde ve konuşurken hızlı nefes alıyor. Çarpıntısı aniden başlamış. Acile ulaştığında ateşi çok yüksek. Elleri titriyor. Sürekli “çok sıcakladım” diyor. Gözlerinde belirgin büyüme fark ediliyor. Son günlerde uykusuz kalmış. Endişeli ve ajite görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 140/90 mmHg, nabız 150/dk, ateş 40.2°C, huzursuz ve terli.",
-      "radyolojik_goruntuler": "Tiroid USG’de difüz büyüme.",
-      "ekg": "Atriyal fibrilasyon.",
-      "tetkikler": "T3 ve T4 çok yüksek, TSH baskılanmış, laktat yüksek."
-    }
-  },
-  {
-    "id": 90,
-    "ad": "Toksoplazmik Ensefalit",
-    "hikaye": "41 yaşında erkek hasta, baş ağrısı, bilinç bulanıklığı ve nöbet şikâyetiyle acile getiriliyor. HIV öyküsü var. Son haftalarda halsizlik ve kilo kaybı tarif ediyor. Acile ulaştığında konuşmaları bozuk, sorulara cevap vermiyor. Bilinci dalgalı. Eşi, hastanın birkaç gündür yemek yemediğini söylüyor. Hasta sık sık başını tutuyor. Gözleri donuk, huzursuz görünüyor. Kasılmalar olmuş. Yakınları çok endişeli. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 100/dk, bilinç dalgalı, ense sertliği yok.",
-      "radyolojik_goruntuler": "Beyin MR’da multipl halka tarzı lezyonlar.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "CD4 çok düşük, seroloji pozitif, CRP yüksek."
-    }
-  },
-  {
-    "id": 91,
-    "ad": "Torasik Aort Diseksiyonu",
-    "hikaye": "63 yaşında erkek hasta, ani başlayan göğüs ağrısı nedeniyle acile getiriliyor. Ağrı sırtına ve karın bölgesine yayılıyor. Hasta ağrıyı “bıçak saplanır gibi” tarif ediyor. Yakınları, hastanın yüksek tansiyon öyküsü olduğunu söylüyor. Olay anında çok paniklemiş, yere oturmuş. Acile ulaştığında rengi soluk, huzursuz ve terli. Konuşurken kısa cümleler kuruyor. Ağrı çok şiddetli, oturmakta zorlanıyor. Eşi, hastanın son günlerde ilaçlarını düzensiz aldığını ifade ediyor. Hastanın dudaklarında morarma var, panik içinde göğsünü tutuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA sağ kolda 190/110 mmHg, sol kolda 120/80 mmHg, nabız 110/dk.",
-      "radyolojik_goruntuler": "BT anjiyografide aort duvarında diseksiyon hattı.",
-      "ekg": "Nonspesifik ST-T değişiklikleri.",
-      "tetkikler": "D-dimer yüksek, Hb normal, kreatinin hafif yüksek."
-    }
-  },
-  {
-    "id": 92,
-    "ad": "Transvers Miyelit",
-    "hikaye": "28 yaşında kadın hasta, bacaklarda güçsüzlük ve uyuşma şikâyetiyle acile geliyor. Yakınları, hastanın 2 gündür yürümekte zorlandığını söylüyor. İdrar yapmada da sorun başlamış. Hasta belden aşağısında hissizlik tarif ediyor. Konuşurken endişeli görünüyor. Acile ulaştığında oturmakta zorlanıyor, sık sık ağlamaklı. Elleriyle bacaklarını ovuşturuyor. Yakınları, hastanın birkaç hafta önce grip benzeri bir enfeksiyon geçirdiğini belirtiyor. Gece boyunca huzursuz uyumuş. Halsizliği ve yorgunluğu çok belirgin. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 110/70 mmHg, nabız 90/dk, alt ekstremitelerde motor kayıp, duyu kaybı, refleksler azalmış.",
-      "radyolojik_goruntuler": "Spinal MR’da T6 seviyesinde transvers lezyon.",
-      "ekg": "Normal.",
-      "tetkikler": "BOS’ta pleositoz, protein yüksek."
-    }
-  },
-  {
-    "id": 93,
-    "ad": "Tüberküloz Menenjiti",
-    "hikaye": "44 yaşında erkek hasta, 2 haftadır devam eden baş ağrısı, halsizlik ve gece terlemesi şikâyetiyle getiriliyor. Yakınları, hastanın son günlerde ateşinin yükseldiğini söylüyor. Hasta bilinç bulanıklığı yaşamış. Acile ulaştığında dalgın, sorulara geç yanıt veriyor. Ense sertliği belirgin. Öksürük ve balgam öyküsü de mevcut. Yakınları, hastanın son aylarda kilo kaybettiğini ifade ediyor. Konuşurken gözlerini kapatıyor, bitkin görünüyor. Panik içinde değil ama çok yorgun. Gece boyunca uykusuz kalmış. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/65 mmHg, nabız 95/dk, ateş 38.5°C, ense sertliği, bilinç bulanık.",
-      "radyolojik_goruntuler": "Beyin MR’da bazal meninkslerde kalınlaşma.",
-      "ekg": "Sinüs ritmi.",
-      "tetkikler": "BOS’ta lenfosit hakimiyeti, ADA yüksek, kültür pozitif."
-    }
-  },
-  {
-    "id": 94,
-    "ad": "Tümör Lizis Sendromu",
-    "hikaye": "36 yaşında erkek hasta, kemoterapi sonrası halsizlik, kas krampları ve bulantı şikâyetiyle acile geliyor. Yakınları, hastanın idrar renginde koyulaşma fark ettiklerini söylüyor. Hasta çok susamış, sürekli su istiyor. Kusma tarif ediyor. Konuşurken bitkin ve yorgun görünüyor. Halsizliği nedeniyle yürüyemiyor. Acile ulaştığında terli, huzursuz ve panik halinde değil. Bacaklarında uyuşma hissediyor. Gece boyunca uyuyamamış. Yakınları, hastanın kemoterapi sonrası bu belirtilerin hızla geliştiğini belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, kaslarda kramplar, halsizlik.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sivri T dalgaları, QRS genişlemesi.",
-      "tetkikler": "Ürik asit yüksek, potasyum 6.5 mmol/L, fosfor yüksek, kalsiyum düşük, kreatinin yüksek."
-    }
-  },
-  {
-    "id": 95,
-    "ad": "Uygunsuz Antidiüretik Hormon Sendromu (SIADH)",
-    "hikaye": "68 yaşında erkek hasta, baş ağrısı, halsizlik ve bilinç bulanıklığı nedeniyle acile getiriliyor. Yakınları, hastanın çok su içmesine rağmen idrar çıkışının azaldığını söylüyor. Son günlerde iştahsızlık ve bulantı olmuş. Acile ulaştığında bitkin ve huzursuz görünüyor. Konuşmaları yavaş, gözleri dalgın. Eşi, hastanın son haftalarda akciğer hastalığı nedeniyle tedavi gördüğünü belirtiyor. Hasta panik içinde değil ama oryantasyonu bozulmuş. Sürekli uyumak istiyor. Dudakları kuru, cildi soluk. Yakınları, gece boyunca konfüzyon yaşadığını anlatıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 115/70 mmHg, nabız 88/dk, bilinç bulanık, oryantasyon bozuk.",
-      "radyolojik_goruntuler": "Beyin BT normal.",
-      "ekg": "Normal.",
-      "tetkikler": "Na 118 mmol/L, idrar osmolalitesi yüksek, serum osmolalitesi düşük."
-    }
-  },
-  {
-    "id": 96,
-    "ad": "Üst Gastrointestinal Kanama",
-    "hikaye": "58 yaşında erkek hasta, kahverengi kusma ve siyah dışkı şikâyetiyle acile getiriliyor. Olay anında halsizlik ve baş dönmesi yaşamış. Acile ulaştığında rengi soluk, terli ve huzursuz. Konuşmaları kısa, sürekli “midem yanıyor” diyerek şikâyet ediyor. Yakınları, hastanın uzun süredir mide ilaçları kullandığını söylüyor. Sigara ve alkol öyküsü var. Hasta panik içinde değil ama çok yorgun. Gece boyunca kusma yaşamış. Konuşurken karnını tutuyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 85/55 mmHg, nabız 120/dk, cilt soluk ve nemli, epigastrik hassasiyet.",
-      "radyolojik_goruntuler": "Endoskopide mide fundusunda ülser ve aktif kanama.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 6.9 g/dl, Htc %22, laktat yüksek."
-    }
-  },
-  {
-    "id": 97,
-    "ad": "Vazooklüziv Kriz",
-    "hikaye": "25 yaşında kadın hasta, şiddetli kemik ve eklem ağrısı nedeniyle acile getiriliyor. Orak hücre anemisi öyküsü var. Ağrı tüm vücuduna yayılmış. Hasta sürekli kıvranıyor ve huzursuz. Konuşurken kısa cümleler kuruyor. Dudakları morarmış. Yakınları, hastanın birkaç gündür çok halsiz olduğunu söylüyor. Gece boyunca uyuyamamış. İştahsızlık mevcut. Ağrı nedeniyle hareket etmek istemiyor. Panik içinde değil ama endişeli görünüyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/60 mmHg, nabız 110/dk, cilt soluk, ekstremitelerde hassasiyet.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Hb 7.5 g/dl, retikülosit yüksek, LDH yüksek."
-    }
-  },
-  {
-    "id": 98,
-    "ad": "Vazovagal Senkop",
-    "hikaye": "21 yaşında erkek hasta, ani gelişen bayılma şikâyetiyle acile getiriliyor. Olay kalabalık bir ortamda olmuş, hasta yere yığılmış. Yakınları, hastanın olay öncesi baş dönmesi ve terleme yaşadığını söylüyor. Bilinç kısa sürede açılmış. Acile ulaştığında bitkin ve yorgun. Konuşurken “birden gözüm karardı” diyor. Panik içinde değil ama endişeli görünüyor. Olay sonrası mide bulantısı olmuş. Daha önce benzer şikâyetler yaşamış. Ebeveynleri, hastanın çok stresli dönemlerde bu tür şikâyetler yaşadığını belirtiyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 95/60 mmHg, nabız 60/dk, bilinç açık, cilt soluk ve nemli.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Sinüs bradikardisi.",
-      "tetkikler": "Elektrolitler normal, glukoz normal."
-    }
-  },
-  {
-    "id": 99,
-    "ad": "Ventriküler Taşikardi",
-    "hikaye": "64 yaşında erkek hasta, ani başlayan çarpıntı ve bayılma hissi nedeniyle acile getiriliyor. Olay sırasında yere düşmek üzereyken yakalanmış. Hasta çok panik içinde. Dudakları morarmış. Konuşmakta zorlanıyor. Terli ve huzursuz. Yakınları, hastanın kalp hastalığı öyküsü olduğunu söylüyor. Acile ulaştığında bilinci dalgalı. “Kalbim çok hızlı atıyor” diyerek şikâyet ediyor. Endişeli görünüyor, oturmakta zorlanıyor. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 80/50 mmHg, nabız 180/dk, cilt soluk ve soğuk.",
-      "radyolojik_goruntuler": "Normal.",
-      "ekg": "Geniş QRS’li düzenli taşikardi.",
-      "tetkikler": "Troponin hafif yüksek, potasyum normal, magnezyum düşük."
-    }
-  },
-  {
-    "id": 100,
-    "ad": "Volvulus",
-    "hikaye": "72 yaşında erkek hasta, ani başlayan karın ağrısı, şişlik ve kusma nedeniyle acile getiriliyor. Ağrı tüm karnı kaplamış. Hasta sürekli karnını tutuyor. Konuşurken kısa ve kesik cümleler kuruyor. Yakınları, hastanın birkaç gündür kabız olduğunu söylüyor. Olay sabah başlamış, giderek şiddetlenmiş. Kusma kahverengi ve kötü kokulu. Acile ulaştığında huzursuz, terli ve bitkin. Karnı şiş ve gergin. Gece boyunca uyuyamamış. Yürümekte zorlanıyor, sürekli yatağa kıvrılmış halde. Klinik Bulgular:",
-    "klinik_bulgular": {
-      "fizik_muayene": "TA 100/70 mmHg, nabız 115/dk, karın şiş, timpani, barsak sesleri azalmış.",
-      "radyolojik_goruntuler": "Batın BT’de bağırsaklarda torsiyon, dilatasyon, hava-sıvı seviyeleri.",
-      "ekg": "Sinüs taşikardisi.",
-      "tetkikler": "Lökosit 14.000/mm³, laktat yüksek, elektrolitler hafif bozuk."
-    }
-  }
-]
+hastaliklar = [{'id': 1,
+  'ad': 'Abdominal Aort Anevrizması Rüptürü',
+  'hikaye': '72 yaşında erkek hasta. Sabah banyoda yere yığılmış. Son günlerde mide yanması ve karında şişkinlik nedeniyle ilaç kullandığı öğreniliyor. Olay anında belden başlayıp sırta ve kasıklara yayılan çok şiddetli bir ağrı tarif ediyor. Ağrı giderek artmış. Hasta bunu hayatındaki en kötü ağrı olarak tanımlıyor. Soğuk terleme, bilinç bulanıklığı ve huzursuzluk mevcut. Konuşmaları kısa ve kesik kesik, sürekli belini ovuşturuyor. Yere düştüğünde kafasını çarpmış, alnında yüzeyel bir kesi var. Eşi, hastanın son haftalarda bacaklarında da ağrı şikayetleri olduğunu aktarıyor. Hasta sürekli mide sorununa ve belindeki ağrıya dikkat çekiyor.\n\n2. Adrenal Kriz\nÖykü:\n45 yaşında kadın hasta, son 2 gündür bulantı, kusma ve halsizlik yaşıyormuş. Yakınları sabah aniden titremeye başladığını ve konuşmalarının garipleştiğini söylüyor. Çok susadığını, su içtikten kısa süre sonra ise tekrar kustuğunu ifade ediyorlar. Şiddetli karın ağrısı nedeniyle sedyede bacaklarını karnına doğru çekerek yan yatıyor. Dudakları kurumuş, cildinde koyu renk lekeler mevcut. Son haftalarda iştah kaybı ve baş ağrıları başlamış. Eşi, hastanın evde birkaç kez fenalaştığını ve neredeyse bayıldığını söylüyor. Acil servise getirildiğinde bilincinin bulanık olduğu, sorulara gecikmeli yanıtlar verdiği görülüyor. Göz altlarında çökme ve ağız kuruluğu belirgin. Yakınları bu durumun zehirlenme olabileceğini ifade ediyor.\n\n3. Akut Glokom\nÖykü:\n60 yaşında kadın hasta, ani başlayan sağ göz ağrısı ve baş ağrısı şikayetleri ile acil servise başvuruyor. Evde parasetamol tablet almış, fakat fayda görmemiş. Görmesi giderek bulanıklaşmış, ışıkların etrafında haleler görmeye başlamış. Şikayetlerine bulantı ve kusma eklenmiş. Oğlu, hastanın gece uyumakta zorlandığını ve “gözüm patlayacak gibi” dediğini söylüyor. Çok huzursuz olduğu, gözünü açmakta dahi zorlandığı görülüyor. Konuşurken sürekli gözünü ovuşturuyor. 3 ay kadar önce yakını görme problemi nedeniyle gözlük kullanmaya başladığını, ayrıca hipertansiyon tanısı ile ilaç kullandığını belirtiyor. Yatarken ağrının arttığını, oturunca biraz azaldığını söylüyor.\n\n\n\n\n4. Akut Graft-Versus-Host Hastalığı\nÖykü:\n35 yaşında erkek hasta, aplastik anemi nedeniyle uygulanan kemik iliği naklinden yaklaşık 3 hafta sonra vücutta yaygın döküntü, karın ağrısı ve ishal nedeniyle acil servise getiriliyor. Televizyon izlerken kuruyemiş ve cips yediğini, buna bağlı gelişen alerji olabileceğini düşünüyor. Ciltte yaygın kızarıklık ve kaşıntı mevcut. Yakınları, hastanın son günlerde birkaç kez ateşinin çıktığını ve halsizliğinin arttığını dile getiriyor. Hasta, ishal nedeniyle sık sık tuvalete gitmek zorunda kaldığını, karnının ağrıdığını, doğru düzgün yemek yiyemediğini, her yerinin kaşındığını ve ağzında yaralar çıktığını söylüyor. Moralsiz ve bitkin durumda olduğu, konuşmakta ve yürümekte zorlandığı, bu nedenle tekerkeli sandalyede olduğu görülüyor. Yakınları, hastanın geceleri uyumakta zorlandığını ifade ediyor.\n\n5. Akut İnferior Miyokard İnfarktüsü\nÖykü:\n62 yaşında erkek hasta, sabah kahvaltısından sonra mide ağrısı başlamış. Gastrit için kullandığı şuruplardan 2 ölçek içmiş ama rahatlama sağlamamış. Ağrının sırta ve sağ omza yayıldığını tarif ediyor. Bulantı ve yoğun terleme mevcut. 18 yaşından beri, günde ortalama 1 paket sigara içtiğini, yaklaşık 10 yıldır da gastrit tanısı ile ilaç tedavisi aldığını söylüyor. Evde eşine “mideme kramp giriyor” diye yakınmış. Hastanın rengi solgun, nefes nefese ve konuşmaları kısa. Ağrı kesici alırsa rahatlayacağını dile getiriyor. Şikayetleri başladıktan yaklaşık yarım saat kadar sonra eşinin ısrarı ile acil servise getirilmiş.\n\n6. Akut İskemik İnme\nÖykü:\n68 yaşında erkek hasta, konuşma bozukluğu ve sağ tarafında güçsüzlük şikâyetiyle acil servise getiriliyor. Yakınları, belirtilerin yaklaşık 1 saat önce başladığını söylüyor. Evde önce kan şekeri düşüklüğü zannedilerek komposto suyu içirilmiş ancak düzelmemiş. Hasta bir süredir tansiyon ilacını düzensiz kullandığını itiraf ediyor. Yolda gelirken konuşmaları anlaşılmaz hale gelmiş, sağ kolunu kaldıramamaya başlamış. Hastanın bilinci açık, ancak oryantasyonu bozuk. Sorulara kısa ve anlamsız cevaplar veriyor. Eşi, hastanın birkaç gündür baş ağrısı ve halsizlik şikâyeti olduğunu belirtiyor. Hasta, sürekli sağ bacağını oynatmakta zorlandığını söylüyor. Oğlunun ifadesine göre evde otururken aniden yüzünün sağ tarafı sarkık görünmeye başlamış.\n\n\n\n7. Akut Kalp Yetmezliği\nÖykü:\n72 yaşında erkek hasta, ani başlayan nefes darlığı ve öksürük nedeniyle acil servise getiriliyor. Son 1 haftadır her 2 ayak bileğinde şişlik varmış. Hasta, gece uykudan nefes darlığıyla uyanmış. Konuşurken sık sık öksürüyor, “nefes alamıyorum” diye yakınıyor. Cildi soluk ve terli. Yakınları, hastanın merdiven çıkarken çok yorulduğunu, nefes nefese kaldığını, ancak yastık sayısını artırarak uyuyabildiğini söylüyor. Oturur pozisyonda durmaya çalıştığı gözlemleniyor. Bacaklarında belirgin ödem mevcut. Hastanın çok huzursuz ve panik içinde olduğu görülüyor.\n\n8. Akut KOAH Alevlenmesi\nÖykü:\n70 yaşında erkek hasta. 50 yılı aşkın süredir günde en az 1 paket sigara içiyormuş. Yaklaşık 10 yıldır, sabahları daha yoğun olan, öksürük ve balgam çıkarma şikayetleri mevcutmuş. Son 2 gündür öksürüğü ve balgamı artmış, nefes darlığı belirginleşmiş. Evde inhaler tedavilerini düzenli kullanmadığını söylüyor. Yakınları, hastanın merdiven çıkarken çok zorlandığını ve geceleri nefes almakta güçlük çektiğini belirtiyor. Evde “astım krizi” olabileceği düşünülerek nebülizatör ile ilaç verilmiş ama fayda etmemiş. Acil servise getirildiğinde konuşmakta zorlanıyor, cümleleri yarıda kesiliyor. Dudaklarında morarma gözleniyor. Hasta sürekli oturur pozisyonda kalmaya çalışıyor. Son bir haftadır iştahsızlık ve yorgunluk şikâyetleri de başlamış. Israrcı bir şekilde, şikayetlerinin üşütmeden kaynaklandığını dile getiriyor.\n\n9. Akut Pankreatit\nÖykü:\n55 yaşında erkek hasta, ani başlayan şiddetli karın ağrısı nedeniyle acil servise müracaat ediyor. Ağrı epigastrik bölgede başlamış, zamanla sırta doğru yayılım göstermiş. İlk başta reflü olduğunu düşünerek antiasit ilaç almış ama bundan fayda görmemiş. Bulantı ve birkaç kez kusma eşlik etmiş. Hastanın geçen sene eşinden ayrıldığı ve üzüntüden yoğun alkol tükettiği öğreniliyor. Son günlerde yağlı yemeklerden sonra karnında rahatsızlık hissettiğini söylüyor. Ağrı nedeniyle gece uyuyamamış. Ağrısı sabaha karşı dayanılmaz hale gelmiş. Hastanın, huzursuz, terli ve kıvranır halde olduğu görülüyor. Israrla reflüsünün çok şiddetlendiğini, soda içerse rahatlayabileceğini söylüyor.\n\n\n\n\n\n10. Akut Perfore Apandisit\nÖykü:\n28 yaşında erkek hasta, 2 gün önce başlayan karın ağrısı şikâyetiyle acil servise geliyor. Başlangıçta göbek çevresinde olan ağrı zamanla sağ alt kadrana yerleşmiş. İştahsızlık, bulantı ve kusma şikayetleri eşlik ediyormuş. Evde bu durumun gaz sancısı olduğunu düşünerek spazm giderici bir ilaç almış. Ateşi yükselmiş, gece boyunca uyuyamamış. Karın ağrısının çok şiddetli olduğu, yürürken zorlandığı görülüyor. Yakınları, hastanın ağrısının giderek arttığını ve son saatlerde kıvranmaya başladığını söylüyor. Hasta ayakta dik durmakta zorlanıyor, sürekli sağ tarafına eğiliyor. Birkaç gün önce normalden fazla acılı yemek yediğini, karın ağrısının bundan kaynaklandığını belirtiyor. Konuşmaları kısa, şiddetli karın ağrısı nedeniyle çok fazla hareket etmek istemiyor.\n\n\n11. Akut Perikardit\nÖykü:\n35 yaşında erkek hasta göğüs ağrısı nedeniyle acil servise başvuruyor. Birkaç gün önce göğsünün ön kısmında, nefes alırken ve yatarken artan bir ağrı başladığını, öne doğru eğilince ise ağrının biraz azaldığını söylüyor. Motosiklet kullanırken rüzgardan etkilendiği için kas ağrısı yaşadığını, hatta geçen hafta burun akıntısı ve halsizlik şikayetleri olduğu için ağrı kesici ve soğuk algınlığı ilaçları kullandığını söylüyor. Ağrıya hafif ateş ve nefes darlığı eşlik etmiş. Hasta sürekli göğsünü ovuşturuyor, pozisyon değiştirerek rahatlamaya çalışıyor. Geceleri uyuyamadığını, ağrıdan dolayı sık sık uyandığını anlatıyor. Konuşurken kısa cümlelerle yanıt veriyor.\n\n12. Akut Renal Yetmezlik\nÖykü:\n58 yaşında erkek hasta halsizlik, iştahsızlık ve bacaklarda şişlik şikâyetleriyle acil servise getiriliyor. Hasta, son günlerde idrar miktarının belirgin şekilde azaldığını, baş ağrısı, bulantı ve kusma yaşadığını belirtiyor. Yaklaşık 10 yıldır hipertansiyon tanısı ile ilaç tedavisi alıyormuş, ancak son birkaç aydır ilaçlarını düzensiz kullanmış. Hastanın huzursuz, solgun ve kuru ciltli olduğu görülüyor. Sürekli başının ağrıdığını ve uyumakta zorlandığını anlatıyor. Son günlerde uyurken sık sık bacaklarında kas krampları yaşadığını ifade ediyor. Hasta iştahsızlık nedeniyle son 1 haftada 4 kilo kadar kaybetmiş. Yürürken dengesizlik ve halsizlik belirgin. “İdrarımı yapmakta zorlanıyorum” diye yakınınca, eşi tarafından acil servise getirilmiş.\n\n\n13. Akut Toksik Hepatit\nÖykü:\n40 yaşında erkek hasta, sarılık, halsizlik ve iştahsızlık nedeniyle acil servise başvuruyor. Son günlerde cildinde sararma ve idrar renginde koyulaşma fark etmiş. Birkaç gündür bulantı, kusma ve sağ üst kadranda ağrı şikayetleri tarif ediyor. Yaklaşık bir hafta önce geçirdiği nezle nedeniyle çok sayıda ateş düşürücü ilaç kullandığını beyan ediyor. Hasta halsiz, yorgun, cilt ve skleraları sarı renkte. Yakınları, hastanın son günlerde uykuya meyilli olduğunu söylüyor. Baş ağrısı, kas ve eklem ağrıları da mevcut. Son aylarda yoğun alkol tüketimi olduğu öğreniliyor. Hastanın konuşmalarının yavaş, çevresine ilgisinin de azalmış olduğu görülüyor.\n\n\n14. Alt Gastrointestinal Kanama\nÖykü:\n67 yaşında erkek hasta, birkaç saat önce başlayan bol miktarda kanlı dışkılama şikâyetiyle acil servise getiriliyor. Hasta aniden tuvalete gitme ihtiyacı hissetmiş ve dışkısının parlak kırmızı renkte olduğunu fark etmiş. Daha önce benzer bir şikâyeti olmamış. Karın ağrısı ve baş dönmesi tarif ediyor. Yakınları, hastanın birkaç gündür yorgun olduğunu belirtiyor. Cilt rengi soluk, halsiz ve bitkin görünüyor. Konuşurken “içim boşalıyor gibi” ifadesini kullanıyor. Birkaç aydır kabızlık şikâyeti de mevcutmuş. Sigara ve alkol kullanımı olduğu öğreniliyor. Tuvalette fenalaştığını ve düşecek gibi olduğunu söylüyor.\n\n15. Amniyotik Sıvı Embolisi\nÖykü:\n32 yaşında kadın hasta, doğum sırasında ani gelişen nefes darlığı ve bilinç kaybı nedeniyle acil servise alınıyor. Doğumun normal seyrettiği, ancak gebenin aniden fenalaştığı öğreniliyor. Hastada şiddetli göğüs ağrısı ve öksürük başlamış. Hızla solunumu bozulmuş ve ciltte morarma gelişmiş. Yakınları, doğum öncesinde her şeyin normal olduğunu söylüyor. Hasta doğumdan önce aşırı kaygılıymış. Olay sırasında birkaç dakika boyunca bilinci kapalı kalmış. Acile servise getirildiğinde bilincinin bulanık olduğu ve ciddi solunum sıkıntısı çektiği görülüyor.\n\n\n\n\n\n\n16. Anafilaksi\nÖykü:\n27 yaşında kadın hasta, yemek sonrası birkaç dakika içinde başlayan boğazda şişlik, nefes darlığı ve ciltte yaygın kızarıklık nedeniyle acil servise geliyor. Yemekte kabuklu deniz ürünleri yediği öğreniliyor. İlk olarak dudaklarında ve göz kapaklarında şişlik oluşmuş. Daha sonra nefes almakta zorlanmaya başlamış, ciltte kaşıntı ve yaygın döküntüler gelişmiş. Yakınları, hastanın hızla renginin solduğunu ve nefes alış verişinin zorlaştığını söylüyor. Acil servise ulaştığında panik halinde, konuşmakta zorlanıyor ve sürekli boğazını tutuyor. Sesinde boğukluk mevcut. Yakınları, ısrarla hastanın astım atağı geçirdiğini beyan ediyor. Hastanın giderek daha halsiz hale geldiği görülüyor.\n\n\n17. Anjioödem\nÖykü:\n50 yaşında erkek hasta, yüzde ve dudaklarda gelişen ani şişliklerle acil servise geliyor. Sabah 8 saatlerinde hipertansiyon tedavisi için kullandığı ilacını aldıktan birkaç saat sonra şikâyetleri başlamış. Önce dudaklarında şişlik oluşmuş, daha sonra dilinde ve boğazında da şişlik hissetmiş. Nefes alış verişinde zorlanmaya başlamış. Yakınları, hastanın kısa süre içerisinde sesinin boğuklaştığını, konuşmasının bozulduğunu söylüyor. Hasta panik halinde, sürekli nefes almakta zorlandığını belirtiyor. Göz çevresinde de şişlik var. Yüzünde belirgin ödem olduğu görülüyor. Boğazında daralma hissi olduğunu belirtiyor. Yakınları, ilaca bağlı gelişen alerjik bir reaksiyon olabileceğini düşünüyorlar. Hastanın daha önce benzer bir durum yaşamadığı öğreniliyor.\n\n18. Botulizm\nÖykü:\n42 yaşında erkek hasta, birkaç gün önce ev yapımı bezelye konservesi tükettikten sonra halsizlik, mide bulantısı, karın ağrısı şikayetleri başlamış. Yediğinin midesine dokunduğunu düşünerek önemsememiş. Zamanla çift görme, yutma güçlüğü, konuşmasında peltekleşme, ellerinde ve bacaklarında güçsüzlük şikâyetleri başlayınca endişe ederek acil servise müracaat etmiş. Hastanın göz kapakları düşük, konuşması ise anlaşılmaz halde. Halsiz ve endişeli görünüyor. Yakınları, hastanın son 2 gündür giderek kötüleştiğini, evde tek başına yürüyemez hale geldiğini anlatıyorlar.\n\n\n19. Brown-Sequard Sendromu\nÖykü:\n29 yaşında erkek hasta, kesici-delici alet yaralanması sonrası acil servise getiriliyor. Belden aşağıya yayılan ağrı ve güçsüzlük şikâyeti mevcut. Yaralanma sağ lomber bölgede. Olaydan sonra sağ bacağında kuvvet kaybı başladığını, sol bacağında ise ağrı ve sıcaklık hissini kaybettiğini söylüyor. Yakınları, hastanın yürümekte zorlandığını belirtiyor. Hastanın bilinci açık, ancak çok endişeli. Ayağa kalkmak istediğinde dengesini kaybediyor. Sık sık idrar kaçırma hissettiğini, sırtında çok şiddetli bir ağrı olduğunu ifade ediyor. Yakınları, hastanın olaydan önce tamamen sağlıklı olduğunu vurguluyor. \n\n20. Bruselloz\nÖykü:\n46 yaşında erkek hasta, halsizlik, yüksek ateş, gece boyu yoğun terleme, kas ve eklem ağrıları şikayetleriyle acil servise başvuruyor. Son haftalarda başlayan iştahsızlık ve halsizlik tarif ediyor. Hastanın çiftçilik ve hayvancılık yaptığı, yoğurt ve peynir üreterek pazarlarda sattığı öğreniliyor. Halsiz, terli ve bitkin görünümde. Bel ve diz ağrılarından yakınıyor. Eşi, hastanın son günlerde çok iştahsız olduğunu ve belirgin kilo kaybettiğini söylüyor. \n\n21. Buerger Hastalığı\nÖykü:\n39 yaşında erkek hasta, bacak ağrısı ve yürüme güçlüğü nedeniyle acil servise başvuruyor. Yaklaşık 20 yıldır, günde ortalama 2 paket sigara kullandığı öğreniliyor. 2 hafta önce ayak parmaklarında morarma ve soğukluk fark etmiş. Hasta, yürüdüğünde bacaklarında şiddetli ağrı olduğunu ve durmak zorunda kaldığını söylüyor. Ellerinde de soğukluk ve uyuşma hissi mevcut. Ayak parmak uçlarında küçük yaralar ve koyu renk değişiklikleri gözleniyor. Yakınları, hastanın sık sık sigarayı bırakmaya çalıştığını ama bir türlü başaramadığını belirtiyor. Hasta sürekli bacaklarını ovuşturuyor. Geceleri ağrıdan uyuyamadığını ifade ediyor. \n\n\n\n\n\n22. Cushing Sendromu\nÖykü:\n42 yaşında kadın hasta, halsizlik ve kaç güçsüzlüğü şikayetleriyle acil servise başvuruyor. Son birkaç aydır adet düzensizliği yaşadığını, sürekli bitkin hissettiğini ve bu yüzden moralinin çok bozuk olduğunu ifade ediyor. Geceleri uyumakta zorlandığını, gün içerisinde ise sürekli yorgun hissettiğini söylüyor. Kollarında ve bacaklarında morluklar oluştuğunu, saçlarının dökülmeye başladığını ve cildinde çizgilenmeler olduğunu belirtiyor. Son zamanlarda tatlı yeme isteğinin arttığını, evde yaptığı tansiyon ölçümlerinde sık sık yüksek değerler çıktığını söylüyor. Eşi, hastanın yüzünün yuvarlaklaştığını, kendini mutsuz hissettiğini ve ruh halinde dalgalanmalar olduğunu ifade ediyor. Hasta bitkin görünüyor, otururken sık sık sırtını ovuşturuyor. \n\n23. Dekompresyon Hastalığı\nÖykü:\n34 yaşında erkek hasta, tüplü dalış sonrası eklem ağrısı ve halsizlik şikâyetleriyle arkadaşı tarafında acil servise getiriliyor. Başlangıçta dalışa bağlı yorgunluk zannetmişler. Daha sonra hastada göğüs ağrısı ve öksürük gelişmiş. Arkadaşı, hastanın sudan çıktıktan kısa süre sonra yürüyemez hale geldiğini söylüyor. Vücudunda kaşıntı ve döküntü ortaya çıkmış. Konuşurken nefes nefese kalıyor. Baş ağrısı, halsizlik, sersemlik ve ellerinde uyuşma hissi de tarif ediyor. Tekne ile kıyıya gelirken deniz tuttuğunu, şikayetlerinin buna bağlı olduğunu söylüyor. \n\n24. Deliryum\nÖykü:\n76 yaşında erkek hasta, pnömoni tanısı ile göğüs hastalıkları kliniğinde bir süredir yatarak tedavi görmekte iken ani bilinç değişikliği gelişmiş. Öncesinde oryante olan hasta aniden çevresini tanıyamaz hale gelmiş. Gece boyunca huzursuzluk, agresif davranışlar ve hiperaktivite gözlenmiş. Dalgın ve çeresine ilgisiz olduğu görülüyor. Kızı, 3 gün önce hastanın antibiyotik ilaçlarının değiştiğini, şikayetlerinin buna bağlı olduğunu söylüyor. Hasta, bazen net konuşuyor, bazen anlamsız cümleler kuruyor. Yatakta otururken elleriyle havada bir şeyler yakalamaya çalışıyor. Hemşireler, hastanın yemek yemeyi reddettiğini ve sürekli yataktan kalkmaya çalıştığını ifade ediyor.\n\n\n\n\n\n\n25. Divertikülit\nÖykü:\n61 yaşında kadın hasta, 3 gündür süren karın ağrısı ve yüksek ateş nedeniyle acil servise getiriliyor. Ağrı karnın sol alt kadranında yoğunlaşmış. Başlangıçta hazımsızlık olduğunu düşünerek evdeki ismini hatırlayamadığı mide ilaçlarından birini kullanmış ama fayda görmemiş. Bulantı ve iştahsızlık tarif ediyor. Son 24 saatte ateşi yükselmiş, gece uyuyamamış. Yakınları, hastanın tuvalete çıkarken zorlandığını söylüyor. Bitkin ve huzursuz olduğu, karnını tutarak ve zorlanarak yürüdüğü gözlemleniyor. Yaklaşık 1 haftadır kabızlık şikâyeti olduğu öğreniliyor. Israrla gaz sancısı olduğunu ve gaz giderici verilirse rahatlayacağını söylüyor.\n\n\n26. Diyabetik Ketoasidoz\nÖykü:\n24 yaşında, tip 1 diabetes mellitus tanısı ile insülin tedavisi alan kadın hasta, 2 gün önce başlayan bulantı, kusma ve karın ağrısı şikâyetiyle acil servise başvuruyor. Erkek arkadaşı, hastanın insülin iğnelerini aksattığını söylüyor. Hasta, hiç iştahının olmadığını, çok susadığını, sürekli su içme isteği olduğunu ancak su içse de susuzluk hissinin bir türlü geçmediğini, sık sık idrara çıkma isteğinin olduğunu ifade ediyor. Ağzından gelen yoğun ve keskin bir koku fark ediliyor. Halsiz, yorgun ve uykulu görünüyor, sorulan sorulara geç yanıt veriyor. Derin ve hızlı nefes alıp verdiği gözlemleniyor.\n\n27. Eklampsi\nÖykü:\n29 yaşında gebe kadın, 34. gebelik haftasında gelişen nöbet nedeniyle acil servise getiriliyor. Nöbet geçirmeden kısa süre önce baş ağrısı, bulanık görme ve karın ağrısı şikayetleri olmuş. Eşi, hastanın birkaç gündür yüzünde ve ellerinde şişlikle olduğunu söylüyor. Nöbet sırasında bilinci tamamen kapanmış, vücudunda yaygın kasılmalar olmuş. Ambulansla getirildiğinde bilincinin bulanık ve konuşmalarının yavaş olduğu gözlemleniyor. Yüzünde belirgin ödem mevcut. 2 hafta önce yapılan rutin kontrol muayenesinde tansiyonunun yüksek olduğu öğreniliyor. Hasta sürekli gözlerini ovuşturuyor ve çok huzursuz görünüyor. Bebeğin hareketlerini az hissettiğini söyleyerek ağlıyor.\n\n\n\n\n\n28. Ektopik Gebelik Rüptürü\nÖykü:\n31 yaşında kadın hasta, ani başlayan şiddetli alt karın ağrısı ve bayılma şikâyetiyle acil servise getiriliyor. Son adetinde gecikme olduğu öğreniliyor. Ağrı önce hafif başlamış, sonra hızla şiddetlenmiş. Kusma ve yoğun terleme eklenmiş. Yolda bilinci bulanık hale gelmiş. Cildinin çok soluk olduğu ve belirgin bir halsizliği olduğu görülüyor. Eşi, hastanın son günlerde hafif lekelenme tarzı vaginal kanaması olduğunu söylüyor. Hasta sürekli karnını tutuyor ve “içim parçalanıyor” ifadesini kullanıyor. Birkaç gün önce gebelik testi yaptığını, sonucunun pozitif çıktığını, ancak sonucu eşiyle henüz paylaşmadığını anlatıyor. Konuşmaları kısa ve ağrısı nedeniyle kesik kesik.\n\n\n29. Geçici İskemik Atak\nÖykü:\n63 yaşında erkek hasta, yaklaşık 20 dakika kadar süren konuşma bozukluğu ve sağ elinde güçsüzlük yaşamış. Şikâyetleri kendiliğinden düzelmiş. Yakınları, hastanın olay sırasında bilincinin açık olduğunu ancak cümle kurmakta zorlandığını, peltek konuştuğunu söylüyor. Evde tansiyonu yüksek ölçülmüş. Hasta, şikâyetleri geçince doktora gitmek istememiş. Son 1 aydır baş ağrısı ve bazen görmede bulanıklık yaşıyormuş. Yaklaşık 40 yıldır, günde ortalama 1 paket sigara içtiği ve hipertansiyon tanısı ile medikal tedavi gördüğü öğreniliyor. Hastanın aktif bir yakınması kalmamış ancak endişeli görünüyor. Konuşurken sık sık “biraz önce elim tutmadı, konuşamadım’’ diyor. Yürüyüşünde hafif dengesizlik olduğu gözlemleniyor.\n\n30. Gonokokal Septik Artrit\nÖykü:\n26 yaşında kadın hasta, halsizlik, titreme, iştahsızlık, sol dizinde ağrı, şişlik ve kızarıklık nedeniyle acil servise geliyor. Yürümekte zorlandığı görülüyor. Son 3 gündür idrar yaparken yanma ve vaginal akıntı şikayetleri olduğunu söylüyor. Yakınları, hastanın bacağında birkaç gündür ağrı olduğunu ve aksayarak yürüdüğünü söylüyor. Hasta konuşurken sürekli “dizim patlayacak gibi” ifadesini kullanıyor. Karın ve sırt bölgelerinde birkaç yerde döküntü olduğu görülüyor. 1 ay kadar önce cinsel yolla bulaşan hastalık tanısıyla tedavi gördüğü öğreniliyor.\n\n\n\n\n\n31. Guillain-Barre Sendromu\nÖykü:\n37 yaşında erkek hasta, 1 haftadır süren her iki bacakta güçsüzlük ve uyuşma şikâyetiyle acil servise başvuruyor. Öncesinde üst solunum yolu enfeksiyonu geçirmiş. İlk günlerde şikayetlerinin yoğun iş temposuna bağlı yorgunluktan kaynaklandığını düşünmüş. Şikâyetleri giderek ilerlemiş, yürümekte zorlanmaya başlamış. Yakınları, son 2 gündür hastanın ellerinde de güçsüzlük başladığını, geceleri yoğun öksürükle uyandığını söylüyor. Hasta yorgun ve endişeli görünüyor. Merdiven çıkarken çok zorlandığını anlatıyor. Konuşurken nefes almakta güçlük çektiğini ifade ediyor. \n\n\n32. HELLP Sendromu\nÖykü:\n30 yaşında, 32 haftalık gebe, şiddetli baş ağrısı, bulantı ve sağ üst kadranda karın ağrısı şikayetleriyle acil servise getiriliyor. Son günlerde yüzünde ve ellerinde şişlik fark etmiş. Evde tansiyonu birkaç kez 160/100 mmHg ölçülmüş. Hasta, son günlerde görmede bulanıklık ve ışık çakmaları olduğunu söylüyor. Konuşurken bitkin, sürekli “başım çatlıyor” diyor. Karnındaki bebeğin hareketlerinin azaldığını belirtiyor. Yakınları, hastanın ilk gebeliği olduğunu ve son haftalarda stresli olduğunu ifade ediyor. Hasta çok huzursuz, yemek yemeyi reddediyor, sürekli karnını tutarak ağlıyor. Skleralarının sarı görünümde olduğu tespit ediliyor.\n\n33. Henoch-Schönlein Purpurası\nÖykü:\n12 yaşında erkek hasta, karın ağrısı ve diz eklemlerinde şişlik nedeniyle acil servise getiriliyor. Ailesi, 2 gün önce hastanın dizlerinde şişlik olduğunu fark ettiklerini söylüyor. Kramp tarzında karın ağrısına, zaman zaman kusma eşlik etmiş. İştahı azalmış, son 24 saatte halsizleşmiş. Ailesi, hastanın bacaklarında morluklar olduğunu fark etmiş. Çocuk sürekli karın ağrısından şikâyet ediyor, yürümekte zorlanıyor. Gece boyunca uykusuz kalmış. Konuşurken halsiz, sık sık annesinin elini tutuyor. Birkaç gün önce boğaz enfeksiyonu geçirdiği, okulda sürekli baş ağrısından yakındığı öğreniliyor.\n\n\n\n\n\n34. Herpes Simpleks Ensefaliti\nÖykü:\n41 yaşında kadın hasta, 3 gündür devam eden yüksek ateş, baş ağrısı ve bilinç bulanıklığı nedeniyle acil servise getiriliyor. Eşi, son 24 saatte hastanın konuşmalarının bozulduğunu ve zaman zaman anlamsız cümleler kurduğunu söylüyor. Hasta evde bir kez nöbet geçirmiş. Başlangıçta soğuk algınlığı olduğunu düşünerek parasetamol tablet kullanmış. Hastanın çevreyle iletişimi zayıf, sürekli başını tutuyor, ara ara çığlık atıyor. Eşi, hastanın kısa süre önce uçuk çıkardığını belirtiyor. Son haftalarda iştahının da azaldığı öğreniliyor. Hasta huzuruz ve sedyede kıvranır vaziyette yatıyor.\n\n35. Hiperkalemi\nÖykü:\n65 yaşında erkek hasta, iştahsızlık, halsizlik, kas güçsüzlüğü ve çarpıntı şikâyetleriyle acil servise getiriliyor. Kornik böbrek yetmezliği nedeniyle nefroloji polikliniği tarafından düzenli takip edildiği öğreniliyor. Oğlu, hastanın birkaç gündür idrar miktarının azaldığını söylüyor. Hastanın bitkin durumda olduğu, kaslarında seğirmeler olduğu görülüyor. Konuşurken zorlanıyor, sık sık “kalbim sıkışıyor” ifadesini kullanıyor. Bacaklarında uyuşma hissettiğini, geceleri uyumakta zorlandığını söylüyor. \n\n36. Hiperkalsemi\nÖykü:\n58 yaşında kadın hasta, halsizlik, iştahsızlık, bulantı ve kabızlık şikayetleriyle acil servise getiriliyor. Son birkaç haftadır sık idrara çıkma ve susuzluk şikayetlerinin olduğunu söylüyor. Eşi, son günlerde hastanın davranışlarının değiştiğini, çok dalgın ve moralsiz olduğunu, gün içerisinde sık sık uyukladığını belirtiyor. Hasta, “bacaklarımda ağırlık var” diyerek yürümekte zorlandığını belirtiyor. 2 gün önce kemik ağrıları da başlamış. Konuşurken sık sık susuzluk hissinden yakınıyor.\n\n\n\n\n\n37. Hipertansif İntraserebral Kanama\nÖykü:\n67 yaşında erkek hasta, ani başlangıçlı şiddetli baş ağrısı, bulantı, kusma ve bilinç bulanıklığı nedeniyle acil servise getiriliyor. Eşi, hastanın konuşmasının bir anda bozulduğunu söylüyor. Yaklaşık 15 yıldır hipertansiyon nedeniyle iki ilaç kullandığını, ancak 1 aydır ilaçlarını yazdıramadıkları için tedavisini aksattığını itiraf ediyor. Evde ölçtükleri tansiyon değerinin 210/120 mmHg olduğunu belirtiyor. Hasta, baş dönmesi yaşayarak yere düşmüş ve kısa süreli bilinç kaybı yaşamış. Dalgın ve çevresine karşı ilgisiz olduğu görülüyor. Sürekli başını tutuyor, konuşmaları anlaşılmıyor. Sağ kolunu hareket ettirmekte zorlanıyor.\n\n38. Hipertansif Pulmoner Ödem\nÖykü:\n65 yaşında kadın hasta, ani gelişen şiddetli nefes darlığı ve  bol köpüklü balgam ile acil servise getiriliyor. Evde tansiyonu çok yüksek ölçülmüş. Hasta panik halinde, nefes almakta zorlanıyor. Sedyeye uzanamıyor, sürekli oturur pozisyonda kalmaya çalışıyor. Eşi, hastanın yüzünün bir anda morardığını ve boğulur gibi olduğunu söylüyor. Konuşurken tek kelimelik kısa yanıtlar veriyor. Her iki bacağında belirgin ödem mevcut. Şikayetlerinin baş ağrısı ve görme bulanıklığı ile başladığı öğrenliyor. Hastanın çok huzursuz olduğu görülüyor.\n\n39. Hiperviskozite Sendromu\nÖykü:\n59 yaşında erkek hasta, baş ağrısı, görme bulanıklığı ve halsizlik şikayetleriyle acil servise başvuruyor. Son günlerde burun kanamaları yaşadığını, yürürken sık sık sendelediğini, kendini sürekli yorgun hissettiğini söylüyor. Son birkaç haftadır kilo kaybı ve gece terlemesi de olduğunu belirtiyor. Hastanın konuşması yavaş, cildi solgun ve yüzünde hafif kızarıklık var. Elleri ve ayakları soğuk. Hasta sürekli ‘’başım zonkluyor’’ diyor. Yakınları, son günlerde sık sık uyuduğunu belirtiyor.\n\n40. Hipokalemi\nÖykü:\n48 yaşında kadın hasta, halsizlik, kas krampları ve çarpıntı şikâyetleriyle acil servise geliyor. 3 gün önce başlayan ishal öyküsü mevcut. Yakınları, hastanın birkaç gündür iştahsız olduğunu ve çok su içtiğini söylüyor. Hasta, sürekli bacaklarındaki kramplardan yakınıyor, geceleri uykudan uyandırdığını belirtiyor. Konuşurken ellerinde titreme olduğu fark ediliyor. Yürümekte zorlanıyor, başının döndüğünü söyleyerek oturmak istiyor. Morali çok bozuk ve endişeli görünüyor.\n41. Hipokalsemi\nÖykü:\n35 yaşında kadın hasta, ellerinde karıncalanma ve çarpıntı şikâyetleriyle acil servise geliyor. 10 gün önce guatr nedeniyle ameliyat olduğu öğreniliyor. Ameliyat sonrası, halsizlik ve ellerinde kasılmalar başladığını söylüyor. Hasta konuşurken sürekli ellerini ovuşturuyor. Parmaklarında kasılmalar olduğu görülüyor. Dudak çevresinde uyuşma hissettiğini belirtiyor. Gece boyunca yaşadığı kas krampları nedeniyle uyuyamamış. Panik halinde “ellerim kilitleniyor” diyor. Yürümekte zorlanıyor, sık sık oturuyor. Çevresine kaygılı gözlerle bakıyor.\n\n42. Horner Sendromu\nÖykü:\n54 yaşında erkek hasta, baş ve boyun ağrısı, sağ gözde kızarıklık ve göz kapağında düşüklük şikayetleriyle acil servise başvuruyor. Şikâyetlerinin birkaç gündür olduğunu söylüyor. 2 gün önce de sağ gözünde küçülme olduğunu fark etmiş. Ayrıca kulak çınlaması hissettiğini belirtiyor. Boyun ağrısının 3 hafta önce geçirdiği araç içi trafik kazasından beri devam ettiğini belirtiyor. Çok endişeli ve konuşurken sürekli gözlerindeki asimetriyi vurguluyor. Hastanın terli olduğu, ancak yüzünün sağ tarafının kuru olduğu gözlemleniyor.\n\n\n43. Karbonmonoksit Zehirlenmesi\nÖykü:\n29 yaşında erkek hasta, evde annesi tarafından baygın halde bulunmuş. Ambulansla acil servise getirilen hastanın, baş ağrısı, bulantı ve sersemlik şikayetleri mevcut. Hastanın annesi de eve girdikten sonra, bir süre baş dönmesi yaşadığını, açık havaya çıktığında şikayetinin geçtiğini belirtiyor. Hasta, gece tuvalete gitmek için kalktığında, baş ağrısı ve baş dönmesi hissetmiş ama önemsememiş. Cildi hafif kırmızı görünümde. Yavaş konuştuğu ve dalgın olduğu gözlemleniyor. Sürekli uyumak istediğini belirtiyor. Hafif ajite ve ellerinde titreme olduğu görülüyor. Fabrikada gece vardiyasını bitirip, sabah işten çıktığını, eve geldiğinde üşümemek için sobaya bir torba kömür atıp yattığını söylüyor.\n\n\n\n\n\n\n\n44. Karotis Arter Diseksiyonu\nÖykü:\n46 yaşında kadın hasta, ani gelişen baş ağrısı, boyun ağrısı ve konuşma bozukluğu nedeniyle acil servise getiriliyor. Birkaç gün önce spor salonunda ağır egzersiz yaptığı öğreniliyor. Çok şiddetli baş ağrısına eşlik eden sağ gözünde görme bulanıklığı oluşmuş. Konuşurken zorlandığı ve uygun kelimeleri seçemediği görülüyor. Boynunda ağrı ve sertlik tarif ediyor. Yakınları, hastanın son günlerde sağ kulağında çınlama hissettiğini söylüyor. Hasta sürekli endişeli bir şekilde sağ elindeki uyuşmadan şikâyet ediyor.\n\n45. Kırım Kongo Kanamalı Ateşi\nÖykü:\n37 yaşında erkek hasta, yüksek ateş, baş ağrısı ve kas ağrıları nedeniyle acil servise geliyor. Hasta halsiz, bitkin ve iştahsız. Tekrarlayan burun kanamaları olduğunu söylüyor. Cildinde küçük morluklar olduğu dikkat çekiyor. Konuşurken dalgın ve yorgun görünüyor. Yakınları, hastanın gece boyunca yoğun terlediğini söylüyor. Sedyede karnını tutarak yatıyor. Hastanın meralarda küçükbaş hayvan çobanlığı yaparak geçimini sağladığı öğreniliyor.\n\n46. Klostridiyal Miyonekroz\nÖykü:\n52 yaşında erkek hasta, giderek artan bacak ağrısı, şişlik ve kötü kokulu akıntı nedeniyle acil servise başvuruyor. Hastanın hurda metal toplayıcılığı yaptığı, birkaç gün önce bacağını metal teneke keserek yaralandığı öğreniliyor. Ağrı başlangıçta hafifken kısa sürede şiddetlenmiş. Hasta ateş ve halsizlik ve bacak ağrısı tarif ediyor. Bacak cildi morarmış ve gergin. Şişlik bölgesi elle muayene edildiğinde çıtırtı hissediliyor. Yakınları, hastanın son 24 saatte yürüyemez hale geldiğini söylüyor. \n\n47. Kolanjit\nÖykü:\n62 yaşında kadın hasta, yüksek ateş, titreme ve sağ üst kadranda karın ağrısı nedeniyle acil servise başvuruyor. İdrar renginde koyulaşma ve cildinde sararma olduğunu fark etmiş. Yakınları, hastanın son günlerde iştahsız olduğunu söylüyor. Gece boyunca yoğun terlediği ve karın ağrısının gittikçe şiddetlendiği öğreniliyor. Hasta, sedyede sürekli karnını tutarak yatıyor. 3 ay kadar önce safra kesesinde taş tespit edildiği öğreniliyor. Eşi, hastanın daha önce de birkaç kez benzer şikayetler yaşadığını anlatıyor.\n\n48. Kolesistit\nÖykü:\n56 yaşında kadın hasta, sağ üst kadranda şiddetli karın ağrısı nedeniyle acil servise geliyor. Mide bulantısı olduğunu ve birkaç kez kustuğunu söylüyor. Eşi, hastanın geçen sene safra kesesi taşı tanısı aldığını ve özellikle yağlı yemeklerden sonra karın ağrısı ve mide bulantısı şikayetlerinin olduğunu söylüyor. Son günlerde şikayetlerine yüksek ateş de eklenmiş. Hastanın karnını tutarak ve zorlanarak yürüdüğü görülüyor. Konuşurken sürekli ağrıdan yakınıyor. \n\n49. Kompartman Sendromu\nÖykü:\n28 yaşında erkek hasta, şiddetli sağ bacak ağrısı ve şişliği nedeniyle acil servise getiriliyor. 2 gün önce geçirdiği motosiklet kazası sonrası, tibia fraktürü nedeniyle sağ bacağına alçı uygulanmış. Ancak alçı sonrası giderek artan şiddette bacak ağrısı gelişmiş. Son birkaç saattir ağrıya uyuşma da eklenmiş. Gece boyunca ağrıdan uyuyamadığını ve ayağında soğukluk hissettiğini söylüyor. Ev arkadaşı, hastanın sağ ayağının şiş ve kızarık olduğunu, parmaklarını oynatmakta zorlandığını fark etmiş. Hasta terli ve huzursuz. Konuşmaları kısa ve endişeli, sürekli “bacağım patlayacak gibi” diye yakınıyor.\n\n50. Krup\nÖykü:\n3 yaşında erkek çocuk, ses kısıklığı, öksürük ve yüksek ateş nedeniyle acil servise getiriliyor. Öksürüğünün havlar tarzda olduğu gözlemleniyor. Annesi, çocuğun gece boyunca nefes almakta zorlandığını söylüyor. Çocuk annesine sarılmış ve huzursuz vaziyette. Nefes alırken stridor duyuluyor. Aksiller vücut ısısı 38,5°C olarak ölçülüyor. Çocuğun bitkin olduğu ve konuşmakta zorlandığı görülüyor. Annesi, çocuğun 2 gündür çok iştahsız olduğundan yakınıyor. Geceleri öksürük krizleri olduğunu ve bu nedenle hiç uyuyamadığını belirtiyor.\n\n\n\n\n\n\n\n51. Legionella Pnömonisi\nÖykü:\n62 yaşında erkek hasta, halsizlik, iştahsızlık, baş ağrısı, yüksek ateş, öksürük ve nefes darlığı şikâyetiyle acil servise getiriliyor. Geçen hafta, 5 gün süreyle şehir dışında bir otelde konakladığını, odasındaki klimadan dolayı üşüttüğünü söylüyor. Son 2-3 gündür öksürük ile yoğun balgam çıkışı başlamış. Eşi, hastanın zaman zaman anlamsız konuşmaları olduğunu söylüyor. Hastanın terli ve huzursuz olduğu, öksürük krizleri yaşadığı görülüyor. \n\n52. Meniere Sendromu\nÖykü:\n47 yaşında kadın hasta, tekrarlayan baş dönmesi atakları, sağ kulakta çınlama ve işitme kaybı şikâyetleriyle acil servise geliyor. Son baş dönmesi atağı yaklaşık 1 saat önce başlamış. Şiddetli baş dönmesi nedeniyle ayakta durmakta zorlandığı görülüyor. Hasta sürekli kulağındaki basınç hissinden yakınıyor. Son iki gündür mide bulantısı ve denge kaybı yaşadığını söylüyor. Çok huzursuz ve endişeli görünüyor. Konuşurken başını tutuyor ve sık sık gözlerini kapatıyor. Daha önce de 2-3 kez benzer ataklar yaşadığı öğreniliyor. Eşi, stresli dönemlerde hastanın şikâyetlerinin arttığını belirtiyor. \n\n53. Meningokoksemi\nÖykü:\n18 yaşında erkek hasta, yüksek ateş ve baş ağrısı şikâyetleriyle acil servise getiriliyor. Şikâyetlerinin son birkaç saat içinde hızla geliştiği öğreniliyor. Ailesi, hastanın sabah okula giderken başının ağrıdığını, eve döndüğünde ise kustuğunu ve cildinde çok sayıda kırmızı döküntü gördüklerini söylüyor. Hastanın çok halsiz ve huzursuz olduğu, bilincinin bulanık olduğu görülüyor. Sedyede sürekli sağa sola dönüyor. Cildinde morluklar ve küçük kırmızı döküntüler tespit ediliyor. \n54. Mezenter Arter İskemisi\nÖykü:\n71 yaşında kadın hasta, ani başlayan şiddetli karın ağrısı nedeniyle acil servise getiriliyor. Ağrı yemek sonrası başlamış ve giderek artmış. Kusma ve ishal şikayetleri de eklenmiş. Hasta ağrıdan dolayı sedyede kıvranır halde yatıyor. Yakınları, hastanın birkaç yıldır ritim bozukluğu nedeniyle ilaç kullandığını söylüyor. Hasta çok huzursuz, sürekli karnını tutuyor. Konuşurken zorlandığı görülüyor. Ağrı şiddetine rağmen batın muayenesinde bulguların belirgin olmadığı görülüyor. Hasta sürekli “içim yanıyor” diye yakınıyor. \n\n55. Miksödem Krizi\nÖykü:\n68 yaşında kadın hasta, şiddetli halsizlik ve bilinç bulanıklığı nedeniyle acil servise getiriliyor. Oğlu, annesini uykudan çok zor uyandırabildiğini söylüyor. Evde kombinin yüksek sıcaklıkta çalışmasına rağmen sürekli üşüdüğü öğreniliyor. Konuşmaları yavaş, ses tonu düşük, çevreye ilgisiz durumda. Yüzünün ödemli olduğu ve göz kapaklarının şiş olduğu görülüyor. Oğlu, hastanın Hashimato tanısıyla verilen ilacını düzenli kullanmadığından yakınıyor. Hasta sürekli titriyor ve yorgun görünüyor.\n\n56. Miyokardit\nÖykü:\n26 yaşında erkek hasta, göğüs ağrısı, halsizlik ve çarpıntı şikâyetleriyle acil servise müracaat ediyor. Göğüs ağrısı 3 gün önce başlamış. Son 24 saattir istirahat halinde de oluyormuş. Hasta, halsizliği nedeniyle günlük işlerini yapamadığını, ara ara ateşinin yükseldiğini, geceleri çok terlediğini söylüyor. Son günlerde merdiven çıkarken nefes darlığı yaşadığını belirtiyor. Konuşurken sık sık göğsünü tutuyor. 1 hafta önce grip benzeri bir hastalık geçirdiği öğreniliyor.\n\n57. Nekrotizan Fasiit\nÖykü:\n52 yaşında kadın hasta, sol bacağında şiddetli ağrı, şişlik ve kızarıklık nedeniyle acil servise başvuruyor. Şikâyetleri 2 gün önce başlamış ve artarak devam etmiş. Eşi, bu tablonun düşmeye bağlı hastanın sol diz altında oluşan küçük bir yaralanma sonrasında geliştiğini söylüyor. Ağrı kısa sürede dayanılmaz hale gelmiş. Hastanın çok halsiz olduğu, bacağını hareket ettirmekte zorlandığı, dokunulduğunda şiddetli ağrı ve hassasiyet olduğu görülüyor. Sol bacak cildinde kızarıklık, yer yer morluk ve kötü koku mevcut. Hasta ağlıyor ve çok endişeli görünüyor.\n\n58. Orbital Selülit\nÖykü:\n9 yaşında erkek çocuk, sağ gözde şişlik, kızarıklık ve yüksek ateş nedeniyle acil servise getiriliyor. Şikâyetlerinin 2 gün önce başladığı öğreniliyor. Çocuğun sağ gözünü açmakta zorlandığı, göz hareketlerinin kısıtlı olduğu, göz çevresinin kızarık ve şiş olduğu görülüyor. Annesi, çocuğun 1 hafta önce sinüzit nedeniyle ilaç tedavisi gördüğünü söylüyor. \n\n59. Otoimmün Hemolitik Anemi\nÖykü:\n36 yaşında kadın hasta, halsizlik, baş ağrısı, baş dönmesi ve ciltte solukluk nedeniyle acil servise başvuruyor. Son günlerde çarpıntı ve idrar renginde koyulaşma şikayetleri olduğunu belirtiyor. Eşi, hastanın çok çabuk yorulduğunu söylüyor. Hasta, halsizliği nedeniyle işe gidemediğini, dinlenmeye ihtiyacı olduğunu anlatıyor. Cilt renginde sararma olduğu fark ediliyor. Birkaç gün önce soğuk algınlığı geçirdiği öğreniliyor.\n\n60. Over Kist Rüptürü\nÖykü:\n27 yaşında kadın hasta, ani başlayan karın ağrısı şikayetiyle acil servise geliyor. Ağrı karnın sağ alt kadranında başlamış ve kısa sürede şiddetlenmiş. Daha sonra şikayetlerine bulantı ve baş dönmesi de eklenmiş. Hastanın çok huzursuz olduğu, yürümekte zorlandığı ve sürekli karnını tuttuğu görülüyor. Eşi, hastanın ağrıdan dolayı gece boyunca uyuyamadığını söylüyor. Adet düzensizliği öyküsü olduğu öğreniliyor. Hasta sürekli “karnıma bıçak saplanmış gibi” diyerek ağrısını tarif ediyor. Konuşmaları kısa ve kesik kesik.\n\n61. Özofagus Rüptürü\nÖykü:\n58 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı nedeniyle acil servise getiriliyor. Bir gece önce aşırı alkol aldıktan sonra birkaç kez şiddetli şekilde kusmuş. Kusmalar sonrası, sırtına da yayılım gösteren, göğüs kafesinin tam ortasında bıçak saplanır tarzda bir ağrı hissetmiş. Hasta, terli, solgun ve bitkin görünüyor. Yutkunmada güçlük ve boğaz ağrısı tarif ediyor. Eşi, hastanın mide sorunları nedeniyle uzun yıllardır antiasit ilaçlar kullandığını belirtiyor.\n\n62. Panik Atak\nÖykü:\n26 yaşında kadın hasta, ani başlayan çarpıntı, nefes darlığı ve göğüs ağrısı nedeniyle acil servise getiriliyor. Şikâyetleri şehirler arası otobüs yolculuğunda başlamış. Kalbinin çok hızlı attığını ve boğulacak gibi olduğunu söylüyor. Konuşurken elleri titriyor. Baş dönmesi ve göğüste sıkışma hissi tarif ediyor. Birkaç kez “öleceğim galiba” ifadesini kullanıyor. Erkek arkadaşı, tartıştıklarını ve sonrasında hastanın şikayetlerinin aniden başladığını belirtiyor.\n\n63. Peptik Ülser Perforasyonu\nÖykü:\n49 yaşında erkek hasta, ani başlayan karın ağrısı nedeniyle acil servise getiriliyor. Ağrı epigastrik bölgede başlamış, kısa süre içerisinde tüm karına yayılmış. Hasta, ağrıyı bıçak saplanır tarzda tarif ediyor. Gece yarısı aniden ağrıyla uyanmış. Daha sonra 2 kez kusmuş. Bitkin ve huzursuz görünüyor. 25 yıllık, günde 1 paket sigara kullanımı öyküsü mevcut. Eşi, hastanın midesindeki ekşime ve yanma şikayetleri nedeniyle sık sık ilaç kullandığını söylüyor. Konuşurken çok kısa cümleler kuruyor. Şiddetli karın ağrısı nedeniyle oturup kalkmakta zorlanıyor. \n\n64. Perikardiyal Tamponad\nÖykü:\n56 yaşında erkek hasta, göğüs ağrısı ve nefes darlığı şikayetleriyle acil servise getiriliyor. Şikâyetleri 2 gün önce geçirdiği araç içi trafik kazası sonrası başlamış ve artarak devam etmiş. Gece uykusundan şiddetli nefes darlığı nedeniyle uyanmış. Dudaklarında morarma olduğu, konuşurken çok zorlandığı, kısa cümleler kurduğu görülüyor. Sedyeye yatırıldığında, oturmak istediğini söylüyor. Eşi, son günlerde hastanın ayaklarında şişlik olduğunu söylüyor. Hasta, panik halinde ve göğsünü tutarak sürekli “nefes alamıyorum” diyor. \n\n65. Periorbital Selülit\nÖykü:\n7 yaşında kız çocuk, sağ göz kapağında şişlik ve kızarıklık nedeniyle acil servise getiriliyor. Şikâyetleri önceki akşam başlamış ve sabaha kadar daha da artmış. Annesi, çocuğun burnunun tıkalı olduğunu ve gece ateşinin yükseldiğini söylüyor. Çocuk gözünü açmakta zorlanıyor ve sürekli ağlıyor. Göz çevresi kızarık, şiş ve ısı artışı mevcut. Son 1 sene içerisinde 3 kez sinüzit tanısıyla tedavi gördüğü öğreniliyor.\n\n66. Pilor Stenozu\nÖykü:\n5 haftalık erkek bebek, tekrarlayan kusma şikayeti nedeniyle acil servise getiriliyor. Anne, bebeğin her beslenmeden kısa süre sonra fışkırır tarzda kustuğunu söylüyor. Son günlerde kilo alamadığı fark edilmiş. Bebek sürekli emmek istiyormuş ancak beslendikten kısa süre sonra kusuyormuş. Anne, bebeğin kusmalarının çok şiddetli olduğunu, idrar miktarının azaldığını, bezini eskisi kadar ıslatmadığını belirtiyor. Bebek çok huzursuz ve ağlıyor. Karnında dalgalanma hareketi olduğu tespit ediliyor. \n\n67. Portal Ven Trombozu\nÖykü:\n49 yaşında erkek hasta, karın ağrısı şikayetiyle acil servise geliyor. Son günlerde iştahsız olduğunu ve kilo kaybettiğini anlatıyor. Hastanın Hepatit C nedeniyle takip edildiği öğreniliyor. Karın ağrısının sağ üst kadranda daha şiddetli olduğu, cildinde sararma ve bacaklarında şişlik olduğu tespit ediliyor. Hasta gece uyuyamamış, yorgun ve endişeli görünüyor. Konuşurken sürekli karnını tutuyor.\n\n68. Preeklampsi\nÖykü:\n29 yaşında, 30 haftalık gebe, baş ağrısı, bulanık görme ve karın ağrısı şikayetleriyle acil servise getiriliyor. Eşi, son günlerde hastanın yüzünün ve ellerinin ödemli olduğunu, evde yaptıkları ölçümlerde tansiyonunun çok yüksek çıktığını söylüyor. Hasta çok halsiz ve endişeli. Kısa cümleler kuruyor, sürekli “gözümün önünde ışık çakıyor” diyor. Gece giderek artan şiddette baş ağrısı nedeniyle uyuyamamış. Bebeğinin hareketlerini az hissettiğini söyleyerek ağlıyor.\n\n69. Primer Hiperaldosteronizm\nÖykü:\n43 yaşında erkek hasta, baş ağrısı, halsizlik ve tekrarlayan kas krampları nedeniyle acil servise geliyor. Son günlerde çok su içtiğini ve çok sık idrara çıktığını söylüyor. Evde yaptığı ölçümlerde, tansiyonunun sürekli yüksek olduğunu tespit etmiş. Endişeli ve huzursuz görünüyor. Hasta, sık sık “bacaklarım kasılıyor” diyor. İş arkadaşı, hastanın son günlerde çok sinirli olduğunu ve çalışma performansının çok düştüğünü anlatıyor. \n\n70. Psikotik Atak\nÖykü:\n24 yaşında erkek hasta, son günlerde ailesi tarafından tespit edilen garip davranışları nedeniyle acil servise getiriliyor. Ailesi, hastanın birkaç gündür geceleri hiç uyumadığını, evde kendi kendine konuştuğunu söylüyor. Hasta sürekli kendisini takip eden kişilerden bahsediyor. Konuşurken çok endişeli ve gergin görünüyor. Son 2 gündür yemek yemeyi de reddettiği öğreniliyor. Annesi, oğlunun okul başarısında belirgin bir düşüş olduğunu, bazı günler kendisini odasına kapatarak okula gitmediğini belirtiyor. Hasta sık sık “beni öldürmek istiyorlar” diye bağırıyor. \n71. Psödomembranöz Enterokolit\nÖykü:\n64 yaşında kadın hasta, son 1 haftadır devam eden halsizlik, iştahsızlık, karın ağrısı ve ishal şikâyetleriyle acil servise getiriliyor. Yakınları, hastanın 2 hafta kadar önce boğaz enfeksiyonu nedeniyle antibiyotik tedavisi gördüğünü söylüyor. Hasta, günde yaklaşık 10 kez, bol sulu ve kötü kokulu dışkıladığını belirtiyor. Bitkin halde ve ağrısı nedeniyle sürekli karnını tutuyor. Ağzının kuruduğunu ve mide bulantısı olduğunu söylüyor.\n\n72. Pulmoner Emboli\nÖykü:\n59 yaşında kadın hasta, ani başlangıçlı nefes darlığı ve göğüs ağrısı nedeniyle acil servise getiriliyor. Eşi, hastanın konuşurken aniden nefesinin kesildiğini ve yere oturmak zorunda kaldığını söylüyor. Birkaç gün önce ABD’den Türkiye’ye uçakla seyahat ettiği öğreniliyor. Hasta, kısa cümlelerle, kesik kesik konuşuyor. Panik halinde “nefesim kesiliyor” diyor. Dudaklarının morardığı ve her iki bacağında şişlik olduğu görülüyor. Sedeyeye yatırılmak istendiğinde, boğulacak gibi olduğunu söylüyor. \n\n73. Pulmoner Hipertansiyon\nÖykü:\n48 yaşında kadın hasta, nefes darlığı ve çarpıntı şikâyetleriyle acil servise başvuruyor. Son birkaç aydır merdiven çıkarken zorlandığını, çok çabuk yorulduğunu söylüyor. Göğsünde sıkışma hissettiğini belirtiyor. 1 haftadır ayak bileklerinde şişlik varmış. Konuşurken nefes nefese kalıyor. Eşi, hastanın kısa süreli yürüyüşlerde bile bayılacak gibi olduğunu söylüyor. Hasta, sedyeye yatmak istemiyor, sürekli oturmak istediğini söylüyor. Şiddetli öksürüğü mevcut. Cilt rengi solgun, dudaklarında morarma olduğu görülüyor.\n\n74. Rabdomiyoliz\nÖykü:\n36 yaşında erkek hasta, her iki bacağında şiddetli ağrı ve idrarında koyulaşma şikâyetleriyle acil servise geliyor. Eşi, hastanın 1 gün önce Gelibolu maratonunda koştuğunu, şikâyetlerinin koşudan sonra başladığını söylüyor. Her iki bacağında ağrı ve hassasiyet belirgin. Hasta, “bacaklarım alev alev yanıyor” diye yakınıyor. İdrarının kahverengi olduğunu anlatıyor. Halsiz ve yorgun görünüyor. Gece boyunca ağrıdan ve bacak kramplarından dolayı uyuyamamış. \n\n75. Raynaud Fenomeni\nÖykü:\n32 yaşında kadın hasta, ellerinde üşüme ve renk değişikliği şikâyetleriyle acil servise başvuruyor. Özellikle soğuk havalarda her iki el parmaklarının beyazlaştığını ve hatta bazen morardığını söylüyor. Sıcak bir ortamda bulunduğunda parmaklarda kızarma oluyormuş. Son günlerde parmak uçlarında uyuşmalar da olmaya başladığını ekliyor. Hasta endişeli görünüyor ve sürekli ellerini ovuşturarak, ‘’ellerim üşüyor’’ diye yakınıyor. Eşi, hastanın son günlerde yazı yazmakta da zorlandığını belirtiyor.\n\n76. Restriktif Kardiyomiyopati\nÖykü:\n55 yaşında erkek hasta, nefes darlığı, çarpıntı ve bacaklarda şişlik şikâyetleriyle acil servise geliyor. Şikâyetleri 3 ay kadar önce başlamış ve artarak devam etmiş. Merdiven çıkmakta dahi zorlandığını ve nefes nefese kaldığını söylüyor. Son birkaç gündür geceleri nefes darlığıyla uyanmaya başlamış. Halsizliği belirgin. Konuşurken sık sık göğsünü tutuyor ve nefes nefese kalıyor. Dudaklarında morarma olduğu görülüyor. Eşi, hastanın birkaç aydır çok iştahsız olduğunu ve belirgin kilo kaybettiğini söylüyor. \n\n77. Retina Dekolmanı\nÖykü:\n52 yaşında erkek hasta, sol gözünde ışık çakmaları ve hemen sonrasında gelişen ani görme kaybı nedeniyle acil servise başvuruyor. Hasta, “gözüme sanki perde indi” diyor. Son 1 haftadır gözünün önünde sinek uçuşmaları olduğunu belirtiyor. Görme kaybı çok ani gelişmiş. Eşi, uzağı görmekte zorluk çektiği için gözlük reçete edildiğini, ancak gözlük kullanmayı sevmediğini belirtiyor. Hasta, çok endişeli bir şekilde sürekli gözünü ovuşturuyor.\n\n78. Santral Diyabetes İnsipidus\nÖykü:\n29 yaşında erkek hasta, aşırı susama hissi ve sık idrara çıkma şikâyetleriyle acil servise başvuruyor. Günde 8-10 litre kadar su içtiğini, ancak susuzluk hissinin bir türlü geçmediğini söylüyor. Gece boyunca defalarca tuvalete gittiğini belirtiyor. Annesi, oğlunun kısa sürede çok kilo kaybettiğini anlatıyor. Hastanın dudakları kurumuş ve cildi solgun görünümde. Baş ağrısı ve halsizliği nedeniyle işe gidememiş. Birkaç ay önce halı sahada futbol oynarken kafa travması geçirdiği öğreniliyor.\n79. Sepsis\nÖykü:\n68 yaşında kadın hasta, yüksek ateş ve bilinç bulanıklığı nedeniyle acil servise getiriliyor. Hastanın, yaklaşık 3 gündür öksürük ve balgam çıkarma şikâyetleri olduğu öğreniliyor. Sabah kahvaltısında iştahsız olduğu için birşey yiyememiş ve sonrasında aniden fenalaşmış. Çok halsiz, terli ve solgun olduğu, hızlı nefes alıp verdiği görülüyor. Eşi, hastanın neredeyse hiç idrara çıkmadığını söylüyor. Hastanın çok huzursuz olduğu ve sık sık gözlerini kapattığı gözlemleniyor.\n\n80. Serotonin Sendromu\nÖykü:\n34 yaşında kadın hasta, yoğun terleme ve huzursuzluk şikâyetleriyle acil servise getiriliyor. Hastanın, 1 hafta kadar önce antidepresan ilaç kullanmaya başladığı öğreniliyor. Kol, bacak ve mimik kaslarında seğirmeler olduğu ve yoğun terlediği görülüyor. Konuşurken anlamsız cümleler kuruyor. Eşi, hastanın son 24 saattir hiç uyumadığını belirtiyor. Göz bebeklerinin genişlemiş olduğu tespit ediliyor. Hasta, panik halinde ve “yerimde duramıyorum” diyerek sürekli hareket ediyor.\n\n81. Solunumsal Şarbon\nÖykü:\n42 yaşında erkek hasta, yüksek ateş, öksürük ve göğüs ağrısı şikayetleriyle acil servise getiriliyor. Şikâyetleri halsizlik, burun akıntısı, kas ve eklem ağrıları ile başlamış. Ancak son 2 gündür öksürük, nefes darlığı ve göğüs ağrısı da başlamış. Birkaç kez kanlı balgam çıkarmış. Hastanın, tarım ve büyükbaş hayvancılık yaptığı öğreniliyor. Halsiz ve bitkin olduğu, zorlanarak konuştuğu görülüyor. Eşi, hastanın gece boyunca uyuyamadığını söylüyor. Endişeli bir şekilde sürekli göğsünü tuttuğu görülüyor.\n\n82. Splenik Rüptür\nÖykü:\n27 yaşında erkek hasta, araç içi trafik kazası sonrası başlayan şiddetli karın ağrısı ve halsizlik nedeniyle acil servise getiriliyor. Kaza yerinde kısa süreli bir bayılma yaşadığı öğreniliyor. Cilt renginin soluk, çok terli ve huzursuz olduğu gözlemleniyor. Hasta çok endişeli görünüyor. Kısa cümlelerle ve sürekli karnını tutarak konuşuyor. Ağrının karnın sol üst kadranında daha şiddetli olduğu, sol omuza ve sırta yayılım gösterdiği tespit ediliyor.\n83. Status Astmatikus\nÖykü:\n19 yaşında kadın hasta, şiddetli nefes darlığı nedeniyle acil servise getiriliyor. Astım rahatsızlığı olduğu ve tedavisinde yer alan inhaler ilacını kullanmasına rağmen rahatlamadığı öğreniliyor. Hastanık panik halinde olduğu, dudaklarının morardığı, hırıltılı solunum yaptığı ve konuşmakta güçlük çektiği görülüyor. Ailesi, hastanın 1 hafta kadar önce soğuk algınlığı geçirdiğini söylüyor. Hasta, göğsünde baskı hissettiğini, öksürük krizleri nedeniyle gece boyunca uyuyamadığını söylüyor.\n\n84. Subaraknoid Kanama\nÖykü:\n49 yaşında kadın hasta, ani başlayan şiddetli baş ağrısı nedeniyle acil servise getiriliyor. Ağrıyı “hayatımda yaşadığım en şiddetli baş ağrısı” diye tarif ediyor. Acil servise girerken kustuğu ve kısa süreli bilinç kaybı yaşadığı öğreniliyor. Eşi, hastanın hipertansiyon nedeniyle ilaç kullandığını ancak ara sıra tedavisini aksattığını söylüyor. Hastanın ışığa bakmakta zorlandığı gözlemleniyor. Sürekli “başım patlayacak gibi” ifadesini kullanıyor. \n\n85. Superior Vena Kava Sendromu\nÖykü:\n61 yaşında erkek hasta, yüzde ve boyunda şişlik, nefes darlığı ve öksürük şikâyetleriyle acil servise getiriliyor. Şikâyetlerinin 2 hafta önce başladığı ve giderek arttığı öğreniliyor. Hasta, yüzündeki ve boynundaki şişliğin sabahları artış gösterdiğini ve ses kısıklığının da hiç geçmediğini anlatıyor. Huzursuz olduğu, dudaklarının morardığı ve oturur pozisyonda kalmak istediği gözlemleniyor. Göz kapaklarının ve yüzünün belirgin ödemli olduğu, konuşurken zorlandığı ve sık sık öksürdüğü görülüyor. Kızı, hastanın son dönemlerde belirgin şekilde kilo kaybettiğini söylüyor. Hastanın, yaklaşık 40 yıldır, günde en az 1 paket sigara kullanımı öyküsü mevcut.\n\n\n\n\n\n\n\n\n\n86. Supraventriküler Taşikardi\nÖykü:\n28 yaşında kadın hasta, çarpıntı ve baş dönmesi şikâyetleriyle acil servise müracaat ediyor. Çarpıntı şikayetinin ani başlangıçlı olduğu ve yaklaşık 20 dakikadır devam ettiği öğreniliyor. Hastanın panik halinde olduğu, konuşurken sürekli göğsünü tuttuğu ve nefes nefese kaldığı gözlemleniyor. Eşi, hastanın daha önce de kısa süreli benzer ataklar yaşadığını söylüyor. Çarpıntı hissi sonrası şiddetli baş dönmesi başlamış ve ayakta duramayacak hale gelmiş. Hasta çok endişeli bir şekilde, “kalbim yerinden çıkacak gibi” ifadesini kullanıyor.\n\n\n87. Tansiyon Pnömotoraks\nÖykü:\n34 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı şikâyetleriyle acil servise getiriliyor. Evinin spor salonundaki koşu bandında egzersiz yaparken aniden göğsünde şiddetli bir batma hissi olmuş ve nefes darlığı gelişmiş. Hastanın panik halinde ve çok huzursuz olduğu, konuşmakta zorlandığı için çok kısa cümleler kurduğu, dudaklarının morardığı görülüyor. Sedyede yatarken nefes alamadığını söyleyerek oturmak istiyor. Konuşurken göğsünü tutuyor.\n\n\n88. Testis Torsiyonu\nÖykü:\n17 yaşında erkek hasta, ani başlayan skrotal ağrı nedeniyle acil servise getiriliyor. Ağrı sabah saatlerinde aniden başlamış ve giderek şiddetlenmiş. Gün içerisinde 2 kez kusmuş. Hastanın çok endişeli ve huzursuz olduğu, ağrısından dolayı yürümekte zorlandığı görülüyor. Hasta, ağrının kasık bölgesine doğru yayılım gösterdiğini belirtiyor. 1 gün önce arkadaşlarıyla yaptığı halı saha maçında kasık bölgesine top çarptığı öğreniliyor. \n\n89. Tiroid Fırtınası\nÖykü:\n36 yaşında kadın hasta, yüksek ateş, çarpıntı ve huzursuzluk şikâyetleriyle acil servise geliyor. Eşi, hastanın hipertiroidi tanısıyla tedavi gördüğünü, ancak yaklaşık 2 haftadır ilaçlarını düzenli kullanmadığını söylüyor. Hastanın çok terlediği, panik halinde olduğu, ellerinin titrediği ve konuşurken çok hızlı nefes alıp verdiği görülüyor. Sürekli “çok sıcakladım, kalbim yerinden çıkacak gibi” diye yakınıyor. Son günlerde, geceleri uyumakta zorlandığı öğreniliyor.\n90. Toksoplazma Ensefaliti\nÖykü:\n41 yaşında erkek hasta, şiddetli baş ağrısı ve bilinç bozukluğu nedeniyle acil servise getiriliyor. Eşi, hastanın HIV (+) olduğunu söylüyor. Yaklaşık 3 haftadır halsizlik, iştahsızlık ve kilo kaybı olduğu öğreliliyor. Hastanın konuşması bozuk, bilinç durumu değişken. Sık sık başını tutuyor ve huzursuz görünüyor. Acil servise getirilmeden önce ambulansta epilepsi benzeri bir nöbet geçirdiği öğreniliyor.\n\n91. Torasik Aort Diseksiyonu\nÖykü:\n63 yaşında erkek hasta, ani başlayan göğüs ağrısı nedeniyle acil servise getiriliyor. Hasta, ağrının yırtılır tarzda olduğunu, sırtına ve karın bölgesine yayıldığını belirtiyor. Eşi, hastanın yaklaşık 15 yıldır yüksek tansiyon nedeniyle ilaç tedavisi aldığını, ancak son günlerde ilaçlarını düzenli kullanmadığını söylüyor. Hasta, konuşurken kısa cümleler kuruyor, cildi solgun ve terli. \n\n92. Transvers Miyelit\nÖykü:\n28 yaşında kadın hasta, her iki bacakta güçsüzlük ve uyuşma şikâyetleriyle acil servise geliyor. Eşi, hastanın 10 gün kadar önce grip geçirdiğini, son 2 gündür ise yürümekte zorlandığını, birkaç kez de idrarını tutamadığını söylüyor. Hasta, belden aşağısında his kaybı tarif ediyor. Konuşurken endişeli olduğu görünüyor. Elleriyle bacaklarını ovuşturuyor. Halsiz ve yorgun olduğunu söylüyor.\n\n93. Tüberküloz Menenjiti\nÖykü:\n44 yaşında erkek hasta, yaklaşık 2 haftadır devam eden baş ağrısı, yüksek ateş, halsizlik ve gece terlemesi şikâyetiyle acil servise müracaat ediyor. Hastanın ara ara gözlerini kapattığı, bitkin durumda olduğu ve sorulara geç yanıt verdiği görülüyor. Eşi, hastanın öksürük ve balgam şikâyetlerinin de olduğunu, son birkaç ayda da kilo kaybettiğini ifade ediyor. \n\n\n\n94. Tümör Lizis Sendromu\nÖykü:\n36 yaşında kadın hasta, meme ca nedeniyle uygulanan kemoterapi sonrası başlayan halsizlik, mide bulantısı ve bacaklarda kas kasılmaları şikâyetleriyle acil servise getiriliyor. Eşi, hastanın idrar renginde koyulaşma fark etmiş. Hasta çok bitkin ve yorgun görünüyor, sürekli su içmek istediğini söylüyor. Halsizliği nedeniyle yürümekte zorlanıyor. Gece boyunca hiç uyuyamadığını, bacaklarının uyuştuğunu söylüyor. \n\n95. Uygunsuz Antidiüretik Hormon Salınımı Sendromu (SIADH)\nÖykü:\n68 yaşında erkek hasta, baş ağrısı, halsizlik, iştahsızlı, mide bulantısı ve bilinç değişikliği nedeniyle acil servise getiriliyor. Çok su içmesine rağmen idrar miktarının azaldığı öğreniliyor. Hasta, bitkin ve huzursuz görünüyor, çok yavaş konuşuyor, uyumak istediğini söylüyor. Kızı, hastanın 2 haftadır akciğer enfeksiyonu nedeniyle tedavi gördüğünü belirtiyor. Dudaklarının kuru, cildinin ise solgun olduğu görülüyor. \n\n96. Üst Gastrointestinal Kanama\nÖykü:\n58 yaşında erkek hasta, kahverengi kusma ve siyah dışkılama şikâyetleriyle acil servise geliyor. Halsizlik ve baş dönmesi şikâyetleri de olduğunu beyan eden hastanın, huzursuz ve terli olduğu, cildinin solgun olduğu görülüyor. Sürekli karnını tutarak, mide yanmasından yakınıyor. Eşi, hastanın uzun yıllardır mide ülseri nedeniyle ilaç kullandığını söylüyor. Yaklaşık 35 yıldır sigara ve alkol kullanığı öğreniliyor.\n\n97. Vazooklüziv Kriz\nÖykü:\n25 yaşında kadın hasta, şiddetli kemik ve eklem ağrıları nedeniyle acil servise getiriliyor. Orak hücreli anemisi olduğu öğreniliyor. Hasta şiddetli ağrılardan dolayı çok huzursuz ve konuşurken zorlanıyor. Dudaklarının morardığı görülüyor. Annesi, hastanın birkaç gündür çok halsiz ve iştahsız olduğunu söylüyor. Gece boyunca uyuyamadığını ve ağrı nedeniyle hareket bile etmek istemediğini söylüyor.\n\n\n98. Vazovagal Senkop\nÖykü:\n21 yaşında erkek hasta, bayılma şikâyetiyle acil servise getiriliyor. Bayılma kalabalık bir ortamda gerçekleşmiş, hasta bir anda bilincini kaybederek yere yığılmış. Arkadaşları, hastanın bayılma öncesi baş dönmesi ve yoğun terleme yaşadığını söylüyor. Bayılma sonrası bilinci kısa sürede yerine gelmiş. Hastanın yorgun ve endişeli olduğu görülüyor. Bayılma anını “birden gözüm karardı” şeklinde anlatıyor. Bilinci açıldığında mide bulantısı olmuş. Daha önce de, stresli dönemlerde birkaç kez benzer bayılmalar yaşadığını belirtiyor. \n\n99. Ventriküler Taşikardi\nÖykü:\n64 yaşında erkek hasta, ani başlangıçlı çarpıntı ve bayılma hissi nedeniyle acil servise getiriliyor. Şikâyetleri başladığında neredeyse bayılıp yere düşecek gibi olduğu öğreniliyor. Hastanın terli ve panik halinde olduğu, konuşurken kekelediği, dudaklarının morardığı görülüyor. Bilinç durumunda dalgalanmalar olduğu gözlemleniyor. Oğlu, hastanın ritim bozukluğu nedeniyle yaklaşık 4 yıldır ilaç kullandığını söylüyor.\n\n100. Volvulus\nÖykü:\n72 yaşında erkek hasta, ani başlayan şiddetli karın ağrısı, karında şişlik ve kusma şikayetleriyle acil servise getiriliyor. Ağrı kısa sürede şiddetlenerek tüm karnı kaplamış. Kızı, hastanın birkaç gündür kabız olduğunu söylüyor. Hasta huzursuz, konuşurken kısa cümleler kuruyor ve sürekli karnını tutuyor. Karnının şiş ve gergin olduğu görülüyor. Gece boyunca uyuyamadığı, kahverengi ve kötü kokulu kustuğu öğreniliyor.',
+  'klinik_bulgular': {'fizik_muayene': 'TA 80/50 mmHg, nabız 120/dk, soğuk-nemli cilt, karında yaygın hassasiyet ve defans, orta hatta pulsatil kitle.',
+   'radyolojik_goruntuler': 'Yatak başı USG’de büyük damar çapında genişleme ve çevresinde heterojen hematom. BT anjiyografide aktif kontrast ekstravazasyonu.',
+   'ekg': 'Sinüs taşikardisi, alt derivasyonlarda nonspesifik ST-T değişiklikleri.',
+   'tetkikler': 'Hb 8.9 g/dl, Htc %27, laktat 4.2 mmol/L, kreatinin 1.8 mg/dl.'}},
+ {'id': 2,
+  'ad': 'Adrenal Kriz',
+  'hikaye': '45 yaşında kadın hasta, son 2 gündür bulantı, kusma ve halsizlik yaşıyor. Yakınları sabah aniden titremeye başladığını ve konuşmalarının yavaşladığını söylüyor. Çok susadığını, su içtikten kısa süre sonra tekrar kustuğunu ifade ediyor. Şiddetli karın ağrısı nedeniyle yatağa kıvrılmış durumda. Dudakları kurumuş, cildi koyu pigmentli. Son haftalarda iştah kaybı ve baş ağrıları mevcutmuş. Eşi, evde birkaç kez fenalaştığını ve neredeyse bayıldığını söylüyor. Acile geldiğinde bilinci dalgalı, sorulara gecikmeli yanıt veriyor. Gözleri çökmüş, ağız kuruluğu belirgin. Evde bu durumu “zehirlenme” olarak düşündükleri öğreniliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 70/40 mmHg, nabız 110/dk, cilt kuru, mukozalar kuru, karında yaygın hassasiyet. Bilinç bulanık.',
+   'radyolojik_goruntuler': 'Batın BT’de her iki bezde atrofi, akut kanama yok.',
+   'ekg': 'Sivri T dalgaları, QRS genişlemesi.',
+   'tetkikler': 'Na: 120 mmol/L, K: 6.5 mmol/L, glukoz: 40 mg/dl, kortizol düşük, ACTH yüksek.'}},
+ {'id': 3,
+  'ad': 'Akut Glokom',
+  'hikaye': '60 yaşında kadın hasta ani başlayan göz ağrısı ve baş ağrısı ile başvuruyor. Evde migren sandığı için ağrı kesici almış, fayda görmemiş. Görmesi giderek bulanmış, ışıkların etrafında haleler görmüş. Bulantı ve kusma eklenmiş. Oğlu gece uyumakta zorlandığını ve “gözüm patlayacak gibi” dediğini söylüyor. Acile geldiğinde çok huzursuz, gözünü açmakta zorlanıyor. Konuşurken sürekli gözünü ovuşturuyor. Yakın zamanda yeni gözlük aldığı için başta gözlük uyumsuzluğu düşünülmüş. Öyküsünde hipertansiyon var. Yatarken ağrının arttığını, oturunca biraz azaldığını söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Gözde kızarıklık, kornea ödemli, pupil orta genişlikte, ışığa yanıt yok.',
+   'radyolojik_goruntuler': 'Göz USG’de ön kamara sığ ve basınç artışı mevcut.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'Göz içi basıncı 45 mmHg, görme keskinliği belirgin azalmış.'}},
+ {'id': 4,
+  'ad': 'Akut Graft-Versus-Host Hastalığı',
+  'hikaye': '35 yaşında erkek hasta, kemik iliği naklından 3 hafta sonra yaygın döküntü, karın ağrısı ve ishal nedeniyle acile geliyor. Başta besin intoleransı olabileceği düşünülmüş. Ciltte kızarıklık ve kaşıntı var. Yakınları son günlerde ateşinin çıktığını ve halsizliğinin arttığını anlatıyor. Hasta ishal nedeniyle sık sık tuvalete gidiyor. Yemek yiyemiyor, ağzında yaralar çıkmış. Kaşıntıdan dolayı sürekli derisini kaşıyor. Karın ağrısı giderek şiddetlenmiş. Bitkin ve konuşmakta zorlanıyor. Acile gelirken tekerlekli sandalye ile getirilmiş. Yakınları moral bozukluğundan dolayı uyumadığını söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Yaygın eritemli döküntü, sarılık, karında hassasiyet.',
+   'radyolojik_goruntuler': 'Batın BT’de diffüz barsak duvarı ödemi.',
+   'ekg': 'Normal.',
+   'tetkikler': 'AST/ALT yüksek, bilirubin artmış, CRP yüksek.'}},
+ {'id': 5,
+  'ad': 'Akut İnferior Miyokard İnfarktüsü',
+  'hikaye': '62 yaşında erkek hasta sabah kahvaltısından sonra göğüs ağrısı başlamış. Ağrı mideye vurduğu için önce gastrit düşünülmüş. Bulantı ve yoğun terleme eşlik ediyor. 30 yıldır sigara içiyor. Daha önce birkaç kez göğüs ağrısı olmuş ama doktora gitmemiş. Evde “mideme kramp giriyor” diye yakınmış. Acile geldiğinde rengi solgun, nefes nefese. Konuşmaları kısa, ağrısını sağ omza da vurduğunu söylüyor. Ağrı kesici almış ancak fayda etmemiş. Şikayetler başladıktan 1 saat içinde acile ulaşmış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 50/dk, soğuk ve nemli cilt.',
+   'radyolojik_goruntuler': 'Akciğer grafisi normal.',
+   'ekg': 'DII, DIII, aVF’de ST elevasyonu, bradikardi.',
+   'tetkikler': 'Troponin yüksek, CK-MB artmış, elektrolitler normal.'}},
+ {'id': 6,
+  'ad': 'Akut İskemik İnme',
+  'hikaye': '68 yaşında erkek hasta, konuşma bozukluğu ve sağ tarafında güçsüzlük şikâyetiyle acile getiriliyor. Yakınları belirtilerin yaklaşık 1 saat önce başladığını söylüyor. Evde önce hipoglisemi zannedilerek şekerli su içirilmiş ancak düzelmemiş. Hasta bir süredir tansiyon ilacını düzensiz kullandığını itiraf ediyor. Yolda gelirken konuşmaları anlaşılmaz hale gelmiş, sağ kolunu kaldıramamış. Acile ulaştığında bilinci açık ancak oryantasyonu bozuk. Sorulara kısa ve anlamsız cevaplar veriyor. Eşi, birkaç gündür baş ağrısı ve halsizlik şikâyeti olduğunu belirtiyor. Hasta sürekli sağ bacağını oynatmakta zorlandığını söylüyor. Oğlunun ifadesine göre evde otururken aniden yüzünün sağ tarafı düşmüş gibi görünmüş. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Sağ hemiparezi, disartri, yüzün sağ tarafında asimetri.',
+   'radyolojik_goruntuler': 'Acil BT’de kanama yok, erken iskemik değişiklikler mevcut.',
+   'ekg': 'Atriyal fibrilasyon ritmi.',
+   'tetkikler': 'Kan şekeri 110 mg/dl, INR normal, troponin normal.'}},
+ {'id': 7,
+  'ad': 'Akut KOAH Alevlenmesi',
+  'hikaye': '70 yaşında erkek hasta, kronik solunum hastalığı öyküsüyle biliniyor. Son 2 gündür öksürüğü ve balgamı artmış, nefes darlığı belirginleşmiş. Evde inhaler tedavilerini düzenli kullanmadığını söylüyor. Yakınları, merdiven çıkarken çok zorlandığını ve geceleri nefes almakta güçlük çektiğini belirtiyor. Balgamın rengi sararmış. Evde “astım krizi” olabileceği düşünülerek nebülizatör verilmiş ama fayda etmemiş. Acile getirildiğinde konuşmakta zorlanıyor, cümleleri yarıda kesiliyor. Dudaklarında morarma gözleniyor. Hasta sürekli oturur pozisyonda kalmaya çalışıyor. Son bir haftadır iştahsızlık ve yorgunluk şikâyeti de eklenmiş. Sigara kullanım öyküsü devam ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 130/70 mmHg, nabız 100/dk, solunum sayısı 28/dk, ekspiryum uzamış, yaygın wheezing.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde hiperinflasyon, diyafram düzleşmiş.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Kan gazı: pH 7.32, pCO₂ 55 mmHg, pO₂ 60 mmHg.'}},
+ {'id': 8,
+  'ad': 'Akut Pankreatit',
+  'hikaye': '55 yaşında erkek hasta, ani başlayan şiddetli karın ağrısı nedeniyle başvuruyor. Ağrı epigastrik bölgede başlamış, sırta doğru yayılıyor. İlk başta gastrit olduğunu düşünerek mide ilacı almış ama fayda görmemiş. Bulantı ve birkaç kez kusma eşlik etmiş. Hastanın alkol kullanım öyküsü var. Son günlerde yağlı yemeklerden sonra karnında rahatsızlık hissettiğini söylüyor. Ağrı nedeniyle gece uyuyamamış, sabaha karşı dayanılmaz hale gelmiş. Yakınları, hastanın sürekli karın üstü yatmaya çalıştığını belirtiyor. Acile geldiğinde huzursuz, terli ve kıvranır halde. Öyküsünde safra taşı öyküsü de bulunuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/70 mmHg, nabız 110/dk, epigastrik hassasiyet, defans mevcut.',
+   'radyolojik_goruntuler': 'Batın BT’de pankreas ödemli, çevresinde sıvı koleksiyonu.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Amilaz ve lipaz belirgin yüksek, CRP artmış.'}},
+ {'id': 9,
+  'ad': 'Akut Perfore Apandisit',
+  'hikaye': '28 yaşında erkek hasta, 2 gündür karın ağrısı şikâyetiyle acile geliyor. Başlangıçta göbek çevresinde olan ağrı zamanla sağ alt kadrana yerleşmiş. İştahsızlık, bulantı ve kusma tarifliyor. Evde bu durum önce “hazımsızlık” sanılmış. Ateşi yükselmiş, gece boyunca uyuyamamış. Acile geldiğinde karın ağrısı çok şiddetli, yürürken zorlanıyor. Yakınları, ağrının giderek arttığını ve son saatlerde hastanın kıvranmaya başladığını söylüyor. Hasta ayakta dik durmakta zorlanıyor, sürekli sağ tarafına eğiliyor. Birkaç gün önce normalden fazla acılı yemek yediğini belirtiyor. Konuşmaları kısa, karın ağrısı nedeniyle hareket etmek istemiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Ateş 38.5°C, TA 110/70 mmHg, nabız 105/dk, sağ alt kadranda rebound ve defans.',
+   'radyolojik_goruntuler': 'Batın BT’de apendiks çevresinde sıvı koleksiyonu ve serbest hava.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'Lökosit 18.000/mm³, CRP yüksek.'}},
+ {'id': 10,
+  'ad': 'Akut Perikardit',
+  'hikaye': '35 yaşında erkek hasta göğüs ağrısı nedeniyle acile başvuruyor. Ağrı göğüs ön duvarında, nefes alırken ve yatarken artıyor, öne eğilince biraz azalıyor. Hasta bu ağrıyı birkaç gündür hissettiğini söylüyor. Önce kas ağrısı sandığı için ağrı kesici almış ancak fayda görmemiş. Yakınları, son haftalarda sık sık soğuk algınlığı geçirdiğini belirtiyor. Ağrıya halsizlik ve hafif ateş eşlik etmiş. Acile geldiğinde hafif nefes darlığı da mevcut. Hasta sürekli göğsünü ovuşturuyor, pozisyon değiştirerek rahatlamaya çalışıyor. Geceleri uyuyamadığını, ağrıdan dolayı sık sık uyandığını anlatıyor. Konuşurken kısa cümlelerle yanıt veriyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 90/dk, perikardiyal frotman duyuluyor.',
+   'radyolojik_goruntuler': 'Ekokardiyografide perikardiyal efüzyon mevcut.',
+   'ekg': 'Diffüz ST elevasyonu, PR segment depresyonu.',
+   'tetkikler': 'Troponin hafif yüksek, CRP yüksek, lökositoz.'}},
+ {'id': 11,
+  'ad': 'Akut Renal Yetmezlik',
+  'hikaye': '58 yaşında erkek hasta halsizlik, iştahsızlık ve bacaklarda şişlik şikâyetiyle acile geliyor. Yakınları son günlerde idrar miktarının belirgin şekilde azaldığını söylüyor. Hasta birkaç gündür baş ağrısı, bulantı ve kusma yaşadığını belirtiyor. Daha önce hipertansiyon için ilaç kullanıyormuş fakat son aylarda düzensiz almış. Acile geldiğinde huzursuz, cildi soluk ve kuru. Sürekli başının ağrıdığını ve uyumakta zorlandığını anlatıyor. Eşi, son günlerde uyurken sık sık kasılmalar yaşadığını ifade ediyor. Hasta iştahsızlık nedeniyle son haftada birkaç kilo kaybetmiş. Yürürken dengesizlik ve halsizlik belirgin. Evde sürekli “idrarım gelmiyor” diye yakınmış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 150/90 mmHg, nabız 92/dk, ödem bilateral pretibial bölgede, mukozalar soluk.',
+   'radyolojik_goruntuler': 'Batın USG’de böbreklerde kortikomedüller ayrım silinmiş, boyutlar normalden küçük.',
+   'ekg': 'Sivri T dalgaları (hiperkalemi bulgusu).',
+   'tetkikler': 'Üre 210 mg/dl, kreatinin 6.2 mg/dl, potasyum 6.0 mmol/L, sodyum 130 mmol/L.'}},
+ {'id': 12,
+  'ad': 'Akut Toksik Hepatit',
+  'hikaye': '40 yaşında erkek hasta, sarılık, halsizlik ve iştahsızlık nedeniyle başvuruyor. Son günlerde cildinde sararma ve idrar renginde koyulaşma fark etmiş. Birkaç gündür bulantı, kusma ve sağ üst kadranda ağrı tarif ediyor. Hasta evde ateş düşürücü ilaçları fazla miktarda aldığını itiraf ediyor. Acile geldiğinde yorgun, cilt ve skleralar sarı renkte. Yakınları, son günlerde uykuya meyilli olduğunu söylüyor. Karın bölgesinde şişlik hissetmiş. Baş ağrısı ve kaslarda ağrı da mevcut. Son aylarda alkol kullanımı öyküsü de var. Konuşmaları yavaş, çevresine ilgisi azalmış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 88/dk, sarılık belirgin, hepatomegali palpabl, karında hassasiyet.',
+   'radyolojik_goruntuler': 'Batın USG’de karaciğer büyümüş, ekojenitesi heterojen.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'AST 1450 U/L, ALT 1650 U/L, bilirubin 12 mg/dl, INR 2.1.'}},
+ {'id': 13,
+  'ad': 'Alt Gastrointestinal Kanama',
+  'hikaye': '67 yaşında erkek hasta, birkaç saat önce başlayan bol miktarda kanlı dışkı şikâyetiyle getiriliyor. Hasta aniden tuvalete gitme ihtiyacı hissetmiş ve dışkısının parlak kırmızı olduğunu fark etmiş. Daha önce benzer bir şikâyeti olmamış. Karın ağrısı ve baş dönmesi tarif ediyor. Yakınları, hastanın birkaç gündür yorgun olduğunu belirtiyor. Acile ulaştığında rengi soluk, halsiz ve bitkin görünüyor. Konuşurken “içim boşalıyor gibi” ifadesini kullanıyor. Birkaç aydır kabızlık şikâyeti de mevcut. Sigara ve alkol öyküsü var. Olay sırasında fenalaştığını ve düşecek gibi olduğunu söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 110/dk, cilt soluk ve nemli, rektal muayenede taze kan.',
+   'radyolojik_goruntuler': 'Batın BT anjiyografide kolon segmentinde aktif kontrast ekstravazasyonu.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 7.5 g/dl, Htc %23, laktat 3.8 mmol/L.'}},
+ {'id': 14,
+  'ad': 'Amniyotik Sıvı Embolisi',
+  'hikaye': '32 yaşında kadın hasta, doğum sırasında ani gelişen nefes darlığı ve bilinç kaybı nedeniyle acile alınıyor. Doğumun normal seyir ettiği ancak son aşamada aniden fenalaştığı öğreniliyor. Hastada şiddetli göğüs ağrısı ve öksürük başlamış. Hızla solunumu bozulmuş ve morarma gelişmiş. Yakınları, doğum öncesinde her şeyin normal olduğunu söylüyor. Hasta doğumdan önce aşırı kaygılıymış. Olay sırasında birkaç dakika boyunca bilinci kapalı kalmış. Acile getirildiğinde ciddi solunum sıkıntısı içinde, bilinci bulanık. Yakınları hastanın ilk kez bu kadar ciddi bir durum yaşadığını belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 70/40 mmHg, nabız 130/dk, siyanoz belirgin, solunum sayısı 32/dk.',
+   'radyolojik_goruntuler': 'Akciğer BT’de bilateral diffüz infiltratlar.',
+   'ekg': 'Sinüs taşikardisi, sağ kalp yüklenme bulguları.',
+   'tetkikler': 'Hb 9.0 g/dl, trombosit 60.000/mm³, D-dimer yüksek, oksijen satürasyonu %70.'}},
+ {'id': 15,
+  'ad': 'Anafilaksi',
+  'hikaye': '27 yaşında kadın hasta, yemek sonrası birkaç dakika içinde başlayan boğazda şişlik, nefes darlığı ve yaygın kızarıklık nedeniyle acile geliyor. Yemekte deniz ürünleri yediği öğreniliyor. İlk olarak dudaklarında ve göz kapaklarında şişlik olmuş. Daha sonra nefes almakta zorlanmış. Kaşıntı ve yaygın döküntüler eklenmiş. Yakınları, hastanın hızla renginin solduğunu ve nefesinin kesildiğini söylüyor. Acile ulaştığında panik halinde, konuşmakta zorlanıyor. Sürekli boğazını tutuyor. Sesinde boğukluk gelişmiş. Önce astım atağı zannedilmiş. Hasta giderek daha halsiz hale geliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 70/40 mmHg, nabız 130/dk, yaygın ürtiker, dudak ve dilde şişlik, solunum sıkıntısı.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde yaygın bronkospazm bulgusu.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Laktat 4.5 mmol/L, eozinofil sayısı artmış, oksijen satürasyonu %80.'}},
+ {'id': 16,
+  'ad': 'Anjioödem',
+  'hikaye': '50 yaşında erkek hasta, ani gelişen yüz ve dudak şişliğiyle acile geliyor. Sabah antihipertansif ilacını aldıktan birkaç saat sonra şikâyetleri başlamış. Önce dudaklarında şişlik olmuş, sonra dil ve boğazda genişleme gelişmiş. Hastanın nefes alması zorlaşmış. Yakınları, kısa sürede konuşmasının da bozulduğunu söylüyor. Hasta panik halinde, sürekli nefes almakta zorlandığını belirtiyor. Göz çevresinde de şişlik var. Acile geldiğinde yüzünde belirgin ödem, boğazda daralma hissi mevcut. İlk bakışta alerjik reaksiyon sanılmış. Hastanın daha önce benzer bir durum yaşamadığı öğreniliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, dudak, dil ve boğazda belirgin ödem, inspiratuar stridor.',
+   'radyolojik_goruntuler': 'Boyun BT’de üst hava yollarında ödem, daralma.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'C4 düşük, C1 inhibitör aktivitesi azalmış, oksijen satürasyonu %88.'}},
+ {'id': 17,
+  'ad': 'Botulizm',
+  'hikaye': '42 yaşında erkek hasta, birkaç gün önce ev yapımı konserve tükettikten sonra halsizlik, çift görme ve yutma güçlüğü şikâyetleri başlamış. Önce mide rahatsızlığı zannedilmiş. Bulantı ve karın ağrısı da olmuş. Zamanla konuşması peltekleşmiş. Ellerde ve bacaklarda güçsüzlük belirginleşmiş. Acile ulaştığında göz kapakları düşmüş, konuşması anlaşılmaz halde. Yakınları, hastanın son 2 gündür giderek kötüleştiğini anlatıyor. Evde tek başına yürüyemez hale gelmiş. Acile getirildiğinde solunumu yüzeysel, halsiz ve endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 90/dk, pitozis, yutma güçlüğü, kaslarda güçsüzlük.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'Sinir iletim çalışmasında presinaptik blokaj bulguları, EMG’de anormal yanıtlar.'}},
+ {'id': 18,
+  'ad': 'Brown-Sequard Sendromu',
+  'hikaye': '29 yaşında erkek hasta, bıçaklanma sonrası acile getiriliyor. Belden aşağıya yayılan ağrı ve güçsüzlük şikâyeti var. Yaralanma sağ lomber bölgede. Olaydan sonra sağ bacağında güç kaybı başlamış, sol bacağında ise ağrı ve sıcaklık hissini kaybettiğini söylüyor. Yakınları, hastanın yürümekte zorlandığını belirtiyor. Acile geldiğinde bilinci açık, ancak çok endişeli. Ayağa kalkmak istediğinde dengesini kaybediyor. Sık sık idrar kaçırma hissettiğini ifade ediyor. Yakınları, olaydan önce tamamen sağlıklı olduğunu vurguluyor. Hasta sürekli sırtındaki ağrıdan yakınıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Sağ bacakta motor kayıp, ipsilateral duyu kaybı; karşı tarafta ağrı ve ısı duyusu kaybı.',
+   'radyolojik_goruntuler': 'Spinal MR’da yaralanma seviyesinde hemorajik kontüzyon.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Tam kan sayımı normal, CRP hafif yüksek.'}},
+ {'id': 19,
+  'ad': 'Bruselloz',
+  'hikaye': '46 yaşında erkek hasta, ateş, gece terlemesi ve eklem ağrısı nedeniyle başvuruyor. Son haftalarda iştahsızlık ve halsizlik tarif ediyor. Hasta çiftçi, sık sık hayvanlarla temas ediyor. Özellikle çiğ süt tüketme öyküsü var. Acile geldiğinde halsiz, terli ve bitkin görünümde. Bel ve diz ağrılarından yakınıyor. Yakınları, son günlerde kilo kaybettiğini söylüyor. Hasta gece boyunca yoğun terlediğini ifade ediyor. Vücudunda kas ağrıları ve sürekli yorgunluk mevcut. Konuşmaları net ama yorgun. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 95/dk, ateş 38.5°C, karaciğer ve dalak hafif büyümüş.',
+   'radyolojik_goruntuler': 'MR’da lomber omurgada enflamatuar değişiklikler.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Wright aglütinasyon testi pozitif, CRP yüksek, lökosit normal.'}},
+ {'id': 20,
+  'ad': 'Buerger Hastalığı',
+  'hikaye': '39 yaşında erkek hasta, bacak ağrısı ve yürüme güçlüğü nedeniyle başvuruyor. Uzun süredir sigara kullanıyor. Son haftalarda parmaklarında morarma ve soğukluk fark etmiş. Hasta, yürüdüğünde baldırında şiddetli ağrı oluyor ve durmak zorunda kaldığını söylüyor. Ellerde de soğukluk ve uyuşma şikâyeti var. Acile geldiğinde parmak uçlarında küçük yaralar ve renk değişikliği gözleniyor. Yakınları, hastanın sık sık sigarayı bırakmaya çalıştığını ama başaramadığını belirtiyor. Hasta sürekli bacaklarını ovuşturuyor. Gece ağrıdan uyuyamadığını ifade ediyor. Son günlerde ayak bileklerinde şişlik de eklenmiş. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 88/dk, distal nabızlar alınamıyor, ayak parmaklarında siyanoz.',
+   'radyolojik_goruntuler': 'Alt ekstremite anjiyosunda distal arterlerde tıkanıklık.',
+   'ekg': 'Normal.',
+   'tetkikler': 'D-dimer normal, CRP hafif yüksek, lökosit normal.'}},
+ {'id': 21,
+  'ad': 'Cushing Sendromu',
+  'hikaye': '42 yaşında kadın hasta, son aylarda yüzünde yuvarlaklaşma, kilo artışı ve adet düzensizliği şikâyetleriyle başvuruyor. Aynı zamanda sürekli halsizlik, kas zayıflığı ve moral bozukluğu tarif ediyor. Yakınları yüzünün kısa sürede “ay dede gibi” olduğunu fark ettiklerini söylüyor. Hasta kolay morardığını ve cildinde çizgiler çıktığını belirtiyor. Gece uyumakta zorlandığını, gündüz ise yorgun hissettiğini anlatıyor. Son zamanlarda şeker ihtiyacının arttığını söylüyor. Evde tansiyon ölçümlerinde sık sık yüksek değerler kaydedilmiş. Konuşurken bitkin görünüyor, otururken sık sık sırtını ovuşturuyor. Son haftalarda saç dökülmesinden de şikâyetçi. Yakınları ruh halinde dalgalanmalar olduğunu ifade ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 160/95 mmHg, nabız 88/dk, yüzde yuvarlaklaşma, abdominal bölgede mor çizgiler, kaslarda güçsüzlük.',
+   'radyolojik_goruntuler': 'Batın BT’de adrenal bezlerde kitle şüphesi.',
+   'ekg': 'Hipertansiyona bağlı sol ventrikül hipertrofisi bulguları.',
+   'tetkikler': 'Kortizol yüksek, ACTH düşük, glukoz 180 mg/dl, potasyum düşük.'}},
+ {'id': 22,
+  'ad': 'Dekompresyon Hastalığı',
+  'hikaye': '34 yaşında erkek dalgıç, dalış sonrası kısa sürede yüzeye çıktıktan sonra eklem ağrısı ve halsizlik şikâyetiyle acile getiriliyor. Başlangıçta yorgunluk zannedilmiş. Hastada göğüs ağrısı ve öksürük gelişmiş. Yakınları, sudan çıkarıldıktan kısa süre sonra yürüyemediğini söylüyor. Vücudunda kaşıntı ve döküntü ortaya çıkmış. Konuşurken nefes nefese kalıyor. Baş ağrısı ve sersemlik de tarif ediyor. Olay anında kaskını hızlı çıkarmış ve telaşla sudan çıkmış. Acile ulaştığında halsiz, yönelim bozukluğu var. Ellerde uyuşma hissi mevcut. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/70 mmHg, nabız 110/dk, döküntüler mevcut, kaslarda güçsüzlük.',
+   'radyolojik_goruntuler': 'Toraks BT’de diffüz amfizematöz alanlar.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Kan gazında hipoksemi, laktat yüksek.'}},
+ {'id': 23,
+  'ad': 'Deliryum',
+  'hikaye': '76 yaşında erkek hasta, bir süredir hastanede yatmakta iken ani bilinç değişikliği gelişmiş. Öncesinde oryante olan hasta aniden çevresini tanımaz hale gelmiş. Gece boyunca huzursuzluk, bağırma ve yerinde duramama gözlenmiş. Gün içinde ise dalgın ve ilgisiz. Yakınları, son günlerde ilaçlarının değiştiğini söylüyor. Hasta bazen net konuşuyor, bazen saçma cümleler kuruyor. Yatakta otururken hayali şeyler gördüğünü anlatıyor. Elleriyle havada bir şeyler yakalamaya çalışıyor. Yemek yemeyi reddediyor. Hemşireler, hastanın sürekli yataktan kalkmaya çalıştığını ifade ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 130/80 mmHg, nabız 92/dk, dalgın, zaman-mekan oryantasyonu bozuk.',
+   'radyolojik_goruntuler': 'Beyin BT normal.',
+   'ekg': 'Sinüs ritmi.',
+   'tetkikler': 'Na 128 mmol/L, K 4.2 mmol/L, CRP hafif yüksek, idrar kültürü pozitif.'}},
+ {'id': 24,
+  'ad': 'Divertikülit',
+  'hikaye': '61 yaşında kadın hasta, 3 gündür süren karın ağrısı ve ateş nedeniyle başvuruyor. Ağrı sol alt kadranda yoğunlaşmış. Başlangıçta hazımsızlık sanarak ilaç kullanmış ama fayda görmemiş. Bulantı ve iştahsızlık tarif ediyor. Son 24 saatte ateşi yükselmiş, gece uyuyamamış. Yakınları, hastanın tuvalete çıkarken zorlandığını söylüyor. Acile geldiğinde bitkin ve huzursuz. Karnını tutarak yürümekte zorlanıyor. Daha önce kabızlık şikâyeti olduğu biliniyor. Evde “bağırsaklarımda gaz birikti” diye yakınmış. Konuşmaları kısa, karın ağrısından dolayı oturup kalkarken zorlanıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/70 mmHg, nabız 100/dk, ateş 38.2°C, sol alt kadranda hassasiyet ve defans.',
+   'radyolojik_goruntuler': 'Batın BT’de sigmoid kolon çevresinde inflamasyon, sıvı koleksiyonu.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 15.000/mm³, CRP yüksek.'}},
+ {'id': 25,
+  'ad': 'Diyabetik Ketoasidoz',
+  'hikaye': '24 yaşında tip 1 diyabetli kadın hasta, son 2 gündür bulantı, kusma ve karın ağrısı şikâyetiyle başvuruyor. Yakınları insülinini aksattığını söylüyor. Hasta çok susamış, sürekli su içmiş ancak rahatlamamış. Ağızdan aseton kokusu fark ediliyor. Halsiz, yorgun ve uykulu görünüyor. Son 24 saatte iştahı tamamen kaybolmuş. Acile geldiğinde bilinci bulanık, sorulara yavaş yanıt veriyor. Son haftalarda sık idrara çıkma şikâyeti olduğu öğreniliyor. Nefesi derin ve hızlı. Eşi, hastanın önce gribe benzer semptomlarla başladığını ifade ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 120/dk, derin ve hızlı solunum, cilt kuru.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'T dalga değişiklikleri.',
+   'tetkikler': 'Glukoz 420 mg/dl, pH 7.15, HCO₃ 12 mmol/L, keton pozitif.'}},
+ {'id': 26,
+  'ad': 'Eklampsi',
+  'hikaye': '29 yaşında gebe kadın, 34. haftada ani gelişen nöbet nedeniyle acile getiriliyor. Öncesinde baş ağrısı, bulanık görme ve karın ağrısı tarif etmiş. Eşi, hastanın birkaç gündür şiddetli ödemi olduğunu söylüyor. Nöbet sırasında bilinci tamamen kapanmış, kasılmalar olmuş. Ambulansla getirildiğinde bilinci dalgalı. Konuşmaları yavaş, baş ağrısı devam ediyor. Yüzünde ve ellerinde belirgin şişlik mevcut. Son kontrollerde tansiyonunun yüksek olduğu öğreniliyor. Hasta sürekli gözlerini ovuşturuyor ve huzursuz görünüyor. Karnındaki bebeğin hareketlerini az hissettiğini söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 170/110 mmHg, nabız 100/dk, ödem yaygın, bilinç dalgalı.',
+   'radyolojik_goruntuler': 'Beyin MR’da kortikal bölgelerde ödem alanları.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Proteinüri (+++), kreatinin hafif yüksek, trombosit sayısı normal.'}},
+ {'id': 27,
+  'ad': 'Ektopik Gebelik Rüptürü',
+  'hikaye': '31 yaşında kadın hasta, ani başlayan şiddetli alt karın ağrısı ve bayılma şikâyetiyle acile getiriliyor. Adet gecikmesi öyküsü var. Ağrı önce hafifmiş, sonra hızla şiddetlenmiş. Kusma ve terleme eklenmiş. Yolda bilinci bulanık hale gelmiş. Acile geldiğinde çok soluk ve halsiz. Yakınları, son günlerde hafif lekelenme tarzı kanaması olduğunu söylüyor. Hasta sürekli karnını tutuyor ve “içim parçalanıyor” ifadesini kullanıyor. Birkaç gün önce gebelik testi yaptığını ancak sonucu ailesiyle paylaşmadığını anlatıyor. Konuşmaları kısa, ağrı nedeniyle hareket edemiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 70/40 mmHg, nabız 130/dk, karında yaygın hassasiyet, defans, soluk cilt.',
+   'radyolojik_goruntuler': 'Batın USG’de pelviste serbest sıvı.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 7.8 g/dl, Htc %24, β-hCG pozitif.'}},
+ {'id': 28,
+  'ad': 'Geçici İskemik Atak',
+  'hikaye': '63 yaşında erkek hasta, 20 dakika süren konuşma bozukluğu ve sağ elinde güçsüzlük yaşamış. Şikâyetleri kendiliğinden düzelmiş. Yakınları, hastanın olay sırasında bilincinin açık olduğunu ancak cümle kurmakta zorlandığını söylüyor. Evde tansiyonu yüksek ölçülmüş. Hasta, şikâyetleri geçince doktora gitmek istememiş. Son 1 aydır baş ağrısı ve ara ara görmede bulanıklık tarif ediyor. Sigara ve hipertansiyon öyküsü mevcut. Acile geldiğinde yakınması kalmamış ancak endişeli görünüyor. Konuşurken sık sık “biraz önce elim tutmadı” diye vurguluyor. Yürüyüşünde hafif dengesizlik izleniyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 160/90 mmHg, nabız 88/dk, nörolojik muayene normal.',
+   'radyolojik_goruntuler': 'Beyin BT normal, karotis dopplerinde aterosklerotik plaklar.',
+   'ekg': 'Atriyal fibrilasyon.',
+   'tetkikler': 'Kolesterol yüksek, HbA1c 7.5.'}},
+ {'id': 29,
+  'ad': 'Gonokokal Septik Artrit',
+  'hikaye': '26 yaşında kadın hasta, dizinde ani başlayan ağrı, şişlik ve kızarıklık nedeniyle acile geliyor. Yürümekte zorlanıyor. Son günlerde idrar yaparken yanma ve vajinal akıntı tarif ediyor. Ateşi yükselmiş, halsizlik şikâyeti var. Yakınları, hastanın bacağında birkaç gündür ağrı olduğunu söylüyor. Acile geldiğinde dizini hareket ettiremiyor. Konuşurken sürekli “dizim patlayacak gibi” ifadesini kullanıyor. Ciltte birkaç yerde döküntü gözleniyor. Daha önce cinsel yolla bulaşan hastalık öyküsü olduğu öğreniliyor. Son günlerde iştahsızlık ve kilo kaybı da olmuş. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, ateş 38.7°C, sağ diz ekleminde şişlik, kızarıklık ve hareket kısıtlılığı.',
+   'radyolojik_goruntuler': 'Diz MR’da eklem sıvısında artış ve sinovyal kalınlaşma.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 14.000/mm³, CRP yüksek, eklem sıvısında gram-negatif diplokok.'}},
+ {'id': 30,
+  'ad': 'Guillain-Barre Sendromu',
+  'hikaye': '37 yaşında erkek hasta, 1 haftadır artan bacaklarda güçsüzlük ve uyuşma şikâyetiyle başvuruyor. Öncesinde üst solunum yolu enfeksiyonu geçirmiş. İlk günlerde yorgunluk zannedilmiş. Şikâyetleri giderek ilerlemiş, yürümekte zorlanmaya başlamış. Acile geldiğinde bacaklarını kaldıramıyor. Yakınları, son 2 gündür ellerinde de güçsüzlük başladığını söylüyor. Hasta sürekli yorgun ve endişeli görünüyor. Merdiven çıkarken çok zorlandığını anlatıyor. Konuşurken nefes almakta güçlük hissettiğini ifade ediyor. Yakınları gece öksürükle uyandığını söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 95/dk, alt ekstremitelerde güç kaybı, refleksler alınmıyor.',
+   'radyolojik_goruntuler': 'MR’da spinal kord normal.',
+   'ekg': 'Sinüs ritmi.',
+   'tetkikler': 'BOS’ta protein artışı, hücre sayısı normal (albuminositolojik disosiasyon).'}},
+ {'id': 31,
+  'ad': 'HELLP Sendromu',
+  'hikaye': '30 yaşında, 32 haftalık gebe kadın hasta, şiddetli baş ağrısı, bulantı ve sağ üst kadranda ağrı nedeniyle acile getiriliyor. Son günlerde yüzünde ve ellerinde şişlik fark etmiş. Eşi, hastanın halsizlik ve sarılık benzeri bir görünüm geliştirdiğini söylüyor. Evde tansiyonu birkaç kez 160/100 mmHg ölçülmüş. Hasta son günlerde görmede bulanıklık ve ışık çakmaları tarif ediyor. Konuşurken bitkin, sürekli “başım çatlıyor” diyor. Karnındaki bebeğin hareketlerinin azaldığını belirtiyor. Acile geldiğinde çok huzursuz ve gözyaşları içinde. Yakınları, hastanın ilk gebeliği olduğunu ve son haftalarda stresli olduğunu ifade ediyor. Hasta yemek yemeyi reddediyor, sürekli karnını tutuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 170/110 mmHg, nabız 105/dk, ödem yaygın, sağ üst kadranda hassasiyet.',
+   'radyolojik_goruntuler': 'Abdominal USG’de karaciğer kapsülünde ödem ve serbest sıvı şüphesi.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Trombosit 65.000/mm³, AST 250 U/L, ALT 200 U/L, LDH yüksek, hemoglobin düşük.'}},
+ {'id': 32,
+  'ad': 'Henoch-Schönlein Purpurası',
+  'hikaye': '12 yaşında erkek çocuk, bacaklarında döküntü, karın ağrısı ve eklem şişliği nedeniyle acile getiriliyor. Yakınları, 2 gündür dizlerinde ağrı ve şişlik fark ettiklerini söylüyor. Karın ağrısı kramp tarzında, zaman zaman kusma eşlik etmiş. İştahı azalmış, son 24 saatte halsizleşmiş. Ailesi bacaklarında morluk gibi döküntüler fark etmiş. Çocuk sürekli karın ağrısından şikâyet ediyor, yürümekte zorlanıyor. Gece boyunca uykusuz kalmış. Konuşurken halsiz, sık sık annesinin elini tutuyor. Yakınları, birkaç gün önce boğaz enfeksiyonu geçirdiğini anlatıyor. Çocuğun okulda sürekli baş ağrısından yakındığı da öğreniliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Ateş 37.8°C, TA 100/60 mmHg, bacaklarda purpurik döküntüler, dizlerde şişlik.',
+   'radyolojik_goruntuler': 'Abdominal USG’de barsak duvarında ödem, mezenterik lenfadenopati.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 13.000/mm³, CRP yüksek, idrarda proteinüri ve hematüri.'}},
+ {'id': 33,
+  'ad': 'Herpes Simpleks Ensefaliti',
+  'hikaye': '41 yaşında kadın hasta, 3 gündür süren ateş, baş ağrısı ve bilinç bulanıklığı nedeniyle getiriliyor. Yakınları, son 24 saatte konuşmalarının bozulduğunu ve zaman zaman anlamsız cümleler kurduğunu söylüyor. Hasta evde birkaç kez nöbet geçirmiş. Başlangıçta grip sanılmış. Acile ulaştığında dalgın, çevreyle iletişimi zayıf. Sürekli başını tutuyor, ara ara çığlık atıyor. Eşi, hastanın kısa süre önce uçuk çıkardığını belirtiyor. Bilinç giderek kötüleşmiş. Son haftalarda iştahının da azaldığı öğreniliyor. Hasta yatağında kıvranıyor, huzursuz. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 110/dk, ateş 38.9°C, bilinç bulanık, ense sertliği.',
+   'radyolojik_goruntuler': 'Beyin MR’da temporal loblarda hiperintens lezyonlar.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'BOS’ta lenfositik pleositoz, protein yüksek, PCR pozitif.'}},
+ {'id': 34,
+  'ad': 'Hiperkalemi',
+  'hikaye': '65 yaşında erkek hasta halsizlik, kaslarda güçsüzlük ve çarpıntı şikâyetiyle acile geliyor. Son günlerde iştahsızlık ve bulantı tarif ediyor. Böbrek yetmezliği öyküsü var. Yakınları, hastanın birkaç gündür idrarının azaldığını söylüyor. Acile geldiğinde bitkin, kaslarında seğirmeler var. Hasta konuşurken zorlanıyor, sık sık “kalbim sıkışıyor” ifadesini kullanıyor. Bacaklarında uyuşma hissediyor. Konuşmaları kısa ve kesik. Son 24 saatte uyumakta zorlanmış. Hastanın ilaçlarını düzensiz kullandığı öğreniliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 55/dk, kaslarda güçsüzlük, refleksler azalmış.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sivri T dalgaları, QRS genişlemesi, bradikardi.',
+   'tetkikler': 'Potasyum 7.2 mmol/L, kreatinin 5.5 mg/dl, Na 132 mmol/L.'}},
+ {'id': 35,
+  'ad': 'Hiperkalsemi',
+  'hikaye': '58 yaşında kadın hasta halsizlik, iştahsızlık ve kabızlık nedeniyle acile geliyor. Son haftalarda sık idrara çıkma ve susuzluk tarif ediyor. Yakınları, son günlerde dalgınlaştığını ve sık uyuduğunu söylüyor. Hasta, “bacaklarımda ağırlık var” diyerek yürümede zorlandığını belirtiyor. Bulantı ve mide ağrısı eklenmiş. Evde depresif ruh hali gelişmiş. Son zamanlarda kemik ağrıları da başlamış. Konuşurken sık sık susuzluk hissinden yakınıyor. Yakınları, son günlerde davranışlarının değiştiğini ifade ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 92/dk, kaslarda güçsüzlük, bilinç dalgalı.',
+   'radyolojik_goruntuler': 'Kemik grafilerinde litik lezyonlar.',
+   'ekg': 'QT intervali kısalmış.',
+   'tetkikler': 'Kalsiyum 14.5 mg/dl, PTH yüksek, kreatinin 1.8 mg/dl.'}},
+ {'id': 36,
+  'ad': 'Akut Kalp Yetmezliği',
+  'hikaye': '72 yaşında erkek hasta, ani başlayan nefes darlığı ve öksürük nedeniyle acile getiriliyor. Son günlerde ayak bileklerinde şişlik olmuş. Hasta gece uykudan nefes darlığıyla uyanmış. Konuşurken sık sık öksürüyor, “nefes alamıyorum” diye yakınıyor. Rengi soluk ve terli. Yakınları, hastanın yastık sayısını artırarak uyuduğunu söylüyor. Acile geldiğinde oturur pozisyonda durmaya çalışıyor. Bacaklarında belirgin ödem mevcut. Eşi, son aylarda merdiven çıkarken çok yorulduğunu anlatıyor. Hasta çok huzursuz ve panik içinde. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, bilateral ral, pretibial ödem.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde alveoler ödem, kardiyomegali.',
+   'ekg': 'Sinüs taşikardisi, sol dal bloğu.',
+   'tetkikler': 'BNP yüksek, troponin hafif yüksek, kreatinin normal.'}},
+ {'id': 37,
+  'ad': 'Hipertansif Pulmoner Ödem',
+  'hikaye': '65 yaşında kadın hasta, aniden gelişen şiddetli nefes darlığı ve köpüklü balgam ile acile getiriliyor. Evde tansiyonu çok yüksek ölçülmüş. Hasta panik halinde, nefes almakta zorlanıyor. Yatağa uzanamıyor, sürekli oturur pozisyonda kalıyor. Yakınları, hastanın bir anda morardığını ve boğulur gibi olduğunu söylüyor. Konuşurken tek kelimelik yanıtlar veriyor. Bacaklarında ödem mevcut. Gece boyunca uyuyamamış. Olaydan önce baş ağrısı ve görmede bulanıklık yaşamış. Acile ulaştığında çok huzursuz ve terli. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 220/120 mmHg, nabız 120/dk, yaygın ral, siyanoz.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde yaygın alveoler ödem, kardiyomegali.',
+   'ekg': 'Sol ventrikül hipertrofisi bulguları.',
+   'tetkikler': 'BNP çok yüksek, kreatinin normal, troponin normal.'}},
+ {'id': 38,
+  'ad': 'Hiperviskozite Sendromu',
+  'hikaye': '59 yaşında erkek hasta, baş ağrısı, görme bulanıklığı ve halsizlik nedeniyle başvuruyor. Son günlerde burun kanamaları olmuş. Hasta sürekli yorgun hissettiğini söylüyor. Yakınları, hastanın yürürken sık sık sendelediğini anlatıyor. Konuşmaları yavaşlamış, bazen net değil. Son haftalarda kilo kaybı ve gece terlemesi de tarif ediyor. Acile geldiğinde rengi solgun, yüzünde hafif kızarıklık var. Elleri ve ayakları soğuk. Hasta sürekli başının zonkladığını söylüyor. Yakınları, son günlerde sık sık uyuduğunu belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 140/90 mmHg, nabız 90/dk, bilinç bulanık, görme bulanıklığı mevcut.',
+   'radyolojik_goruntuler': 'Beyin MR’da diffüz küçük damar dolgunluğu.',
+   'ekg': 'Sinüs ritmi.',
+   'tetkikler': 'Hematokrit %65, Hb 19 g/dl, viskozite artmış.'}},
+ {'id': 39,
+  'ad': 'Hipokalemi',
+  'hikaye': '48 yaşında kadın hasta, halsizlik, kaslarda kramplar ve çarpıntı şikâyetiyle acile geliyor. Son günlerde ishal öyküsü var. Yakınları, hastanın birkaç gündür iştahsız olduğunu söylüyor. Acile ulaştığında sürekli bacaklarında kramplardan yakınıyor. Konuşurken ellerinde titreme olduğu fark ediliyor. Baş dönmesi ve yorgunluk mevcut. Geceleri bacak kramplarıyla uyanmış. Eşi, hastanın son günlerde çok su içtiğini belirtiyor. Hasta yürümekte zorlanıyor, sık sık oturmak istiyor. Morali düşük ve endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 105/dk, kaslarda güçsüzlük, refleksler azalmış.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'U dalgaları, QT uzaması, ventriküler ektopiler.',
+   'tetkikler': 'Potasyum 2.4 mmol/L, Na 137 mmol/L, kreatinin normal.'}},
+ {'id': 40,
+  'ad': 'Hipokalsemi',
+  'hikaye': '35 yaşında kadın hasta, ellerinde karıncalanma, kas spazmları ve çarpıntı şikâyetiyle acile geliyor. Son günlerde boyun ameliyatı öyküsü var. Eşi, ameliyat sonrası halsizlik ve kasılmalar başladığını söylüyor. Hasta konuşurken ellerini sürekli ovuşturuyor. Parmaklarında kasılma gelişiyor. Dudak çevresinde uyuşma hissediyor. Gece boyunca kas krampları nedeniyle uyuyamamış. Panik halinde “ellerim kilitleniyor” diyor. Yürümekte zorlanıyor, sık sık oturuyor. Çevresine kaygılı gözlerle bakıyor. Yakınları, hastanın son günlerde moralinin de bozulduğunu söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 115/70 mmHg, nabız 100/dk, pozitif Chvostek ve Trousseau bulguları.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'QT uzaması.',
+   'tetkikler': 'Kalsiyum 6.1 mg/dl, PTH düşük, magnezyum normal.'}},
+ {'id': 41,
+  'ad': 'Horner Sendromu',
+  'hikaye': '54 yaşında erkek hasta, sağ göz kapağında düşüklük ve yüzün sağ tarafında terleme kaybı nedeniyle başvuruyor. Şikâyetlerin birkaç gündür fark edildiği söyleniyor. Yakınları gözünde küçülme olduğunu fark etmiş. Hasta baş ağrısı ve boyun ağrısı tarif ediyor. Birkaç hafta önce trafik kazası geçirmiş, boynunda ağrı kalmış. Acile geldiğinde endişeli, aynaya bakıp gözünü inceliyor. Konuşurken sürekli gözündeki asimetriyi vurguluyor. Eşi, son haftalarda göz kızarıklığı ve görmede bulanıklık da tarif ediyor. Hasta ayrıca kulakta çınlama hissettiğini belirtiyor. Halsizlik ve yorgunluk mevcut. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Sağ gözde pitozis, miyozis ve anhidrozis.',
+   'radyolojik_goruntuler': 'Servikal MR’da paravertebral kitle şüphesi.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'Kan sayımı normal, biyokimya normal.'}},
+ {'id': 42,
+  'ad': 'İntraserebral Hipertansif Kanama',
+  'hikaye': '67 yaşında erkek hasta, aniden gelişen baş ağrısı, bulantı ve bilinç bulanıklığı nedeniyle acile getiriliyor. Eşi, olay sırasında hastanın konuşmalarının bozulduğunu söylüyor. Evde tansiyon aletinde değer 210/120 mmHg olarak ölçülmüş. Hasta yere düşmüş ve kısa süreli bilinç kaybı yaşamış. Acile ulaştığında dalgın, çevreye ilgisiz. Sürekli başını tutuyor. Konuşmaları yavaş, sözcükler anlaşılmıyor. Sağ kolunu hareket ettirmekte zorlanıyor. Yakınları, hastanın ilaçlarını düzenli kullanmadığını anlatıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 200/110 mmHg, nabız 90/dk, sağ hemiparezi, bilinç bulanık.',
+   'radyolojik_goruntuler': 'Beyin BT’de bazal ganglion bölgesinde hematom.',
+   'ekg': 'Sol ventrikül hipertrofisi bulguları.',
+   'tetkikler': 'Kan şekeri normal, koagülasyon testleri normal.'}},
+ {'id': 43,
+  'ad': 'Karbonmonoksit Zehirlenmesi',
+  'hikaye': '29 yaşında erkek hasta, soba ile ısınan evde baygın halde bulunmuş. Ambulansla acile getirildiğinde baş ağrısı, bulantı ve sersemlik tarif ediyor. Olay sırasında eşi de baş dönmesi yaşamış. Hasta, gece boyunca uyandığında baş ağrısı hissetmiş ama önemsememiş. Cildi hafif kiraz kırmızısı görünüyor. Konuşurken dalgın ve yavaş. Yakınları, evde duman kokusu olmadığını söylüyor. Hasta sürekli uyumak istediğini belirtiyor. Acile ulaştığında hafif ajite, ellerinde titreme var. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, bilinç bulanık, cilt kiraz kırmızısı.',
+   'radyolojik_goruntuler': 'Beyin MR’da diffüz hipoksik değişiklikler.',
+   'ekg': 'Sinüs taşikardisi, ST depresyonları.',
+   'tetkikler': 'Karboksihemoglobin %28, laktat yüksek.'}},
+ {'id': 44,
+  'ad': 'Karotis Arter Diseksiyonu',
+  'hikaye': '46 yaşında kadın hasta, ani gelişen baş ağrısı, boyun ağrısı ve konuşma bozukluğu nedeniyle acile geliyor. Birkaç gün önce spor salonunda ağır egzersiz yaptığı öğreniliyor. Olay sırasında sağ gözünde görme bulanıklığı olmuş. Acile ulaştığında baş ağrısı çok şiddetli. Konuşurken zorlanıyor, kelimeleri seçemiyor. Boynunda ağrı ve sertlik tarif ediyor. Yakınları, hastanın son günlerde sağ kulağında çınlama duyduğunu söylüyor. Hasta sürekli sağ elinde uyuşmadan şikâyetçi. Konuşmaları yavaş, endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 88/dk, sağ tarafta hafif hemiparezi, pupil asimetrisi.',
+   'radyolojik_goruntuler': 'MR anjiyografide karotis arterde disseksiyon hattı.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Kan biyokimyası normal, koagülasyon testleri normal.'}},
+ {'id': 45,
+  'ad': 'Kırım Kongo Kanamalı Ateşi',
+  'hikaye': '37 yaşında erkek hasta, kırsal alanda çalıştıktan sonra yüksek ateş, baş ağrısı ve kas ağrıları nedeniyle acile geliyor. Son günlerde keneyle temas öyküsü var. Hasta halsiz, bitkin ve iştahsız. Burun kanaması olmuş. Cildinde küçük morluklar dikkat çekiyor. Konuşurken dalgın ve yorgun görünüyor. Ateş yüksek, titreme mevcut. Yakınları, hastanın gece boyunca yoğun terlediğini söylüyor. Acile ulaştığında yüzü solgun, karın ağrısı tarif ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, peteşi ve ekimozlar mevcut.',
+   'radyolojik_goruntuler': 'Batın USG’de hepatosplenomegali.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Trombosit 25.000/mm³, AST/ALT yüksek, INR uzamış, PCR pozitif.'}},
+ {'id': 46,
+  'ad': 'Klostridiyal Miyonekroz',
+  'hikaye': '52 yaşında erkek hasta, bacağında hızla ilerleyen ağrı, şişlik ve kötü kokulu akıntı nedeniyle başvuruyor. Birkaç gün önce yaralanma öyküsü var. Başlangıçta hafif ağrı varken kısa sürede şiddetlenmiş. Hasta ateş ve halsizlik de tarif ediyor. Acile geldiğinde huzursuz, sürekli bacağını ovuşturuyor. Bacak cildi morarmış ve gergin. Gaz çıkışı nedeniyle çıtırtı hissediliyor. Yakınları, hastanın son 24 saatte yürüyemez hale geldiğini söylüyor. Konuşmaları yavaş, bitkin görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 120/dk, ateş 39.2°C, bacakta yaygın şişlik ve krepitasyon.',
+   'radyolojik_goruntuler': 'BT’de kas dokusu içinde gaz alanları.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 20.000/mm³, CRP çok yüksek, laktat yüksek.'}},
+ {'id': 47,
+  'ad': 'Kolanjit',
+  'hikaye': '62 yaşında kadın hasta, ateş, titreme ve sağ üst kadran ağrısı nedeniyle başvuruyor. İdrar renginde koyulaşma ve ciltte sararma fark etmiş. Yakınları, hastanın son günlerde iştahsız olduğunu söylüyor. Gece boyunca terlemiş. Karın ağrısı gittikçe şiddetlenmiş. Acile ulaştığında bitkin, konuşmaları yavaş. Hasta sürekli karnını tutuyor. Son aylarda safra taşı öyküsü olduğu öğreniliyor. Eşi, birkaç kez benzer atak yaşadığını anlatıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 102/dk, ateş 38.8°C, sarılık mevcut, sağ üst kadranda hassasiyet.',
+   'radyolojik_goruntuler': 'MRCP’de safra yollarında genişleme ve taş.',
+   'ekg': 'Normal.',
+   'tetkikler': 'AST/ALT yüksek, bilirubin yüksek, lökosit 16.000/mm³.'}},
+ {'id': 48,
+  'ad': 'Kolesistit',
+  'hikaye': '56 yaşında kadın hasta, sağ üst kadranda şiddetli karın ağrısı nedeniyle acile geliyor. Ağrıya bulantı ve kusma eşlik ediyor. Eşi, hastanın yağlı yemeklerden sonra şikâyetlerinin arttığını söylüyor. Son günlerde ateş de eklenmiş. Hasta iştahsız ve huzursuz. Acile ulaştığında karnını tutarak yürümekte zorlanıyor. Konuşurken sürekli ağrıdan yakınıyor. Daha önce safra taşı tanısı aldığı öğreniliyor. Gece boyunca uyuyamamış. Ateş ve terleme şikâyetleri mevcut. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 95/dk, ateş 38.3°C, sağ üst kadranda hassasiyet ve Murphy pozitif.',
+   'radyolojik_goruntuler': 'Batın USG’de safra kesesinde taş ve duvar kalınlaşması.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 14.000/mm³, CRP yüksek, ALP yüksek.'}},
+ {'id': 49,
+  'ad': 'Kompartman Sendromu',
+  'hikaye': '28 yaşında erkek hasta, trafik kazası sonrası bacak ağrısı ve şişlik nedeniyle acile getiriliyor. Bacağına alçı uygulanmış, ancak sonrasında ağrı giderek artmış. Hasta sürekli “bacağım patlayacak gibi” diyerek şikâyet ediyor. Ağrıya uyuşma eklenmiş. Gece boyunca ağrıdan uyuyamamış. Acile geldiğinde panik içinde, bacağını oynatamıyor. Ayağında soğukluk hissediyor. Yakınları, parmaklarını oynatmakta zorlandığını fark etmiş. Hasta terli ve huzursuz. Konuşmaları kısa ve endişeli. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 100/dk, bacakta gerginlik, şiddetli ağrı, parmak hareketlerinde kısıtlılık.',
+   'radyolojik_goruntuler': 'BT’de kas bölgesinde ödem ve basınç artışı bulguları.',
+   'ekg': 'Normal.',
+   'tetkikler': 'CK yüksek, laktat yüksek.'}},
+ {'id': 50,
+  'ad': 'Krup',
+  'hikaye': '3 yaşında erkek çocuk, öksürük, ateş ve nefes darlığı nedeniyle acile getiriliyor. Öksürüğü havlar tarzında, sesi kısılmış. Anne, çocuğun gece boyunca nefes almakta zorlandığını söylüyor. Çocuk sürekli annesine sarılmış, huzursuz. Nefes alırken stridor duyuluyor. Ateşi 38.5°C. Çocuk yemek yemeyi reddediyor. Yakınları, evde nefesinin kesildiğini düşündüklerini anlatıyor. Çocuk acile geldiğinde bitkin ve ağlamaklı. Gece öksürük krizleriyle uyanmış. Konuşmakta zorlanıyor, kelimeleri fısıldayarak söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 120/dk, ateş 38.5°C, inspiratuar stridor, havlar tarzda öksürük.',
+   'radyolojik_goruntuler': 'Boyun grafisinde subglottik daralma (“steeple sign”).',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit hafif yüksek, CRP hafif yüksek.'}},
+ {'id': 51,
+  'ad': 'Legionella Pnömonisi',
+  'hikaye': '62 yaşında erkek hasta, yüksek ateş, öksürük ve nefes darlığı şikâyetiyle acile geliyor. Yakınları, hastanın 1 haftadır otelde konakladığını ve havuz kullandığını söylüyor. Öksürüğü başta kuruymuş, sonradan balgam çıkmaya başlamış. Hasta baş ağrısı ve kas ağrısından da yakınıyor. Son 2 gündür ishal tarif ediyor. Halsizliği nedeniyle yatağından kalkmakta zorlanıyor. Eşi, hastanın zaman zaman konuşmalarında dalgalanmalar olduğunu söylüyor. Acile geldiğinde terli, huzursuz ve öksürük krizleri yaşıyor. Son günlerde iştahı da kapanmış. Sigara kullanımı öyküsü mevcut. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 110/dk, ateş 39.5°C, bilateral ral ve krepitasyon.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde sağ alt lobda konsolidasyon, BT’de multilober infiltratlar.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 13.000/mm³, CRP yüksek, hiponatremi (Na 124 mmol/L), idrarda antijen pozitif.'}},
+ {'id': 52,
+  'ad': 'Meniere Sendromu',
+  'hikaye': '47 yaşında kadın hasta, tekrarlayan baş dönmesi, kulakta çınlama ve işitme kaybı şikâyetleriyle acile geliyor. Son atağı birkaç saat önce başlamış. Baş dönmesi o kadar şiddetli ki ayakta duramıyor. Hasta sürekli kulak basıncından yakınıyor. Yakınları, hastanın birkaç gündür mide bulantısı ve dengesizlik yaşadığını söylüyor. Acile geldiğinde çok huzursuz ve endişeli görünüyor. Konuşurken başını tutuyor ve gözleri sık sık kapanıyor. Daha önce benzer ataklar yaşamış. Eşi, hastanın stresli dönemlerde şikâyetlerinin arttığını belirtiyor. Hasta yemek yemeyi reddediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 85/dk, nistagmus mevcut, denge bozukluğu belirgin.',
+   'radyolojik_goruntuler': 'Beyin MR normal, iç kulak MR’da endolenfatik hidrops şüphesi.',
+   'ekg': 'Normal sinüs ritmi.',
+   'tetkikler': 'Odyometri testinde sensörinöral işitme kaybı, elektrolitler normal.'}},
+ {'id': 53,
+  'ad': 'Meningokoksemi',
+  'hikaye': '18 yaşında erkek hasta, ateş, baş ağrısı ve döküntü şikâyetiyle acile getiriliyor. Şikâyetler birkaç saat içinde hızla ilerlemiş. Yakınları, hastanın sabah okula giderken başının ağrıdığını ve eve dönerken morluklar oluştuğunu söylüyor. Hastada kusma ve bilinç bulanıklığı da eklenmiş. Acile ulaştığında çok halsiz ve huzursuz. Yatakta sürekli sağa sola dönüyor. Derisinde morarmalar ve peteşiler dikkat çekiyor. Nefes almakta zorlanıyor. Konuşmaları anlamsız, gözleri donuk. Ebeveynleri, daha önce tamamen sağlıklı olduğunu belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/50 mmHg, nabız 120/dk, ateş 39.8°C, yaygın peteşi ve purpura, ense sertliği.',
+   'radyolojik_goruntuler': 'BT normal.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 20.000/mm³, CRP çok yüksek, kan kültüründe gram-negatif diplokok.'}},
+ {'id': 54,
+  'ad': 'Mezenter Arter İskemisi',
+  'hikaye': '71 yaşında kadın hasta, ani başlayan şiddetli karın ağrısı nedeniyle acile geliyor. Ağrı yemek sonrası başlamış. Başta hazımsızlık sanmış ama giderek şiddetlenmiş. Kusma ve ishal eşlik ediyor. Hasta ağrıdan dolayı yatağa kıvrılmış halde. Yakınları, hastanın atriyal fibrilasyon öyküsü olduğunu söylüyor. Acile ulaştığında çok huzursuz, sürekli karnını tutuyor. Konuşmaları kısa ve zorlanarak çıkıyor. Ağrı şiddetine rağmen karın muayenesinde bulgular hafif. Hasta sürekli “içim yanıyor” diye yakınmış. Morali düşük, endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/70 mmHg, nabız 110/dk, karında yaygın hassasiyet hafif, şiddetli ağrı şikâyeti ile uyumsuz.',
+   'radyolojik_goruntuler': 'Batın BT anjiyografide superior mezenterik arterde tıkanıklık, barsaklarda hipoperfüzyon.',
+   'ekg': 'Atriyal fibrilasyon.',
+   'tetkikler': 'Laktat 5 mmol/L, lökosit 18.000/mm³, CRP yüksek.'}},
+ {'id': 55,
+  'ad': 'Miksödem Krizi',
+  'hikaye': '68 yaşında kadın hasta, bilinç bulanıklığı, soğuk intoleransı ve şiddetli halsizlik nedeniyle acile getiriliyor. Yakınları, hastanın günlerdir çok uyuduğunu ve zor uyandırıldığını söylüyor. Evde ısıtıcı çalışmasına rağmen sürekli üşümüş. Konuşmaları yavaş, ses tonu kısık. Yüzü şiş, göz kapakları ödemli. Nabzının çok yavaşladığı fark edilmiş. Acile geldiğinde bilinci bulanık, çevreyle ilgisiz. Dudakları morarmış. Yakınları, ilaçlarını düzenli kullanmadığını anlatıyor. Sürekli titriyor ve yorgun görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 45/dk, soğuk ve kuru cilt, ödemli yüz.',
+   'radyolojik_goruntuler': 'BT normal.',
+   'ekg': 'Sinüs bradikardisi, düşük voltaj.',
+   'tetkikler': 'TSH çok yüksek, serbest T4 çok düşük, Na 120 mmol/L.'}},
+ {'id': 56,
+  'ad': 'Miyokardit',
+  'hikaye': '26 yaşında erkek hasta, göğüs ağrısı, halsizlik ve çarpıntı şikâyetiyle acile geliyor. Yakınları, hastanın 1 hafta önce grip benzeri hastalık geçirdiğini söylüyor. Göğüs ağrısı birkaç gündür devam ediyormuş. Hastada ateş ve gece terlemesi de mevcut. Konuşurken sık sık göğsünü tutuyor. Halsizliği nedeniyle günlük işlerini yapamıyor. Acile geldiğinde endişeli, solgun ve terli. Son günlerde eforla nefes darlığı yaşadığını belirtiyor. Olay günü istirahat halinde de göğüs ağrısı olmuş. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 105/dk, ateş 38.1°C, kalpte üfürüm.',
+   'radyolojik_goruntuler': 'Ekokardiyografide ejeksiyon fraksiyonu düşük, sol ventrikül dilate.',
+   'ekg': 'ST-T dalga değişiklikleri, sinüs taşikardisi.',
+   'tetkikler': 'Troponin yüksek, CK-MB artmış, CRP yüksek.'}},
+ {'id': 57,
+  'ad': 'Nekrotizan Fasiit',
+  'hikaye': '52 yaşında kadın hasta, bacağında şiddetli ağrı, şişlik ve kızarıklık nedeniyle acile getiriliyor. Şikâyetler 2 gündür artarak devam ediyor. Yakınları, hastanın bacağındaki küçük bir yara sonrası bu tablo geliştiğini söylüyor. Ağrı kısa sürede dayanılmaz hale gelmiş. Hasta halsiz ve ateşi yükselmiş. Acile geldiğinde panik içinde, bacağını hareket ettiremiyor. Ciltte hızla ilerleyen morluk ve kötü koku mevcut. Yara çevresi hassas, dokunulduğunda şiddetli ağrı oluyor. Hasta sürekli ağlamış, çok endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 120/dk, ateş 39.5°C, bacakta yaygın şişlik ve nekrotik cilt.',
+   'radyolojik_goruntuler': 'BT’de yumuşak dokuda gaz birikimi.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 22.000/mm³, CRP çok yüksek, laktat 4.5 mmol/L.'}},
+ {'id': 58,
+  'ad': 'Orbital Selülit',
+  'hikaye': '9 yaşında erkek çocuk, gözde şişlik, kızarıklık ve ateş nedeniyle acile getiriliyor. Şikâyetler 2 gündür var. Anne, çocuğun burnunun da tıkalı olduğunu söylüyor. Çocuk gözünü açmakta zorlanıyor. Ateşi yüksek, halsiz. Acile ulaştığında endişeli ve sürekli ağlıyor. Göz çevresi kızarık ve şiş. Göz hareketleri kısıtlı, ağrı artıyor. Ailesi, çocuğun daha önce sinüzit geçirdiğini belirtiyor. Çocuk yemek yemeyi reddediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Ateş 38.7°C, TA 95/60 mmHg, nabız 110/dk, göz kapağı ödemli, hareket kısıtlı.',
+   'radyolojik_goruntuler': 'Orbital BT’de subperiostal apse ve sinüslerde doluluk.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 17.000/mm³, CRP yüksek.'}},
+ {'id': 59,
+  'ad': 'Otoimmün Hemolitik Anemi',
+  'hikaye': '36 yaşında kadın hasta, halsizlik, baş dönmesi ve ciltte solukluk nedeniyle başvuruyor. Son günlerde çarpıntı tarif ediyor. İdrar renginde koyulaşma olmuş. Yakınları, hastanın çok hızlı yorulduğunu söylüyor. Hasta baş ağrısından da yakınıyor. Konuşurken solgun ve yorgun görünüyor. Halsizliği nedeniyle işe gidememiş. Acile geldiğinde huzursuz, sık sık dinlenmek istiyor. Cildinde sarılık da fark ediliyor. Hasta son günlerde soğuk algınlığı geçirmiş. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, cilt soluk ve ikterik.',
+   'radyolojik_goruntuler': 'Batın USG’de dalak büyümüş.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 6.8 g/dl, indirekt bilirubin yüksek, retikülosit artmış, Coombs testi pozitif.'}},
+ {'id': 60,
+  'ad': 'Over Kist Rüptürü',
+  'hikaye': '27 yaşında kadın hasta, ani başlayan alt karın ağrısı nedeniyle acile getiriliyor. Ağrı sağ tarafta başlamış, kısa sürede şiddetlenmiş. Hasta bulantı ve baş dönmesi de tarif ediyor. Acile ulaştığında çok huzursuz ve ağrıdan kıvranıyor. Yürümekte zorlanıyor, sürekli karnını tutuyor. Yakınları, hastanın birkaç gündür karın bölgesinde dolgunluk hissettiğini söylüyor. Gece boyunca uyuyamamış. Adet düzensizliği öyküsü mevcut. Hasta sürekli “patladı gibi” diyerek ağrısını tarif ediyor. Konuşmaları kısa ve kesik. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, karında sağ alt kadranda hassasiyet.',
+   'radyolojik_goruntuler': 'Pelvik USG’de serbest sıvı ve rüptüre kist görünümü.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Hb 9.5 g/dl, Htc %29, β-hCG negatif.'}},
+ {'id': 61,
+  'ad': 'Özefagus Rüptürü',
+  'hikaye': '58 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı nedeniyle acile getiriliyor. Bir gece önce aşırı alkol aldıktan sonra şiddetli kusmalar yaşamış. Kusmalar sonrası göğsünde bıçak saplanır gibi ağrı hissetmiş. Eşi, olaydan sonra hastanın çok halsizleştiğini söylüyor. Acile ulaştığında terli, solgun ve bitkin görünüyor. Konuşurken “göğsüm parçalanıyor” diyerek şikâyet ediyor. Yutkunmada güçlük ve boğazda ağrı tarif ediyor. Sırtına vuran bir ağrıdan da yakınmakta. Yemek yemeyi reddediyor. Yakınları, hastanın mide sorunları nedeniyle sık ilaç kullandığını belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 120/dk, ateş 38.2°C, göğüste hassasiyet, subkutan amfizem.',
+   'radyolojik_goruntuler': 'Toraks BT’de mediastinal hava, plevral effüzyon.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 17.000/mm³, CRP yüksek, pH düşük.'}},
+ {'id': 62,
+  'ad': 'Panik Atak',
+  'hikaye': '26 yaşında kadın hasta, ani başlayan çarpıntı, nefes darlığı ve göğüs ağrısı nedeniyle acile geliyor. Şikâyetleri otobüste yolculuk sırasında başlamış. Kalbinin çok hızlı attığını ve boğulacak gibi olduğunu söylüyor. Acile ulaştığında çok korkmuş ve panik içinde. Konuşurken elleri titriyor, terlemiş ve gözleri endişeyle etrafta dolaşıyor. Yakınları, hastanın daha önce de benzer ataklar yaşadığını anlatıyor. Baş dönmesi ve göğüste sıkışma tarif ediyor. Birkaç kez “öleceğim sandım” ifadesini kullanıyor. Olaydan sonra sakinleşmekte zorlanmış. Şikâyetler aniden başlamış ve yaklaşık 20 dakikadır devam ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 130/80 mmHg, nabız 120/dk, hızlı ve yüzeysel solunum, terleme.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Kan şekeri normal, elektrolitler normal, troponin normal.'}},
+ {'id': 63,
+  'ad': 'Peptik Ülser Perforasyonu',
+  'hikaye': '49 yaşında erkek hasta, ani başlayan karın ağrısı nedeniyle acile getiriliyor. Ağrı epigastrik bölgede başlamış, tüm karına yayılmış. Hasta ağrıyı bıçak saplanır gibi tarif ediyor. Gece yarısı aniden uyanmış ve karnını tutarak yere kıvrılmış. Kusma ve terleme eklenmiş. Acile ulaştığında bitkin ve huzursuz görünüyor. Sigara ve alkol öyküsü var. Yakınları, hastanın sık sık mide ilaçları kullandığını söylüyor. Konuşurken çok kısa cevaplar veriyor. Karın ağrısı nedeniyle oturup kalkmakta zorlanıyor. Morali düşük, endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 115/dk, karında defans ve rebound.',
+   'radyolojik_goruntuler': 'Batın BT’de karın boşluğunda serbest hava ve sıvı.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 15.000/mm³, CRP yüksek, Hb normal.'}},
+ {'id': 64,
+  'ad': 'Perikardiyal Tamponad',
+  'hikaye': '56 yaşında erkek hasta, nefes darlığı ve göğüs ağrısı nedeniyle acile getiriliyor. Şikâyetleri birkaç gündür artarak devam etmiş. Hasta konuşurken çok zorlanıyor. Geceleri uykudan nefes darlığıyla uyanmış. Acile ulaştığında oturur pozisyonda kalmak istiyor. Dudakları morarmış, gözleri endişeli. Eşi, son günlerde hastanın ayaklarında şişlik olduğunu söylüyor. Hasta çok huzursuz, göğsünü tutarak sürekli “nefes alamıyorum” diyor. Konuşmaları kısa, panik içinde. Yakınları, hastanın daha önce göğüs travması geçirdiğini belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 85/60 mmHg, nabız 120/dk, boyun venlerinde dolgunluk, kalp sesleri derinden duyuluyor.',
+   'radyolojik_goruntuler': 'Ekokardiyografide perikardiyal efüzyon, kalp odacıklarında sıkışma bulguları.',
+   'ekg': 'Elektriksel alternans.',
+   'tetkikler': 'Hb normal, laktat yüksek, troponin hafif yüksek.'}},
+ {'id': 65,
+  'ad': 'Periorbital Selülit',
+  'hikaye': '7 yaşında kız çocuk, göz kapağında şişlik ve kızarıklık nedeniyle acile getiriliyor. Şikâyetler dün akşam başlamış, sabah artmış. Ateşi yükselmiş. Anne, çocuğun burnunun tıkalı olduğunu söylüyor. Çocuk gözünü açmakta zorlanıyor. Yemek yemeyi reddediyor, huzursuz. Acile ulaştığında sürekli ağlıyor. Göz çevresi kızarık, şiş ve dokununca ağrılı. Konuşmaları kısık, bitkin görünüyor. Ailesi, daha önce sık sinüzit öyküsü olduğunu belirtiyor. Çocuk sık sık annesine sarılıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Ateş 38.6°C, TA 95/60 mmHg, nabız 115/dk, göz kapağında ödem ve eritem, göz hareketleri serbest.',
+   'radyolojik_goruntuler': 'Orbital BT’de yumuşak doku ödemi, apse yok.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 13.000/mm³, CRP yüksek.'}},
+ {'id': 66,
+  'ad': 'Pilor Stenozu',
+  'hikaye': '5 haftalık erkek bebek, tekrarlayan fışkırır tarzda kusmalar nedeniyle acile getiriliyor. Anne, bebeğin her beslenmeden kısa süre sonra kustuğunu söylüyor. Son günlerde kilo alamadığı fark edilmiş. Bebek sürekli aç gibi emmek istiyor ama kısa sürede kusuyor. Kusmalar şiddetli ve süt kokulu. Anne, bebeğin bezlerini eskisi kadar ıslatmadığını belirtiyor. Acile ulaştığında bebek huzursuz, ağlıyor ve cildi kuru. Karnında dalga hareketi izleniyor. Babası, bebeğin doğumdan beri sağlıklı olduğunu ancak son haftalarda şikâyetlerin başladığını anlatıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 80/50 mmHg, nabız 160/dk, kilo düşük, epigastrik bölgede zeytin büyüklüğünde kitle.',
+   'radyolojik_goruntuler': 'Abdominal USG’de mide çıkışında kas kalınlaşması, dar kanal.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Na düşük, K düşük, metabolik alkaloz.'}},
+ {'id': 67,
+  'ad': 'Portal Ven Trombozu',
+  'hikaye': '49 yaşında erkek hasta, karın ağrısı ve şişlik nedeniyle acile geliyor. Son günlerde iştahsızlık ve kilo kaybı tarif ediyor. Hastanın karaciğer hastalığı öyküsü var. Acile ulaştığında huzursuz, karnını tutarak yürüyor. Ağrı daha çok üst karında hissediliyor. Yakınları, son günlerde cildinde sararma fark ettiklerini söylüyor. Hasta gece uyuyamamış. Yemek yemeyi reddediyor. Bacaklarında da şişlik mevcut. Konuşurken endişeli ve yorgun görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, karında şişlik, asit, hepatosplenomegali.',
+   'radyolojik_goruntuler': 'Batın BT’de portal vende dolum defekti, karaciğerde konjesyon.',
+   'ekg': 'Normal.',
+   'tetkikler': 'INR uzamış, trombosit düşük, bilirubin yüksek.'}},
+ {'id': 68,
+  'ad': 'Preeklampsi',
+  'hikaye': '29 yaşında, 30 haftalık gebe kadın hasta, baş ağrısı, bulanık görme ve karın ağrısı nedeniyle acile geliyor. Eşi, son günlerde yüzünde ve ellerinde şişlik fark ettiklerini söylüyor. Hasta çok halsiz, sürekli “gözümün önünde ışık çakıyor” diye tarif ediyor. Karnında sertlik ve ağrı mevcut. Acile ulaştığında ödem belirgin. Konuşmaları kısa, endişeli görünüyor. Geceleri uyuyamamış, baş ağrısı giderek artmış. Yakınları, hastanın son haftalarda tansiyonunun yüksek olduğunu belirtiyor. Hasta huzursuz ve ağlamaklı. Karnındaki bebeğin hareketlerini az hissettiğini söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 170/110 mmHg, nabız 95/dk, ödem yaygın, refleksler hiperaktif.',
+   'radyolojik_goruntuler': 'Ultrasonografide intrauterin gelişme geriliği.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Proteinüri (+++), kreatinin hafif yüksek, trombosit normal.'}},
+ {'id': 69,
+  'ad': 'Primer Hiperaldosteronizm',
+  'hikaye': '43 yaşında erkek hasta, baş ağrısı, kas krampları ve halsizlik nedeniyle acile geliyor. Son günlerde çok su içtiğini ve sık idrara çıktığını söylüyor. Evde tansiyonu sürekli yüksek ölçülmüş. Acile ulaştığında endişeli ve huzursuz. Bacaklarında kasılma mevcut. Hasta, sık sık “bacaklarım tutuluyor” diyor. Yakınları, son günlerde sinirli olduğunu belirtiyor. İşyerinde performansının düştüğü anlatılıyor. Hasta gece boyunca uyuyamamış. Yemek yemeyi reddediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 170/100 mmHg, nabız 92/dk, kaslarda güçsüzlük, hafif dehidratasyon.',
+   'radyolojik_goruntuler': 'Abdominal BT’de adrenal bezde kitle şüphesi.',
+   'ekg': 'U dalgaları, QT uzaması.',
+   'tetkikler': 'Potasyum 2.8 mmol/L, Na 148 mmol/L, aldosteron yüksek, renin düşük.'}},
+ {'id': 70,
+  'ad': 'Psikotik Atak',
+  'hikaye': '24 yaşında erkek hasta, son günlerde konuşmalarında anlamsızlık ve davranış bozukluğu nedeniyle acile getiriliyor. Yakınları, hastanın evde kendi kendine konuştuğunu söylüyor. Hasta sürekli çevresinde olmayan şeylerden bahsediyor. Konuşurken huzursuz, gözlerini bir noktaya dikiyor. Acile ulaştığında agresifleşmiş. Yemek yemeyi reddediyor. Son günlerde uykusuz kalmış. Ebeveynleri, hastanın okul başarısında düşüş olduğunu belirtiyor. Hasta sık sık “beni takip ediyorlar” diye bağırıyor. Morali bozuk, endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 120/80 mmHg, nabız 90/dk, ajite, yönelim bozukluğu.',
+   'radyolojik_goruntuler': 'Beyin MR normal.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Kan biyokimyası normal, idrar toksikoloji negatif.'}},
+ {'id': 71,
+  'ad': 'Psödomembranöz Enterokolit',
+  'hikaye': '64 yaşında kadın hasta, son 1 haftadır devam eden ishal ve karın ağrısı şikâyetiyle acile getiriliyor. Yakınları, hastanın kısa süre önce antibiyotik tedavisi gördüğünü söylüyor. İshal sulu ve kötü kokulu, günde 10’dan fazla tuvalete gitmiş. Hastada halsizlik ve iştahsızlık belirgin. Eşi, hastanın son günlerde çok kilo kaybettiğini ifade ediyor. Hasta sürekli karnını tutuyor ve oturmakta zorlanıyor. Geceleri uyuyamamış, ishal nedeniyle sık sık tuvalete kalkmış. Acile ulaştığında çok bitkin, konuşmaları yavaş. Karın ağrısı nedeniyle sürekli kıvranıyor. Susuzluk hissi belirgin. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 95/60 mmHg, nabız 110/dk, karında yaygın hassasiyet, dil kuru.',
+   'radyolojik_goruntuler': 'Batın BT’de kolon duvarında kalınlaşma, diffüz ödem.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 20.000/mm³, CRP yüksek, dışkı testinde toksin pozitif.'}},
+ {'id': 72,
+  'ad': 'Pulmoner Emboli',
+  'hikaye': '59 yaşında kadın hasta, ani başlayan nefes darlığı ve göğüs ağrısı nedeniyle acile getiriliyor. Birkaç gün önce uzun uçak yolculuğu yapmış. Yakınları, hastanın bacaklarında şişlik fark ettiklerini söylüyor. Olay sırasında aniden nefesi kesilmiş, yere oturmak zorunda kalmış. Acile ulaştığında dudakları morarmış. Hasta “nefesim kesiliyor” diyerek panik içinde. Konuşmaları kısa ve kesik. Eşi, hastanın son günlerde öksürük ve balgam şikâyeti olmadığını belirtiyor. Yatarken nefes almakta çok zorlandığını söylüyor. Terli ve huzursuz görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 120/dk, solunum sayısı 30/dk, sağ bacakta ödem.',
+   'radyolojik_goruntuler': 'BT pulmoner anjiyografide sağ ana pulmoner arterde dolum defekti.',
+   'ekg': 'Sinüs taşikardisi, S1Q3T3 paterni.',
+   'tetkikler': 'D-dimer yüksek, kan gazında hipoksemi.'}},
+ {'id': 73,
+  'ad': 'Pulmoner Hipertansiyon',
+  'hikaye': '48 yaşında kadın hasta, eforla artan nefes darlığı ve çarpıntı nedeniyle başvuruyor. Son aylarda merdiven çıkarken zorlandığını söylüyor. Halsizlik ve yorgunluk tarif ediyor. Son günlerde ayak bileklerinde şişlik başlamış. Hasta, göğsünde sıkışma hissettiğini belirtiyor. Konuşurken nefes nefese kalıyor. Acile ulaştığında rengi soluk, dudaklarında morarma mevcut. Eşi, son haftalarda hastanın bayılacak gibi olduğunu söylüyor. Hasta sürekli oturmak istiyor, yürümekte zorlanıyor. Gece boyunca uyuyamamış, öksürük krizleri yaşamış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, siyanoz, pretibial ödem.',
+   'radyolojik_goruntuler': 'Ekokardiyografide sağ ventrikül hipertrofisi, pulmoner arter basıncı artmış.',
+   'ekg': 'Sağ aks sapması, sağ ventrikül hipertrofisi.',
+   'tetkikler': 'BNP yüksek, oksijen satürasyonu %85.'}},
+ {'id': 74,
+  'ad': 'Rabdomiyoliz',
+  'hikaye': '36 yaşında erkek hasta, şiddetli kas ağrısı ve koyu renkli idrar şikâyetiyle acile geliyor. Yakınları, hastanın ağır spor sonrası şikâyetlerinin başladığını söylüyor. Kaslarda ağrı ve hassasiyet belirgin. Hasta “bacaklarımda yanma var” diyerek şikâyet ediyor. İdrarının kahverengi olduğunu anlatıyor. Halsiz ve yorgun görünüyor. Son 24 saatte sık sık kramp girmiş. Gece boyunca ağrıdan uyuyamamış. Acile ulaştığında panik içinde, sık sık su içmek istiyor. Konuşurken kaslarını ovuşturuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 95/dk, kaslarda yaygın ağrı ve hassasiyet.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Hiperkalemiye bağlı sivri T dalgaları.',
+   'tetkikler': 'CK çok yüksek, potasyum 6.2 mmol/L, kreatinin 2.8 mg/dl.'}},
+ {'id': 75,
+  'ad': 'Raynaud Fenomeni',
+  'hikaye': '32 yaşında kadın hasta, ellerinde soğukluk ve renk değişikliği şikâyetiyle başvuruyor. Özellikle soğuk havada parmaklarının beyazlaştığını ve morardığını söylüyor. Sıcak ortama girince parmaklarda kızarma oluyor. Son haftalarda parmak uçlarında uyuşma tarif ediyor. Acile ulaştığında elleri buz gibi. Hasta sürekli ellerini ovuşturuyor. Yakınları, hastanın son günlerde yazı yazmakta zorlandığını belirtiyor. Endişeli görünüyor, konuşurken ellerini saklamaya çalışıyor. Günlük yaşamını etkileyen şikâyetleri olduğunu ifade ediyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 115/70 mmHg, nabız 80/dk, ellerde soğukluk, distal nabızlar zayıf.',
+   'radyolojik_goruntuler': 'El damar dopplerinde vazospazm bulguları.',
+   'ekg': 'Normal.',
+   'tetkikler': 'ANA pozitif, CRP normal.'}},
+ {'id': 76,
+  'ad': 'Restriktif Kardiyomiyopati',
+  'hikaye': '55 yaşında erkek hasta, nefes darlığı, çarpıntı ve bacaklarda şişlik nedeniyle acile geliyor. Şikâyetler aylardır artarak devam etmiş. Hasta merdiven çıkmakta zorlanıyor. Son günlerde gece nefes darlığıyla uyanmış. Halsizliği belirgin. Konuşurken sık sık göğsünü tutuyor. Acile ulaştığında çok yorgun ve terli. Dudaklarında morarma mevcut. Yakınları, son aylarda hastanın iştahsız olduğunu ve kilo kaybettiğini söylüyor. Hasta sürekli dinlenmek istiyor, yürümekte zorlanıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 105/65 mmHg, nabız 95/dk, juguler venöz dolgunluk, pretibial ödem.',
+   'radyolojik_goruntuler': 'Ekokardiyografide diyastolik dolum kısıtlı, atriyumlar geniş.',
+   'ekg': 'Düşük voltajlı QRS, aritmi.',
+   'tetkikler': 'BNP yüksek, troponin normal, CRP normal.'}},
+ {'id': 77,
+  'ad': 'Retina Dekolmanı',
+  'hikaye': '52 yaşında erkek hasta, ani başlayan görme kaybı ve ışık çakmaları nedeniyle başvuruyor. Şikâyetler bir gözde başlamış. Hasta “perde iniyor gibi” bir his tarif ediyor. Yakınları, hastanın birkaç haftadır gözünde uçuşmalar gördüğünü söylüyor. Acile ulaştığında çok endişeli ve huzursuz. Görme kaybı hızla ilerlemiş. Hasta sürekli gözünü ovuşturuyor. Konuşurken sık sık “gözüm kararıyor” diyor. Daha önce miyopi öyküsü olduğu öğreniliyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'Görme keskinliği belirgin azalmış, pupil normal.',
+   'radyolojik_goruntuler': 'Göz USG’de retina tabakasında ayrılma.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Kan değerleri normal.'}},
+ {'id': 78,
+  'ad': 'Santral Diyabetes İnsipidus',
+  'hikaye': '29 yaşında erkek hasta, aşırı susama ve sık idrara çıkma nedeniyle başvuruyor. Günde 8–10 litre su içtiğini söylüyor. Gece boyunca defalarca tuvalete kalkmış. Yakınları, hastanın çok kilo kaybettiğini anlatıyor. Acile ulaştığında bitkin ve huzursuz. Dudakları kurumuş, cildi solgun. Konuşurken sürekli “çok susadım” diyor. İştahı azalmış, gözleri çökmüş. Halsizliği nedeniyle işe gidememiş. Baş ağrısı tarif ediyor. Yakınları, birkaç ay önce kafa travması geçirdiğini söylüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 95/dk, cilt kuru, mukozalar kuru.',
+   'radyolojik_goruntuler': 'Hipofiz MR’da posterior hipofiz sinyali kaybı.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Na 154 mmol/L, idrar yoğunluğu çok düşük, plazma osmolalitesi yüksek.'}},
+ {'id': 79,
+  'ad': 'Sepsis',
+  'hikaye': '68 yaşında kadın hasta, ateş, bilinç bulanıklığı ve tansiyon düşüklüğü nedeniyle acile getiriliyor. Yakınları, hastanın 3 gündür öksürük ve balgam çıkardığını söylüyor. Sabah aniden bilinci bulanıklaşmış. Acile ulaştığında çok halsiz, terli ve solgun. Konuşmaları anlaşılmaz. Nabzı hızlı, nefes darlığı var. Hasta sürekli yatağında dönüyor. Eşi, hastanın idrar çıkışının da azaldığını söylüyor. Hasta panik halinde, sık sık gözlerini kapatıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 80/50 mmHg, nabız 120/dk, ateş 39.1°C, bilinç bulanık.',
+   'radyolojik_goruntuler': 'Akciğer BT’de konsolidasyon alanları.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 23.000/mm³, CRP çok yüksek, laktat 5.2 mmol/L, prokalsitonin yüksek.'}},
+ {'id': 80,
+  'ad': 'Serotonin Sendromu',
+  'hikaye': '34 yaşında kadın hasta, huzursuzluk, terleme ve kaslarda kasılma nedeniyle acile getiriliyor. Yakınları, hastanın son günlerde antidepresan ilaç kullandığını söylüyor. Hasta panik içinde, sürekli hareket ediyor. Kaslarında titreme mevcut. Konuşurken anlamsız cümleler kuruyor. Ateşi yükselmiş, terleme yoğun. Eşi, hastanın son 24 saatte uykusuz olduğunu belirtiyor. Acile ulaştığında ajite, göz bebekleri geniş. Hasta sürekli “duramıyorum” diyerek bağırıyor. Bitkin ama hiperaktif görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 140/90 mmHg, nabız 130/dk, ateş 39.5°C, kaslarda klonus, ajitasyon.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'CK yüksek, laktat yüksek, elektrolitler normal.'}},
+ {'id': 81,
+  'ad': 'Solunumsal Şarbon',
+  'hikaye': '42 yaşında erkek hasta, yüksek ateş, öksürük ve göğüs ağrısı nedeniyle acile getiriliyor. Çiftçi olduğu öğreniliyor, son günlerde hayvanlarla yakın temas etmiş. Şikâyetler ilk başta soğuk algınlığına benzemiş. Ancak son 2 günde nefes darlığı ve göğüs ağrısı şiddetlenmiş. Hasta öksürürken kanlı balgam çıkarmış. Acile ulaştığında rengi soluk, dudakları morarmış. Halsiz ve bitkin, konuşmaları kısa ve zorlanarak çıkıyor. Terlemiş ve huzursuz görünüyor. Yakınları, hastanın gece boyunca uyuyamadığını söylüyor. Endişeli ve panik içinde sürekli göğsünü tutuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 90/60 mmHg, nabız 120/dk, ateş 39.7°C, solunum sayısı 32/dk, siyanoz mevcut.',
+   'radyolojik_goruntuler': 'Akciğer BT’de mediastinal genişleme, plevral effüzyon.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 18.000/mm³, CRP yüksek, kan kültüründe gram-pozitif basiller.'}},
+ {'id': 82,
+  'ad': 'Splenik Rüptür',
+  'hikaye': '27 yaşında erkek hasta, trafik kazası sonrası karın ağrısı ve halsizlik nedeniyle acile getiriliyor. Olay yerinde kısa süreli bayılma yaşamış. Acile ulaştığında rengi solgun, çok terli ve huzursuz. Karnında şiddetli ağrı tarif ediyor. Konuşmaları kısa, sürekli karnını tutuyor. Yakınları, hastanın daha önce sağlıklı olduğunu belirtiyor. Ağrı sırta yayılıyor. Yolda gelirken bilinci dalgalanmış. Hasta oturmakta zorlanıyor, yatağa kıvrılmış halde. Endişeli ve panik içinde görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 80/50 mmHg, nabız 125/dk, karında defans, sol üst kadranda hassasiyet.',
+   'radyolojik_goruntuler': 'Batın BT’de dalakta laserasyon ve intraperitoneal sıvı.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 7.8 g/dl, Htc %24, laktat yüksek.'}},
+ {'id': 83,
+  'ad': 'Status Astmatikus',
+  'hikaye': '19 yaşında kadın hasta, şiddetli nefes darlığı nedeniyle acile getiriliyor. Astım öyküsü mevcut, inhalerini kullanmasına rağmen rahatlamamış. Nefesi hırıltılı ve zor. Hasta panik halinde, konuşmakta güçlük çekiyor. Dudakları morarmış. Acile ulaştığında çok huzursuz, terli ve ajite. Yakınları, hastanın son günlerde soğuk algınlığı geçirdiğini söylüyor. Göğsünde baskı hissi tarif ediyor. Elleriyle sürekli boğazını tutuyor. Gece boyunca uyuyamamış, öksürük krizleri yaşamış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/65 mmHg, nabız 130/dk, solunum sayısı 35/dk, yaygın wheezing, yardımcı solunum kasları aktif.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde hiperinflasyon.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Kan gazında pH 7.28, pCO₂ 55 mmHg, pO₂ 60 mmHg.'}},
+ {'id': 84,
+  'ad': 'Subaraknoid Kanama',
+  'hikaye': '49 yaşında kadın hasta, ani başlayan şiddetli baş ağrısı nedeniyle acile getiriliyor. Hasta ağrıyı “hayatımda hissettiğim en kötü baş ağrısı” diye tarif ediyor. Kusma ve ense sertliği eklenmiş. Olay sırasında bilinci kısa süreli kapanmış. Acile ulaştığında çok huzursuz, başını tutarak yatıyor. Yakınları, hastanın hipertansiyon öyküsü olduğunu söylüyor. Konuşmaları yavaş, gözleri endişeli. Işığa bakmakta zorlanıyor. Sürekli “başım patlayacak” ifadesini kullanıyor. Halsiz ve bitkin görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 150/90 mmHg, nabız 95/dk, ense sertliği, bilinç bulanık.',
+   'radyolojik_goruntuler': 'Beyin BT’de subaraknoid boşluklarda yaygın kanama.',
+   'ekg': 'ST-T değişiklikleri.',
+   'tetkikler': 'Kan şekeri normal, lökosit hafif yüksek.'}},
+ {'id': 85,
+  'ad': 'Superior Vena Kava Sendromu',
+  'hikaye': '61 yaşında erkek hasta, yüz ve boyunda şişlik, nefes darlığı ve öksürük nedeniyle acile getiriliyor. Şikâyetler birkaç haftadır giderek artmış. Sabahları belirgin şişlik oluyor. Hasta ses kısıklığından da yakınıyor. Acile ulaştığında huzursuz, oturur pozisyonda kalmak istiyor. Dudakları morarmış. Göz kapakları şiş, yüzünde belirgin ödem mevcut. Yakınları, hastanın kilo kaybettiğini ve iştahsız olduğunu söylüyor. Konuşurken zorlanıyor, sık sık öksürüyor. Sigara öyküsü var. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, juguler venöz dolgunluk, yüzde ve boyunda ödem.',
+   'radyolojik_goruntuler': 'Toraks BT’de mediastende büyük kitle, vena kavada daralma.',
+   'ekg': 'Sinüs ritmi.',
+   'tetkikler': 'Hb normal, laktat normal, tümör belirteçleri yüksek.'}},
+ {'id': 86,
+  'ad': 'Supraventriküler Taşikardi',
+  'hikaye': '28 yaşında kadın hasta, ani başlayan çarpıntı ve baş dönmesi nedeniyle acile geliyor. Çarpıntı birden başlamış, yaklaşık 20 dakikadır devam ediyor. Hasta panik halinde, sürekli kalbini tutuyor. Konuşurken nefes nefese kalıyor. Halsiz ve terli. Yakınları, hastanın daha önce de kısa süreli benzer ataklar yaşadığını söylüyor. Olay sırasında baş dönmesi şiddetlenmiş, yere oturmak zorunda kalmış. Acile ulaştığında çok endişeli, elleri titriyor. “Kalbim yerinden çıkacak gibi” ifadesini kullanıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 180/dk, cilt soluk ve terli.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Dar QRS’li taşikardi, P dalgaları seçilemiyor.',
+   'tetkikler': 'Elektrolitler normal, troponin normal.'}},
+ {'id': 87,
+  'ad': 'Tansiyon Pnömotoraks',
+  'hikaye': '34 yaşında erkek hasta, ani başlayan göğüs ağrısı ve nefes darlığı nedeniyle acile getiriliyor. Olaydan önce ağır egzersiz yapmış. Aniden göğsünde batma hissi olmuş. Nefesi hızla daralmış. Acile ulaştığında panik içinde, dudakları morarmış. Hasta konuşmakta zorlanıyor, kısa cümlelerle yanıt veriyor. Terli ve huzursuz. Eşi, hastanın daha önce sağlıklı olduğunu söylüyor. Nefes almak için sürekli dik oturmak istiyor. Konuşurken göğsünü tutuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 85/60 mmHg, nabız 130/dk, sağ hemitoraksta solunum sesleri yok, juguler venöz dolgunluk.',
+   'radyolojik_goruntuler': 'Akciğer grafisinde sağ hemitoraksta geniş pnömotoraks, mediastinal kayma.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Kan gazında hipoksemi, laktat yüksek.'}},
+ {'id': 88,
+  'ad': 'Testiküler Torsiyon',
+  'hikaye': '17 yaşında erkek hasta, ani başlayan testis ağrısı nedeniyle acile getiriliyor. Ağrı sabah aniden başlamış, çok şiddetli. Hasta huzursuz, sürekli ağrısından dolayı kıvranıyor. Konuşurken terli ve endişeli görünüyor. Kusma da eklenmiş. Yakınları, hastanın daha önce sağlıklı olduğunu söylüyor. Ağrı kasığa yayılıyor. Yürümekte zorlanıyor. Sürekli “çok acıyor” diyerek bağırıyor. Endişeli, kıpırdamak istemiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 110/dk, sağ testis şiş ve hassas, yüksek pozisyonda.',
+   'radyolojik_goruntuler': 'Skrotal doppler USG’de testiste kan akımı izlenmiyor.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Lökosit 12.000/mm³, CRP hafif yüksek.'}},
+ {'id': 89,
+  'ad': 'Tiroid Fırtınası',
+  'hikaye': '36 yaşında kadın hasta, yüksek ateş, çarpıntı ve huzursuzluk nedeniyle acile geliyor. Yakınları, hastanın tiroid hastalığı öyküsü olduğunu söylüyor. Hasta çok terli, panik halinde ve konuşurken hızlı nefes alıyor. Çarpıntısı aniden başlamış. Acile ulaştığında ateşi çok yüksek. Elleri titriyor. Sürekli “çok sıcakladım” diyor. Gözlerinde belirgin büyüme fark ediliyor. Son günlerde uykusuz kalmış. Endişeli ve ajite görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 140/90 mmHg, nabız 150/dk, ateş 40.2°C, huzursuz ve terli.',
+   'radyolojik_goruntuler': 'Tiroid USG’de difüz büyüme.',
+   'ekg': 'Atriyal fibrilasyon.',
+   'tetkikler': 'T3 ve T4 çok yüksek, TSH baskılanmış, laktat yüksek.'}},
+ {'id': 90,
+  'ad': 'Toksoplazmik Ensefalit',
+  'hikaye': '41 yaşında erkek hasta, baş ağrısı, bilinç bulanıklığı ve nöbet şikâyetiyle acile getiriliyor. HIV öyküsü var. Son haftalarda halsizlik ve kilo kaybı tarif ediyor. Acile ulaştığında konuşmaları bozuk, sorulara cevap vermiyor. Bilinci dalgalı. Eşi, hastanın birkaç gündür yemek yemediğini söylüyor. Hasta sık sık başını tutuyor. Gözleri donuk, huzursuz görünüyor. Kasılmalar olmuş. Yakınları çok endişeli. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 100/dk, bilinç dalgalı, ense sertliği yok.',
+   'radyolojik_goruntuler': 'Beyin MR’da multipl halka tarzı lezyonlar.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'CD4 çok düşük, seroloji pozitif, CRP yüksek.'}},
+ {'id': 91,
+  'ad': 'Torasik Aort Diseksiyonu',
+  'hikaye': '63 yaşında erkek hasta, ani başlayan göğüs ağrısı nedeniyle acile getiriliyor. Ağrı sırtına ve karın bölgesine yayılıyor. Hasta ağrıyı “bıçak saplanır gibi” tarif ediyor. Yakınları, hastanın yüksek tansiyon öyküsü olduğunu söylüyor. Olay anında çok paniklemiş, yere oturmuş. Acile ulaştığında rengi soluk, huzursuz ve terli. Konuşurken kısa cümleler kuruyor. Ağrı çok şiddetli, oturmakta zorlanıyor. Eşi, hastanın son günlerde ilaçlarını düzensiz aldığını ifade ediyor. Hastanın dudaklarında morarma var, panik içinde göğsünü tutuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA sağ kolda 190/110 mmHg, sol kolda 120/80 mmHg, nabız 110/dk.',
+   'radyolojik_goruntuler': 'BT anjiyografide aort duvarında diseksiyon hattı.',
+   'ekg': 'Nonspesifik ST-T değişiklikleri.',
+   'tetkikler': 'D-dimer yüksek, Hb normal, kreatinin hafif yüksek.'}},
+ {'id': 92,
+  'ad': 'Transvers Miyelit',
+  'hikaye': '28 yaşında kadın hasta, bacaklarda güçsüzlük ve uyuşma şikâyetiyle acile geliyor. Yakınları, hastanın 2 gündür yürümekte zorlandığını söylüyor. İdrar yapmada da sorun başlamış. Hasta belden aşağısında hissizlik tarif ediyor. Konuşurken endişeli görünüyor. Acile ulaştığında oturmakta zorlanıyor, sık sık ağlamaklı. Elleriyle bacaklarını ovuşturuyor. Yakınları, hastanın birkaç hafta önce grip benzeri bir enfeksiyon geçirdiğini belirtiyor. Gece boyunca huzursuz uyumuş. Halsizliği ve yorgunluğu çok belirgin. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 110/70 mmHg, nabız 90/dk, alt ekstremitelerde motor kayıp, duyu kaybı, refleksler azalmış.',
+   'radyolojik_goruntuler': 'Spinal MR’da T6 seviyesinde transvers lezyon.',
+   'ekg': 'Normal.',
+   'tetkikler': 'BOS’ta pleositoz, protein yüksek.'}},
+ {'id': 93,
+  'ad': 'Tüberküloz Menenjiti',
+  'hikaye': '44 yaşında erkek hasta, 2 haftadır devam eden baş ağrısı, halsizlik ve gece terlemesi şikâyetiyle getiriliyor. Yakınları, hastanın son günlerde ateşinin yükseldiğini söylüyor. Hasta bilinç bulanıklığı yaşamış. Acile ulaştığında dalgın, sorulara geç yanıt veriyor. Ense sertliği belirgin. Öksürük ve balgam öyküsü de mevcut. Yakınları, hastanın son aylarda kilo kaybettiğini ifade ediyor. Konuşurken gözlerini kapatıyor, bitkin görünüyor. Panik içinde değil ama çok yorgun. Gece boyunca uykusuz kalmış. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/65 mmHg, nabız 95/dk, ateş 38.5°C, ense sertliği, bilinç bulanık.',
+   'radyolojik_goruntuler': 'Beyin MR’da bazal meninkslerde kalınlaşma.',
+   'ekg': 'Sinüs ritmi.',
+   'tetkikler': 'BOS’ta lenfosit hakimiyeti, ADA yüksek, kültür pozitif.'}},
+ {'id': 94,
+  'ad': 'Tümör Lizis Sendromu',
+  'hikaye': '36 yaşında erkek hasta, kemoterapi sonrası halsizlik, kas krampları ve bulantı şikâyetiyle acile geliyor. Yakınları, hastanın idrar renginde koyulaşma fark ettiklerini söylüyor. Hasta çok susamış, sürekli su istiyor. Kusma tarif ediyor. Konuşurken bitkin ve yorgun görünüyor. Halsizliği nedeniyle yürüyemiyor. Acile ulaştığında terli, huzursuz ve panik halinde değil. Bacaklarında uyuşma hissediyor. Gece boyunca uyuyamamış. Yakınları, hastanın kemoterapi sonrası bu belirtilerin hızla geliştiğini belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, kaslarda kramplar, halsizlik.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sivri T dalgaları, QRS genişlemesi.',
+   'tetkikler': 'Ürik asit yüksek, potasyum 6.5 mmol/L, fosfor yüksek, kalsiyum düşük, kreatinin yüksek.'}},
+ {'id': 95,
+  'ad': 'Uygunsuz Antidiüretik Hormon Sendromu (SIADH)',
+  'hikaye': '68 yaşında erkek hasta, baş ağrısı, halsizlik ve bilinç bulanıklığı nedeniyle acile getiriliyor. Yakınları, hastanın çok su içmesine rağmen idrar çıkışının azaldığını söylüyor. Son günlerde iştahsızlık ve bulantı olmuş. Acile ulaştığında bitkin ve huzursuz görünüyor. Konuşmaları yavaş, gözleri dalgın. Eşi, hastanın son haftalarda akciğer hastalığı nedeniyle tedavi gördüğünü belirtiyor. Hasta panik içinde değil ama oryantasyonu bozulmuş. Sürekli uyumak istiyor. Dudakları kuru, cildi soluk. Yakınları, gece boyunca konfüzyon yaşadığını anlatıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 115/70 mmHg, nabız 88/dk, bilinç bulanık, oryantasyon bozuk.',
+   'radyolojik_goruntuler': 'Beyin BT normal.',
+   'ekg': 'Normal.',
+   'tetkikler': 'Na 118 mmol/L, idrar osmolalitesi yüksek, serum osmolalitesi düşük.'}},
+ {'id': 96,
+  'ad': 'Üst Gastrointestinal Kanama',
+  'hikaye': '58 yaşında erkek hasta, kahverengi kusma ve siyah dışkı şikâyetiyle acile getiriliyor. Olay anında halsizlik ve baş dönmesi yaşamış. Acile ulaştığında rengi soluk, terli ve huzursuz. Konuşmaları kısa, sürekli “midem yanıyor” diyerek şikâyet ediyor. Yakınları, hastanın uzun süredir mide ilaçları kullandığını söylüyor. Sigara ve alkol öyküsü var. Hasta panik içinde değil ama çok yorgun. Gece boyunca kusma yaşamış. Konuşurken karnını tutuyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 85/55 mmHg, nabız 120/dk, cilt soluk ve nemli, epigastrik hassasiyet.',
+   'radyolojik_goruntuler': 'Endoskopide mide fundusunda ülser ve aktif kanama.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 6.9 g/dl, Htc %22, laktat yüksek.'}},
+ {'id': 97,
+  'ad': 'Vazooklüziv Kriz',
+  'hikaye': '25 yaşında kadın hasta, şiddetli kemik ve eklem ağrısı nedeniyle acile getiriliyor. Orak hücre anemisi öyküsü var. Ağrı tüm vücuduna yayılmış. Hasta sürekli kıvranıyor ve huzursuz. Konuşurken kısa cümleler kuruyor. Dudakları morarmış. Yakınları, hastanın birkaç gündür çok halsiz olduğunu söylüyor. Gece boyunca uyuyamamış. İştahsızlık mevcut. Ağrı nedeniyle hareket etmek istemiyor. Panik içinde değil ama endişeli görünüyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/60 mmHg, nabız 110/dk, cilt soluk, ekstremitelerde hassasiyet.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Hb 7.5 g/dl, retikülosit yüksek, LDH yüksek.'}},
+ {'id': 98,
+  'ad': 'Vazovagal Senkop',
+  'hikaye': '21 yaşında erkek hasta, ani gelişen bayılma şikâyetiyle acile getiriliyor. Olay kalabalık bir ortamda olmuş, hasta yere yığılmış. Yakınları, hastanın olay öncesi baş dönmesi ve terleme yaşadığını söylüyor. Bilinç kısa sürede açılmış. Acile ulaştığında bitkin ve yorgun. Konuşurken “birden gözüm karardı” diyor. Panik içinde değil ama endişeli görünüyor. Olay sonrası mide bulantısı olmuş. Daha önce benzer şikâyetler yaşamış. Ebeveynleri, hastanın çok stresli dönemlerde bu tür şikâyetler yaşadığını belirtiyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 95/60 mmHg, nabız 60/dk, bilinç açık, cilt soluk ve nemli.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Sinüs bradikardisi.',
+   'tetkikler': 'Elektrolitler normal, glukoz normal.'}},
+ {'id': 99,
+  'ad': 'Ventriküler Taşikardi',
+  'hikaye': '64 yaşında erkek hasta, ani başlayan çarpıntı ve bayılma hissi nedeniyle acile getiriliyor. Olay sırasında yere düşmek üzereyken yakalanmış. Hasta çok panik içinde. Dudakları morarmış. Konuşmakta zorlanıyor. Terli ve huzursuz. Yakınları, hastanın kalp hastalığı öyküsü olduğunu söylüyor. Acile ulaştığında bilinci dalgalı. “Kalbim çok hızlı atıyor” diyerek şikâyet ediyor. Endişeli görünüyor, oturmakta zorlanıyor. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 80/50 mmHg, nabız 180/dk, cilt soluk ve soğuk.',
+   'radyolojik_goruntuler': 'Normal.',
+   'ekg': 'Geniş QRS’li düzenli taşikardi.',
+   'tetkikler': 'Troponin hafif yüksek, potasyum normal, magnezyum düşük.'}},
+ {'id': 100,
+  'ad': 'Volvulus',
+  'hikaye': '72 yaşında erkek hasta, ani başlayan karın ağrısı, şişlik ve kusma nedeniyle acile getiriliyor. Ağrı tüm karnı kaplamış. Hasta sürekli karnını tutuyor. Konuşurken kısa ve kesik cümleler kuruyor. Yakınları, hastanın birkaç gündür kabız olduğunu söylüyor. Olay sabah başlamış, giderek şiddetlenmiş. Kusma kahverengi ve kötü kokulu. Acile ulaştığında huzursuz, terli ve bitkin. Karnı şiş ve gergin. Gece boyunca uyuyamamış. Yürümekte zorlanıyor, sürekli yatağa kıvrılmış halde. Klinik Bulgular:',
+  'klinik_bulgular': {'fizik_muayene': 'TA 100/70 mmHg, nabız 115/dk, karın şiş, timpani, barsak sesleri azalmış.',
+   'radyolojik_goruntuler': 'Batın BT’de bağırsaklarda torsiyon, dilatasyon, hava-sıvı seviyeleri.',
+   'ekg': 'Sinüs taşikardisi.',
+   'tetkikler': 'Lökosit 14.000/mm³, laktat yüksek, elektrolitler hafif bozuk.'}}]
+
+
+
+
